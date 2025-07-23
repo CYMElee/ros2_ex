@@ -1,0 +1,13 @@
+[01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:[m[K In member function ‘[01m[Kvoid PositionAttitudeVelocityConverterNode::attitude_callback(px4_msgs::msg::VehicleAttitude_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:105:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::msg::VehicleAttitude_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitude_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kq_d[m[K’
+  105 |         Eigen::Vector3d omega_ned(msg->[01;31m[Kq_d[m[K[0], msg->q_d[1], msg->q_d[2]);
+      |                                        [01;31m[K^~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:105:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::msg::VehicleAttitude_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitude_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kq_d[m[K’
+  105 |         Eigen::Vector3d omega_ned(msg->q_d[0], msg->[01;31m[Kq_d[m[K[1], msg->q_d[2]);
+      |                                                     [01;31m[K^~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:105:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::msg::VehicleAttitude_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitude_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kq_d[m[K’
+  105 |         Eigen::Vector3d omega_ned(msg->q_d[0], msg->q_d[1], msg->[01;31m[Kq_d[m[K[2]);
+      |                                                                  [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/platform_topic_tool.dir/build.make:76: CMakeFiles/platform_topic_tool.dir/src/platform_topic_tool.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:333: CMakeFiles/platform_topic_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

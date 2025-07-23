@@ -1,0 +1,9 @@
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/wrench_mapper.cpp:6:12:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+    6 | #define lw [01;31m[K0.8[m[K // units: meter
+      |            [01;31m[K^~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/wrench_mapper.cpp:6:12:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[Klw[m[K’
+    6 | #define lw [01;36m[K0.8[m[K // units: meter
+      |            [01;36m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/wrench_mapper.dir/build.make:76: CMakeFiles/wrench_mapper.dir/node/wrench_mapper.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/wrench_mapper.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

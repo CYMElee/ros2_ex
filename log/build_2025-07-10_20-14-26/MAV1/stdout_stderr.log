@@ -1,0 +1,12 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/MAV1.dir/node/main.cpp.o[0m
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::set_offboard_mode()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:208:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kresult[m[K’
+  208 |         if (result.get()->[01;31m[Kresult[m[K) {
+      |                           [01;31m[K^~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::arm_vehicle()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:230:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kresult[m[K’
+  230 |         if (result.get()->[01;31m[Kresult[m[K) {
+      |                           [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/MAV1.dir/build.make:76: CMakeFiles/MAV1.dir/node/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/MAV1.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

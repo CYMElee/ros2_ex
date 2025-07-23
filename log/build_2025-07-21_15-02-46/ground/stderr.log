@@ -1,0 +1,12 @@
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:[m[K In constructor ‘[01m[KMAV_State::MAV_State()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:28:5:[m[K [01;31m[Kerror: [m[K‘[01m[KuxrQoS_t[m[K’ was not declared in this scope
+   28 |     [01;31m[KuxrQoS_t[m[K qos = {
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:35:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kqos[m[K’ was not declared in this scope; did you mean ‘[01m[Kcos[m[K’?
+   35 |             "/MAV1/fmu/out/vehicle_status", [01;31m[Kqos[m[K, std::bind(&MAV_State::MAV1_CB, this, std::placeholders::_1));
+      |                                             [01;31m[K^~~[m[K
+      |                                             [32m[Kcos[m[K
+gmake[2]: *** [CMakeFiles/keyboard_node.dir/build.make:76: CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:227: CMakeFiles/keyboard_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

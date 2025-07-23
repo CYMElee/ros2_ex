@@ -1,0 +1,36 @@
+[0.006s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[0.041s] [ 13%] Built target attitude_controller
+[0.041s] [ 33%] Built target keyboard_node
+[0.041s] [ 46%] Built target trajectory_generator
+[0.041s] [ 66%] Built target qc_servo
+[0.041s] [ 73%] Built target gripper_controller
+[0.041s] [ 86%] Built target wrench_mapper
+[0.041s] [100%] Built target position_controller
+[0.046s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '0': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[0.047s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/ground
+[0.052s] -- Install configuration: "RelWithDebInfo"
+[0.052s] -- Execute custom install script
+[0.053s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/keyboard_node
+[0.053s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/attitude_controller
+[0.053s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/gripper_controller
+[0.053s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/position_controller
+[0.053s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/qc_servo
+[0.053s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/wrench_mapper
+[0.053s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/trajectory_generator
+[0.054s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/launch/keyboard_launch.xml
+[0.054s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/package_run_dependencies/ground
+[0.054s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/parent_prefix_path/ground
+[0.054s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/ament_prefix_path.sh
+[0.054s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/ament_prefix_path.dsv
+[0.054s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/path.sh
+[0.054s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/path.dsv
+[0.054s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.bash
+[0.054s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.sh
+[0.054s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.zsh
+[0.054s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.dsv
+[0.054s] -- Symlinking: /home/lee/workspace/ros2_ex/install/ground/share/ground/package.dsv
+[0.059s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/packages/ground
+[0.059s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/cmake/groundConfig.cmake
+[0.059s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/cmake/groundConfig-version.cmake
+[0.059s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/package.xml
+[0.061s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '0': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/ground

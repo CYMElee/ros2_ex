@@ -1,0 +1,59 @@
+[0.006s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake /home/lee/workspace/ros2_ex/src/ground -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/ground
+[0.013s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.072s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.074s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.087s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.088s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.091s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.095s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.100s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.115s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.115s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.175s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.201s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.206s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.213s] -- Found tf2: 0.25.13 (/opt/ros/humble/share/tf2/cmake)
+[0.214s] -- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.248s] -- Found px4_msgs: 2.0.1 (/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/cmake)
+[0.262s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.293s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.294s] -- Configured cppcheck include dirs: /home/lee/workspace/ros2_ex/src/ground/include;$<BUILD_INTERFACE:/home/lee/workspace/ros2_ex/src/ground/include>
+[0.294s] -- Configured cppcheck exclude dirs and/or files: 
+[0.294s] -- Added test 'lint_cmake' to check CMake code style
+[0.294s] -- Added test 'uncrustify' to check C / C++ code style
+[0.294s] -- Configured uncrustify additional arguments: 
+[0.295s] -- Added test 'xmllint' to check XML markup files
+[0.295s] -- Configuring done
+[0.306s] -- Generating done
+[0.310s] -- Build files have been written to: /home/lee/workspace/ros2_ex/build/ground
+[0.315s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake /home/lee/workspace/ros2_ex/src/ground -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/ground
+[0.316s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[0.338s] [35m[1mConsolidate compiler generated dependencies of target gripper_controller[0m
+[0.338s] [35m[1mConsolidate compiler generated dependencies of target keyboard_node[0m
+[0.338s] [35m[1mConsolidate compiler generated dependencies of target trajectory_generator[0m
+[0.339s] [35m[1mConsolidate compiler generated dependencies of target attitude_controller[0m
+[0.340s] [35m[1mConsolidate compiler generated dependencies of target position_controller[0m
+[0.340s] [35m[1mConsolidate compiler generated dependencies of target qc_servo[0m
+[0.340s] [35m[1mConsolidate compiler generated dependencies of target wrench_mapper[0m
+[0.347s] [ 13%] Built target trajectory_generator
+[0.348s] [ 26%] Built target wrench_mapper
+[0.348s] [ 33%] [32mBuilding CXX object CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o[0m
+[0.349s] [ 46%] Built target gripper_controller
+[0.350s] [ 60%] Built target qc_servo
+[0.350s] [ 73%] Built target attitude_controller
+[0.352s] [ 86%] Built target position_controller
+[1.417s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.417s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:89:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kc_prev[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[1.417s]    89 |     int [01;35m[Kc_prev[m[K = EOF;
+[1.417s]       |         [01;35m[K^~~~~~[m[K
+[6.861s] [ 93%] [32m[1mLinking CXX executable keyboard_node[0m
+[11.783s] /usr/bin/ld: CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o: in function `std::_Bind<void (MAV_State::*(MAV_State*, std::_Placeholder<1>))(std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >)>::_Bind<MAV_State*, std::_Placeholder<1> const&>(void (MAV_State::*&&)(std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >), MAV_State*&&, std::_Placeholder<1> const&)':
+[11.783s] /usr/include/c++/11/functional:490: undefined reference to `MAV_State::MAV1_CB(std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >)'
+[11.783s] /usr/bin/ld: /usr/include/c++/11/functional:490: undefined reference to `MAV_State::MAV2_CB(std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >)'
+[11.783s] /usr/bin/ld: /usr/include/c++/11/functional:490: undefined reference to `MAV_State::MAV3_CB(std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >)'
+[11.783s] /usr/bin/ld: /usr/include/c++/11/functional:490: undefined reference to `MAV_State::MAV4_CB(std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >)'
+[11.807s] collect2: error: ld returned 1 exit status
+[11.808s] gmake[2]: *** [CMakeFiles/keyboard_node.dir/build.make:185: keyboard_node] Error 1
+[11.808s] gmake[1]: *** [CMakeFiles/Makefile2:227: CMakeFiles/keyboard_node.dir/all] Error 2
+[11.808s] gmake: *** [Makefile:146: all] Error 2
+[11.810s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '2': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32

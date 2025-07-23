@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target wrench_mapper[0m
+[ 20%] Built target gripper_controller
+[ 40%] Built target position_controller
+[ 60%] Built target attitude_controller
+[ 80%] Built target qc_servo
+[ 90%] [32mBuilding CXX object CMakeFiles/wrench_mapper.dir/node/wrench_mapper.cpp.o[0m
+[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/lee/workspace/ros2_ex/src/ground/node/wrench_mapper.cpp: No such file or directory
+compilation terminated.
+gmake[2]: *** [CMakeFiles/wrench_mapper.dir/build.make:76: CMakeFiles/wrench_mapper.dir/node/wrench_mapper.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/wrench_mapper.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

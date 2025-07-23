@@ -1,0 +1,24 @@
+[35m[1mConsolidate compiler generated dependencies of target keyboard_node[0m
+[ 13%] Built target position_controller
+[ 26%] Built target trajectory_generator
+[ 40%] Built target gripper_controller
+[ 53%] Built target attitude_controller
+[ 66%] Built target wrench_mapper
+[ 80%] Built target qc_servo
+[ 86%] [32mBuilding CXX object CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o[0m
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:[m[K In constructor ‘[01m[KMAV_State::MAV_State()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:36:132:[m[K [01;31m[Kerror: [m[K‘[01m[KMAV1_CB[m[K’ is not a member of ‘[01m[KMAV_State[m[K’
+   36 |         MAV1_ = this->create_subscription<px4_msgs::msg::VehicleStatus>("/MAV1/fmu/out/vehicle_status", qos, std::bind(&MAV_State::[01;31m[KMAV1_CB[m[K, this, std::placeholders::_1));
+      |                                                                                                                                    [01;31m[K^~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:37:132:[m[K [01;31m[Kerror: [m[K‘[01m[KMAV2_CB[m[K’ is not a member of ‘[01m[KMAV_State[m[K’
+   37 |         MAV2_ = this->create_subscription<px4_msgs::msg::VehicleStatus>("/MAV2/fmu/out/vehicle_status", qos, std::bind(&MAV_State::[01;31m[KMAV2_CB[m[K, this, std::placeholders::_1));
+      |                                                                                                                                    [01;31m[K^~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:38:132:[m[K [01;31m[Kerror: [m[K‘[01m[KMAV3_CB[m[K’ is not a member of ‘[01m[KMAV_State[m[K’
+   38 |         MAV3_ = this->create_subscription<px4_msgs::msg::VehicleStatus>("/MAV3/fmu/out/vehicle_status", qos, std::bind(&MAV_State::[01;31m[KMAV3_CB[m[K, this, std::placeholders::_1));
+      |                                                                                                                                    [01;31m[K^~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:39:132:[m[K [01;31m[Kerror: [m[K‘[01m[KMAV4_CB[m[K’ is not a member of ‘[01m[KMAV_State[m[K’
+   39 |         MAV4_ = this->create_subscription<px4_msgs::msg::VehicleStatus>("/MAV4/fmu/out/vehicle_status", qos, std::bind(&MAV_State::[01;31m[KMAV4_CB[m[K, this, std::placeholders::_1));
+      |                                                                                                                                    [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/keyboard_node.dir/build.make:76: CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:227: CMakeFiles/keyboard_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

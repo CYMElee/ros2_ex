@@ -1,0 +1,4 @@
+source;share/ground/local_setup.bash
+source;share/ground/local_setup.dsv
+source;share/ground/local_setup.sh
+source;share/ground/local_setup.zsh

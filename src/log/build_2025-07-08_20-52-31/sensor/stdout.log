@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target topic_tool[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/topic_tool.dir/src/topic_tool.cpp.o[0m
+[100%] [32m[1mLinking CXX executable topic_tool[0m
+[100%] Built target topic_tool
+-- Install configuration: ""
+-- Installing: /home/lee/workspace/ros2_ex/src/install/sensor/lib/sensor/topic_tool
+-- Set runtime path of "/home/lee/workspace/ros2_ex/src/install/sensor/lib/sensor/topic_tool" to ""
+-- Up-to-date: /home/lee/workspace/ros2_ex/src/install/sensor/share/ament_index/resource_index/package_run_dependencies/sensor
+-- Up-to-date: /home/lee/workspace/ros2_ex/src/install/sensor/share/ament_index/resource_index/parent_prefix_path/sensor
+-- Up-to-date: /home/lee/workspace/ros2_ex/src/install/sensor/share/sensor/environment/ament_prefix_path.sh
+-- Installing: /home/lee/workspace/ros2_ex/src/install/sensor/share/sensor/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/lee/workspace/ros2_ex/src/install/sensor/share/sensor/environment/path.sh
+-- Installing: /home/lee/workspace/ros2_ex/src/install/sensor/share/sensor/environment/path.dsv
+-- Up-to-date: /home/lee/workspace/ros2_ex/src/install/sensor/share/sensor/local_setup.bash
+-- Up-to-date: /home/lee/workspace/ros2_ex/src/install/sensor/share/sensor/local_setup.sh
+-- Up-to-date: /home/lee/workspace/ros2_ex/src/install/sensor/share/sensor/local_setup.zsh
+-- Installing: /home/lee/workspace/ros2_ex/src/install/sensor/share/sensor/local_setup.dsv
+-- Installing: /home/lee/workspace/ros2_ex/src/install/sensor/share/sensor/package.dsv
+-- Up-to-date: /home/lee/workspace/ros2_ex/src/install/sensor/share/ament_index/resource_index/packages/sensor
+-- Up-to-date: /home/lee/workspace/ros2_ex/src/install/sensor/share/sensor/cmake/sensorConfig.cmake
+-- Up-to-date: /home/lee/workspace/ros2_ex/src/install/sensor/share/sensor/cmake/sensorConfig-version.cmake
+-- Up-to-date: /home/lee/workspace/ros2_ex/src/install/sensor/share/sensor/package.xml

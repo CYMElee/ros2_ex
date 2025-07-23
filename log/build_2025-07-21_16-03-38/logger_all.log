@@ -1,0 +1,357 @@
+[0.047s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--event-handlers', 'console_cohesion+', '--base-paths', '/home/lee/workspace/ros2_ex', '--cmake-args', '-DCMAKE_BUILD_TYPE=RelWithDebInfo']
+[0.047s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=['console_cohesion+'], ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/lee/workspace/ros2_ex'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=RelWithDebInfo'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7d35bc257f10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7d35bc257970>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7d35bc257970>>, mixin_verb=('build',))
+[0.064s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.064s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.064s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.064s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.064s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.064s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/lee/workspace/ros2_ex'
+[0.064s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex) by extensions ['ignore', 'ignore_ament_install']
+[0.064s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex) by extension 'ignore'
+[0.064s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex) by extension 'ignore_ament_install'
+[0.064s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex) by extensions ['colcon_pkg']
+[0.064s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex) by extension 'colcon_pkg'
+[0.064s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex) by extensions ['colcon_meta']
+[0.064s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex) by extension 'colcon_meta'
+[0.064s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex) by extensions ['ros']
+[0.064s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex) by extension 'ros'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex) by extensions ['cmake', 'python']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex) by extension 'cmake'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex) by extension 'python'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex) by extensions ['python_setup_py']
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex) by extension 'python_setup_py'
+[0.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/build) by extensions ['ignore', 'ignore_ament_install']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/build) by extension 'ignore'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/build) ignored
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/install) by extensions ['ignore', 'ignore_ament_install']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/install) by extension 'ignore'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/install) ignored
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/log) by extensions ['ignore', 'ignore_ament_install']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/log) by extension 'ignore'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/log) ignored
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src) by extensions ['ignore', 'ignore_ament_install']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src) by extension 'ignore'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src) by extension 'ignore_ament_install'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src) by extensions ['colcon_pkg']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src) by extension 'colcon_pkg'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src) by extensions ['colcon_meta']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src) by extension 'colcon_meta'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src) by extensions ['ros']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src) by extension 'ros'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src) by extensions ['cmake', 'python']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src) by extension 'cmake'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src) by extension 'python'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src) by extensions ['python_setup_py']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src) by extension 'python_setup_py'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV) by extensions ['ignore', 'ignore_ament_install']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV) by extension 'ignore'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV) by extension 'ignore_ament_install'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV) by extensions ['colcon_pkg']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV) by extension 'colcon_pkg'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV) by extensions ['colcon_meta']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV) by extension 'colcon_meta'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV) by extensions ['ros']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV) by extension 'ros'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV) by extensions ['cmake', 'python']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV) by extension 'cmake'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV) by extension 'python'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV) by extensions ['python_setup_py']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV) by extension 'python_setup_py'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV/MAV1) by extensions ['ignore', 'ignore_ament_install']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV/MAV1) by extension 'ignore'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV/MAV1) by extension 'ignore_ament_install'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV/MAV1) by extensions ['colcon_pkg']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV/MAV1) by extension 'colcon_pkg'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV/MAV1) by extensions ['colcon_meta']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV/MAV1) by extension 'colcon_meta'
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV/MAV1) by extensions ['ros']
+[0.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/MAV/MAV1) by extension 'ros'
+[0.073s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lee/workspace/ros2_ex/src/MAV/MAV1' with type 'ros.ament_cmake' and name 'MAV1'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/build) by extensions ['ignore', 'ignore_ament_install']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/build) by extension 'ignore'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/build) ignored
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/ground) by extensions ['ignore', 'ignore_ament_install']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/ground) by extension 'ignore'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/ground) by extension 'ignore_ament_install'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/ground) by extensions ['colcon_pkg']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/ground) by extension 'colcon_pkg'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/ground) by extensions ['colcon_meta']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/ground) by extension 'colcon_meta'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/ground) by extensions ['ros']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/ground) by extension 'ros'
+[0.073s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lee/workspace/ros2_ex/src/ground' with type 'ros.ament_cmake' and name 'ground'
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/install) by extensions ['ignore', 'ignore_ament_install']
+[0.073s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/install) by extension 'ignore'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/install) ignored
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/log) by extensions ['ignore', 'ignore_ament_install']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/log) by extension 'ignore'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/log) ignored
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/px4_msgs) by extension 'ignore'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/px4_msgs) by extension 'ignore_ament_install'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/px4_msgs) by extensions ['colcon_pkg']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/px4_msgs) by extension 'colcon_pkg'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/px4_msgs) by extensions ['colcon_meta']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/px4_msgs) by extension 'colcon_meta'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/px4_msgs) by extensions ['ros']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/px4_msgs) by extension 'ros'
+[0.074s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lee/workspace/ros2_ex/src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/sensor) by extensions ['ignore', 'ignore_ament_install']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/sensor) by extension 'ignore'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/sensor) by extension 'ignore_ament_install'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/sensor) by extensions ['colcon_pkg']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/sensor) by extension 'colcon_pkg'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/sensor) by extensions ['colcon_meta']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/sensor) by extension 'colcon_meta'
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/sensor) by extensions ['ros']
+[0.074s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lee/workspace/ros2_ex/src/sensor) by extension 'ros'
+[0.075s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lee/workspace/ros2_ex/src/sensor' with type 'ros.ament_cmake' and name 'sensor'
+[0.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.084s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.084s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.084s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/lee/workspace/ros2_ex/install
+[0.084s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/lee/workspace/vrpn/install
+[0.085s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 303 installed packages in /opt/ros/humble
+[0.086s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.101s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'px4_msgs' is in: /home/lee/workspace/vrpn/install/px4_msgs, /home/lee/workspace/ros2_ex/install/px4_msgs
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding px4_msgs
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo']'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.102s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lee/workspace/ros2_ex/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lee/workspace/ros2_ex/install/px4_msgs', 'merge_install': False, 'path': '/home/lee/workspace/ros2_ex/src/px4_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'sensor' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo']'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'sensor' build argument 'cmake_target' from command line to 'None'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'sensor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'sensor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'sensor' build argument 'cmake_clean_first' from command line to 'False'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'sensor' build argument 'cmake_force_configure' from command line to 'False'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'sensor' build argument 'ament_cmake_args' from command line to 'None'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'sensor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'sensor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.102s] DEBUG:colcon.colcon_core.verb:Building package 'sensor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lee/workspace/ros2_ex/build/sensor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lee/workspace/ros2_ex/install/sensor', 'merge_install': False, 'path': '/home/lee/workspace/ros2_ex/src/sensor', 'symlink_install': True, 'test_result_base': None}
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'MAV1' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo']'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'MAV1' build argument 'cmake_target' from command line to 'None'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'MAV1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'MAV1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'MAV1' build argument 'cmake_clean_first' from command line to 'False'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'MAV1' build argument 'cmake_force_configure' from command line to 'False'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'MAV1' build argument 'ament_cmake_args' from command line to 'None'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'MAV1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.102s] Level 5:colcon.colcon_core.verb:set package 'MAV1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.102s] DEBUG:colcon.colcon_core.verb:Building package 'MAV1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lee/workspace/ros2_ex/build/MAV1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lee/workspace/ros2_ex/install/MAV1', 'merge_install': False, 'path': '/home/lee/workspace/ros2_ex/src/MAV/MAV1', 'symlink_install': True, 'test_result_base': None}
+[0.103s] Level 5:colcon.colcon_core.verb:set package 'ground' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo']'
+[0.103s] Level 5:colcon.colcon_core.verb:set package 'ground' build argument 'cmake_target' from command line to 'None'
+[0.103s] Level 5:colcon.colcon_core.verb:set package 'ground' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.103s] Level 5:colcon.colcon_core.verb:set package 'ground' build argument 'cmake_clean_cache' from command line to 'False'
+[0.103s] Level 5:colcon.colcon_core.verb:set package 'ground' build argument 'cmake_clean_first' from command line to 'False'
+[0.103s] Level 5:colcon.colcon_core.verb:set package 'ground' build argument 'cmake_force_configure' from command line to 'False'
+[0.103s] Level 5:colcon.colcon_core.verb:set package 'ground' build argument 'ament_cmake_args' from command line to 'None'
+[0.103s] Level 5:colcon.colcon_core.verb:set package 'ground' build argument 'catkin_cmake_args' from command line to 'None'
+[0.103s] Level 5:colcon.colcon_core.verb:set package 'ground' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.103s] DEBUG:colcon.colcon_core.verb:Building package 'ground' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lee/workspace/ros2_ex/build/ground', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lee/workspace/ros2_ex/install/ground', 'merge_install': False, 'path': '/home/lee/workspace/ros2_ex/src/ground', 'symlink_install': True, 'test_result_base': None}
+[0.103s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.103s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.103s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lee/workspace/ros2_ex/src/px4_msgs' with build type 'ament_cmake'
+[0.104s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lee/workspace/ros2_ex/src/px4_msgs'
+[0.104s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.104s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.104s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.106s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lee/workspace/ros2_ex/src/sensor' with build type 'ament_cmake'
+[0.106s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lee/workspace/ros2_ex/src/sensor'
+[0.106s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.106s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.110s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/workspace/ros2_ex/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/lee/workspace/ros2_ex/src/px4_msgs -DCMAKE_BUILD_TYPE=RelWithDebInfo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/px4_msgs
+[0.112s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/workspace/ros2_ex/build/sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/lee/workspace/ros2_ex/src/sensor -DCMAKE_BUILD_TYPE=RelWithDebInfo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/sensor
+[0.406s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/workspace/ros2_ex/build/sensor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/lee/workspace/ros2_ex/src/sensor -DCMAKE_BUILD_TYPE=RelWithDebInfo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/sensor
+[0.408s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/workspace/ros2_ex/build/sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/sensor -- -j32 -l32
+[0.449s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/workspace/ros2_ex/build/sensor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/sensor -- -j32 -l32
+[0.454s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/workspace/ros2_ex/build/sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/sensor
+[0.467s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensor)
+[0.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/workspace/ros2_ex/build/sensor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/sensor
+[0.469s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/sensor' for CMake module files
+[0.469s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/sensor' for CMake config files
+[0.470s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor', 'cmake_prefix_path')
+[0.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/sensor/share/sensor/hook/cmake_prefix_path.ps1'
+[0.470s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/workspace/ros2_ex/install/sensor/share/sensor/hook/cmake_prefix_path.dsv'
+[0.471s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/sensor/share/sensor/hook/cmake_prefix_path.sh'
+[0.471s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/sensor/lib'
+[0.471s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/sensor/bin'
+[0.471s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/sensor/lib/pkgconfig/sensor.pc'
+[0.471s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/sensor/lib/python3.10/site-packages'
+[0.472s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/sensor/bin'
+[0.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/sensor/share/sensor/package.ps1'
+[0.472s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lee/workspace/ros2_ex/install/sensor/share/sensor/package.dsv'
+[0.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/sensor/share/sensor/package.sh'
+[0.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/sensor/share/sensor/package.bash'
+[0.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/sensor/share/sensor/package.zsh'
+[0.474s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lee/workspace/ros2_ex/install/sensor/share/colcon-core/packages/sensor)
+[0.474s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sensor)
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/sensor' for CMake module files
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/sensor' for CMake config files
+[0.474s] Level 1:colcon.colcon_core.shell:create_environment_hook('sensor', 'cmake_prefix_path')
+[0.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/sensor/share/sensor/hook/cmake_prefix_path.ps1'
+[0.474s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/workspace/ros2_ex/install/sensor/share/sensor/hook/cmake_prefix_path.dsv'
+[0.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/sensor/share/sensor/hook/cmake_prefix_path.sh'
+[0.475s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/sensor/lib'
+[0.475s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/sensor/bin'
+[0.475s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/sensor/lib/pkgconfig/sensor.pc'
+[0.475s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/sensor/lib/python3.10/site-packages'
+[0.475s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/sensor/bin'
+[0.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/sensor/share/sensor/package.ps1'
+[0.475s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lee/workspace/ros2_ex/install/sensor/share/sensor/package.dsv'
+[0.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/sensor/share/sensor/package.sh'
+[0.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/sensor/share/sensor/package.bash'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/sensor/share/sensor/package.zsh'
+[0.476s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lee/workspace/ros2_ex/install/sensor/share/colcon-core/packages/sensor)
+[1.523s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/workspace/ros2_ex/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/lee/workspace/ros2_ex/src/px4_msgs -DCMAKE_BUILD_TYPE=RelWithDebInfo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/px4_msgs
+[1.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/workspace/ros2_ex/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/px4_msgs -- -j32 -l32
+[2.147s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/workspace/ros2_ex/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/px4_msgs -- -j32 -l32
+[2.149s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/workspace/ros2_ex/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/px4_msgs
+[2.341s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[2.341s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/workspace/ros2_ex/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/px4_msgs
+[2.341s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/px4_msgs' for CMake module files
+[2.342s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/px4_msgs' for CMake config files
+[2.345s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[2.345s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[2.345s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[2.345s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[2.345s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/px4_msgs/lib'
+[2.345s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[2.345s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[2.346s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[2.346s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/px4_msgs/bin'
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/px4_msgs/lib/python3.10/site-packages'
+[2.346s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/px4_msgs/bin'
+[2.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/package.ps1'
+[2.346s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/package.dsv'
+[2.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/package.sh'
+[2.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/package.bash'
+[2.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/package.zsh'
+[2.347s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lee/workspace/ros2_ex/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[2.347s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[2.347s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/px4_msgs' for CMake module files
+[2.347s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/px4_msgs' for CMake config files
+[2.350s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[2.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[2.350s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[2.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[2.350s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/px4_msgs/lib'
+[2.350s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[2.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[2.350s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[2.351s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/px4_msgs/bin'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/px4_msgs/lib/python3.10/site-packages'
+[2.351s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/px4_msgs/bin'
+[2.351s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/package.ps1'
+[2.351s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/package.dsv'
+[2.351s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/package.sh'
+[2.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/package.bash'
+[2.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/package.zsh'
+[2.352s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lee/workspace/ros2_ex/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[2.352s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lee/workspace/ros2_ex/src/MAV/MAV1' with build type 'ament_cmake'
+[2.352s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lee/workspace/ros2_ex/src/MAV/MAV1'
+[2.352s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.352s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.355s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lee/workspace/ros2_ex/src/ground' with build type 'ament_cmake'
+[2.355s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lee/workspace/ros2_ex/src/ground'
+[2.355s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.355s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.446s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/workspace/ros2_ex/build/MAV1': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake /home/lee/workspace/ros2_ex/src/MAV/MAV1 -DCMAKE_BUILD_TYPE=RelWithDebInfo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/MAV1
+[2.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake /home/lee/workspace/ros2_ex/src/ground -DCMAKE_BUILD_TYPE=RelWithDebInfo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/ground
+[2.697s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake /home/lee/workspace/ros2_ex/src/ground -DCMAKE_BUILD_TYPE=RelWithDebInfo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/ground
+[2.698s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[3.224s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/workspace/ros2_ex/build/MAV1' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake /home/lee/workspace/ros2_ex/src/MAV/MAV1 -DCMAKE_BUILD_TYPE=RelWithDebInfo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/MAV1
+[3.226s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/workspace/ros2_ex/build/MAV1': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/MAV1 -- -j32 -l32
+[3.272s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/workspace/ros2_ex/build/MAV1' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/MAV1 -- -j32 -l32
+[3.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lee/workspace/ros2_ex/build/MAV1': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/MAV1
+[3.285s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(MAV1)
+[3.286s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/MAV1' for CMake module files
+[3.286s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/workspace/ros2_ex/build/MAV1' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/MAV1
+[3.286s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/MAV1' for CMake config files
+[3.286s] Level 1:colcon.colcon_core.shell:create_environment_hook('MAV1', 'cmake_prefix_path')
+[3.287s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/hook/cmake_prefix_path.ps1'
+[3.287s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/hook/cmake_prefix_path.dsv'
+[3.287s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/hook/cmake_prefix_path.sh'
+[3.288s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/MAV1/lib'
+[3.288s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/MAV1/bin'
+[3.288s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/MAV1/lib/pkgconfig/MAV1.pc'
+[3.288s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/MAV1/lib/python3.10/site-packages'
+[3.288s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/MAV1/bin'
+[3.288s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/package.ps1'
+[3.289s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/package.dsv'
+[3.289s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/package.sh'
+[3.289s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/package.bash'
+[3.289s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/package.zsh'
+[3.289s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lee/workspace/ros2_ex/install/MAV1/share/colcon-core/packages/MAV1)
+[3.290s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(MAV1)
+[3.290s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/MAV1' for CMake module files
+[3.290s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/MAV1' for CMake config files
+[3.290s] Level 1:colcon.colcon_core.shell:create_environment_hook('MAV1', 'cmake_prefix_path')
+[3.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/hook/cmake_prefix_path.ps1'
+[3.290s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/hook/cmake_prefix_path.dsv'
+[3.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/hook/cmake_prefix_path.sh'
+[3.290s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/MAV1/lib'
+[3.290s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/MAV1/bin'
+[3.290s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/MAV1/lib/pkgconfig/MAV1.pc'
+[3.291s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/MAV1/lib/python3.10/site-packages'
+[3.291s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/MAV1/bin'
+[3.291s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/package.ps1'
+[3.291s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/package.dsv'
+[3.291s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/package.sh'
+[3.291s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/package.bash'
+[3.291s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/package.zsh'
+[3.292s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lee/workspace/ros2_ex/install/MAV1/share/colcon-core/packages/MAV1)
+[4.468s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ground)
+[4.468s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/ground' for CMake module files
+[4.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '2': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[4.469s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/ground' for CMake config files
+[4.469s] Level 1:colcon.colcon_core.shell:create_environment_hook('ground', 'cmake_prefix_path')
+[4.469s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/ground/share/ground/hook/cmake_prefix_path.ps1'
+[4.469s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lee/workspace/ros2_ex/install/ground/share/ground/hook/cmake_prefix_path.dsv'
+[4.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lee/workspace/ros2_ex/install/ground/share/ground/hook/cmake_prefix_path.sh'
+[4.470s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/ground/lib'
+[4.470s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/ground/bin'
+[4.470s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/ground/lib/pkgconfig/ground.pc'
+[4.470s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/ground/lib/python3.10/site-packages'
+[4.470s] Level 1:colcon.colcon_core.environment:checking '/home/lee/workspace/ros2_ex/install/ground/bin'
+[4.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/ground/share/ground/package.ps1'
+[4.471s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lee/workspace/ros2_ex/install/ground/share/ground/package.dsv'
+[4.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/ground/share/ground/package.sh'
+[4.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/ground/share/ground/package.bash'
+[4.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/lee/workspace/ros2_ex/install/ground/share/ground/package.zsh'
+[4.471s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lee/workspace/ros2_ex/install/ground/share/colcon-core/packages/ground)
+[4.481s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.481s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.481s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[4.481s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.485s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.485s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.485s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.493s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.493s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lee/workspace/ros2_ex/install/local_setup.ps1'
+[4.494s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lee/workspace/ros2_ex/install/_local_setup_util_ps1.py'
+[4.494s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lee/workspace/ros2_ex/install/setup.ps1'
+[4.495s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lee/workspace/ros2_ex/install/local_setup.sh'
+[4.495s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lee/workspace/ros2_ex/install/_local_setup_util_sh.py'
+[4.495s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lee/workspace/ros2_ex/install/setup.sh'
+[4.496s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lee/workspace/ros2_ex/install/local_setup.bash'
+[4.496s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lee/workspace/ros2_ex/install/setup.bash'
+[4.496s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lee/workspace/ros2_ex/install/local_setup.zsh'
+[4.497s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lee/workspace/ros2_ex/install/setup.zsh'

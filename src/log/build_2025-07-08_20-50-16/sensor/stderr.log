@@ -1,0 +1,47 @@
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:65:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kstdgeometry_msgs[m[K’ was not declared in this scope; did you mean ‘[01m[Kgeometry_msgs[m[K’?
+   65 |   rclcpp::Subscription<[01;31m[Kstdgeometry_msgs[m[K::msg::PoseStamped>::SharedPtr host_sub_;
+      |                        [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                        [32m[Kgeometry_msgs[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:65:58:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   65 |   rclcpp::Subscription<stdgeometry_msgs::msg::PoseStamped[01;31m[K>[m[K::SharedPtr host_sub_;
+      |                                                          [01;31m[K^[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:65:58:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:65:58:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:65:58:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:65:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   65 |   rclcpp::Subscription<stdgeometry_msgs::msg::PoseStamped>::[01;31m[KSharedPtr[m[K host_sub_;
+      |                                                             [01;31m[K^~~~~~~~~[m[K
+      |                                                                      [32m[K;[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:65:71:[m[K [01;31m[Kerror: [m[K‘[01m[Khost_sub_[m[K’ does not name a type
+   65 |   rclcpp::Subscription<stdgeometry_msgs::msg::PoseStamped>::SharedPtr [01;31m[Khost_sub_[m[K;
+      |                                                                       [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:66:19:[m[K [01;31m[Kerror: [m[K‘[01m[Krcpp[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp[m[K’?
+   66 |   std::shared_ptr<[01;31m[Krcpp[m[K::Rate> rate_;
+      |                   [01;31m[K^~~~[m[K
+      |                   [32m[Krclcpp[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:66:29:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   66 |   std::shared_ptr<rcpp::Rate[01;31m[K>[m[K rate_;
+      |                             [01;31m[K^[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:[m[K In constructor ‘[01m[KMocapNode::MocapNode()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:26:5:[m[K [01;31m[Kerror: [m[K‘[01m[Khost_sub_[m[K’ was not declared in this scope
+   26 |     [01;31m[Khost_sub_[m[K = this->create_subscription<geometry_msgs::msg::PoseStamped>(
+      |     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:30:43:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::shared_ptr<rclcpp::GenericRate<std::chrono::_V2::system_clock> >[m[K’ to ‘[01m[Kint[m[K’ in assignment
+   30 |     rate_ = [01;31m[Kstd::make_shared<rclcpp::Rate>(100.0)[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+      |                                           [01;31m[K|[m[K
+      |                                           [01;31m[Kstd::shared_ptr<rclcpp::GenericRate<std::chrono::_V2::system_clock> >[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:[m[K In member function ‘[01m[Kvoid MocapNode::run()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:45:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass MocapNode[m[K’ has no member named ‘[01m[Kget_shared_ptr[m[K’
+   45 |       rclcpp::spin_some(this->[01;31m[Kget_shared_ptr[m[K());
+      |                               [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:46:12:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ is not a pointer
+   46 |       rate_[01;31m[K->[m[Ksleep();
+      |            [01;31m[K^~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:74:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclpp[m[K’ has not been declared
+   74 |   [01;31m[Krclpp[m[K::shutdown();
+      |   [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/topic_tool.dir/build.make:76: CMakeFiles/topic_tool.dir/src/topic_tool.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/topic_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

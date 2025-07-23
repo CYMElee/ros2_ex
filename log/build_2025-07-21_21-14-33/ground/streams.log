@@ -1,0 +1,57 @@
+[0.007s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[0.022s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.080s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.083s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.096s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.097s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.099s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.103s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.108s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.122s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.123s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.174s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.195s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.200s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.208s] -- Found tf2: 0.25.13 (/opt/ros/humble/share/tf2/cmake)
+[0.209s] -- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.243s] -- Found px4_msgs: 2.0.1 (/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/cmake)
+[0.256s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.291s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.292s] -- Configured cppcheck include dirs: /home/lee/workspace/ros2_ex/src/ground/include;$<BUILD_INTERFACE:/home/lee/workspace/ros2_ex/src/ground/include>
+[0.292s] -- Configured cppcheck exclude dirs and/or files: 
+[0.292s] -- Added test 'lint_cmake' to check CMake code style
+[0.292s] -- Added test 'uncrustify' to check C / C++ code style
+[0.292s] -- Configured uncrustify additional arguments: 
+[0.292s] -- Added test 'xmllint' to check XML markup files
+[0.293s] -- Configuring done
+[0.306s] -- Generating done
+[0.311s] -- Build files have been written to: /home/lee/workspace/ros2_ex/build/ground
+[0.326s] [35m[1mConsolidate compiler generated dependencies of target attitude_controller[0m
+[0.326s] [35m[1mConsolidate compiler generated dependencies of target position_controller[0m
+[0.326s] [35m[1mConsolidate compiler generated dependencies of target trajectory_generator[0m
+[0.327s] [35m[1mConsolidate compiler generated dependencies of target gripper_controller[0m
+[0.327s] [35m[1mConsolidate compiler generated dependencies of target keyboard_node[0m
+[0.327s] [35m[1mConsolidate compiler generated dependencies of target qc_servo[0m
+[0.328s] [35m[1mConsolidate compiler generated dependencies of target wrench_mapper[0m
+[0.332s] [  5%] [32mBuilding CXX object CMakeFiles/platform_topic_tool.dir/src/platform_topic_tool.cpp.o[0m
+[0.336s] [ 17%] Built target trajectory_generator
+[0.336s] [ 29%] Built target attitude_controller
+[0.337s] [ 41%] Built target position_controller
+[0.338s] [ 52%] Built target gripper_controller
+[0.339s] [ 70%] Built target keyboard_node
+[0.339s] [ 82%] Built target qc_servo
+[0.340s] [ 94%] Built target wrench_mapper
+[1.759s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:[m[K In member function ‘[01m[Kvoid PositionAttitudeVelocityConverterNode::attitude_callback(px4_msgs::msg::VehicleAttitude_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.759s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:105:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::msg::VehicleAttitude_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitude_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kq_d[m[K’
+[1.759s]   105 |         Eigen::Vector3d omega_ned(msg->[01;31m[Kq_d[m[K[0], msg->q_d[1], msg->q_d[2]);
+[1.759s]       |                                        [01;31m[K^~~[m[K
+[1.759s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:105:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::msg::VehicleAttitude_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitude_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kq_d[m[K’
+[1.760s]   105 |         Eigen::Vector3d omega_ned(msg->q_d[0], msg->[01;31m[Kq_d[m[K[1], msg->q_d[2]);
+[1.760s]       |                                                     [01;31m[K^~~[m[K
+[1.760s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:105:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::msg::VehicleAttitude_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitude_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kq_d[m[K’
+[1.760s]   105 |         Eigen::Vector3d omega_ned(msg->q_d[0], msg->q_d[1], msg->[01;31m[Kq_d[m[K[2]);
+[1.760s]       |                                                                  [01;31m[K^~~[m[K
+[3.289s] gmake[2]: *** [CMakeFiles/platform_topic_tool.dir/build.make:76: CMakeFiles/platform_topic_tool.dir/src/platform_topic_tool.cpp.o] Error 1
+[3.290s] gmake[1]: *** [CMakeFiles/Makefile2:333: CMakeFiles/platform_topic_tool.dir/all] Error 2
+[3.290s] gmake: *** [Makefile:146: all] Error 2
+[3.291s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '2': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32

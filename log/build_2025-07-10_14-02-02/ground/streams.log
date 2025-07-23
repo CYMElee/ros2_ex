@@ -1,0 +1,23 @@
+[0.005s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[0.037s] [ 13%] [32mBuilding CXX object CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o[0m
+[0.037s] [ 13%] [32mBuilding CXX object CMakeFiles/keyboard_node.dir/src/getch.cpp.o[0m
+[0.038s] [ 26%] Built target gripper_controller
+[0.039s] [ 40%] Built target trajectory_generator
+[0.039s] [ 53%] Built target attitude_controller
+[0.040s] [ 66%] Built target wrench_mapper
+[0.040s] [ 80%] Built target qc_servo
+[0.041s] [ 93%] Built target position_controller
+[0.043s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kground/getch.h: No such file or directory
+[0.043s]     1 | #include [01;31m[K"ground/getch.h"[m[K
+[0.043s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[0.043s] compilation terminated.
+[0.043s] gmake[2]: *** [CMakeFiles/keyboard_node.dir/build.make:90: CMakeFiles/keyboard_node.dir/src/getch.cpp.o] Error 1
+[0.043s] gmake[2]: *** Waiting for unfinished jobs....
+[0.120s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kground/getch.h: No such file or directory
+[0.120s]     4 | #include [01;31m[K<ground/getch.h>[m[K
+[0.120s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[0.120s] compilation terminated.
+[0.122s] gmake[2]: *** [CMakeFiles/keyboard_node.dir/build.make:76: CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o] Error 1
+[0.122s] gmake[1]: *** [CMakeFiles/Makefile2:227: CMakeFiles/keyboard_node.dir/all] Error 2
+[0.122s] gmake: *** [Makefile:146: all] Error 2
+[0.124s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '2': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32

@@ -1,0 +1,100 @@
+[35m[1mConsolidate compiler generated dependencies of target keyboard_node[0m
+[ 26%] Built target attitude_controller
+[ 26%] Built target trajectory_generator
+[ 40%] Built target position_controller
+[ 53%] Built target gripper_controller
+[ 66%] Built target qc_servo
+[ 80%] Built target wrench_mapper
+[ 86%] [32mBuilding CXX object CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o[0m
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:46:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid MAV_State::MAV1_CB(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::UniquePtr)[m[K’ cannot be overloaded with ‘[01m[Kvoid MAV_State::MAV1_CB(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::UniquePtr)[m[K’
+   46 |     void [01;31m[KMAV1_CB[m[K(const px4_msgs::msg::VehicleStatus::UniquePtr msg)
+      |          [01;31m[K^~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:24:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid MAV_State::MAV1_CB(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::UniquePtr)[m[K’
+   24 |     void [01;36m[KMAV1_CB[m[K(const px4_msgs::msg::VehicleStatus::UniquePtr);
+      |          [01;36m[K^~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:51:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid MAV_State::MAV2_CB(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::UniquePtr)[m[K’ cannot be overloaded with ‘[01m[Kvoid MAV_State::MAV2_CB(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::UniquePtr)[m[K’
+   51 |     void [01;31m[KMAV2_CB[m[K(const px4_msgs::msg::VehicleStatus::UniquePtr msg)
+      |          [01;31m[K^~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:25:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid MAV_State::MAV2_CB(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::UniquePtr)[m[K’
+   25 |     void [01;36m[KMAV2_CB[m[K(const px4_msgs::msg::VehicleStatus::UniquePtr);
+      |          [01;36m[K^~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:56:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid MAV_State::MAV3_CB(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::UniquePtr)[m[K’ cannot be overloaded with ‘[01m[Kvoid MAV_State::MAV3_CB(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::UniquePtr)[m[K’
+   56 |     void [01;31m[KMAV3_CB[m[K(const px4_msgs::msg::VehicleStatus::UniquePtr msg)
+      |          [01;31m[K^~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:26:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid MAV_State::MAV3_CB(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::UniquePtr)[m[K’
+   26 |     void [01;36m[KMAV3_CB[m[K(const px4_msgs::msg::VehicleStatus::UniquePtr);
+      |          [01;36m[K^~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:61:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid MAV_State::MAV4_CB(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::UniquePtr)[m[K’ cannot be overloaded with ‘[01m[Kvoid MAV_State::MAV4_CB(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::UniquePtr)[m[K’
+   61 |     void [01;31m[KMAV4_CB[m[K(const px4_msgs::msg::VehicleStatus::UniquePtr msg)
+      |          [01;31m[K^~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:27:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid MAV_State::MAV4_CB(px4_msgs::msg::VehicleStatus_<std::allocator<void> >::UniquePtr)[m[K’
+   27 |     void [01;36m[KMAV4_CB[m[K(const px4_msgs::msg::VehicleStatus::UniquePtr);
+      |          [01;36m[K^~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:[m[K In constructor ‘[01m[KMAV_State::MAV_State()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:36:72:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMAV_State::create_subscription<px4_msgs::msg::VehicleStatus>(const char [29], rmw_qos_profile_t&, std::_Bind_helper<false, void (MAV_State::*)(std::unique_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::default_delete<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >), MAV_State*, const std::_Placeholder<1>&>::type)[m[K’
+   36 |         MAV1_ = [01;31m[Kthis->create_subscription<px4_msgs::msg::VehicleStatus>([m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   37 | [01;31m[K            "/MAV1/fmu/out/vehicle_status", qos_profile, std::bind(&MAV_State::MAV1_CB, this, std::placeholders::_1))[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:37:45:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kqos_profile[m[K’ (type ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’}) to type ‘[01m[Kconst rclcpp::QoS&[m[K’
+   37 |             "/MAV1/fmu/out/vehicle_status", [01;36m[Kqos_profile[m[K, std::bind(&MAV_State::MAV1_CB, this, std::placeholders::_1));
+      |                                             [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:38:72:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMAV_State::create_subscription<px4_msgs::msg::VehicleStatus>(const char [29], rmw_qos_profile_t&, std::_Bind_helper<false, void (MAV_State::*)(std::unique_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::default_delete<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >), MAV_State*, const std::_Placeholder<1>&>::type)[m[K’
+   38 |         MAV2_ = [01;31m[Kthis->create_subscription<px4_msgs::msg::VehicleStatus>([m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   39 | [01;31m[K            "/MAV2/fmu/out/vehicle_status", qos_profile, std::bind(&MAV_State::MAV2_CB, this, std::placeholders::_1))[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:39:45:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kqos_profile[m[K’ (type ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’}) to type ‘[01m[Kconst rclcpp::QoS&[m[K’
+   39 |             "/MAV2/fmu/out/vehicle_status", [01;36m[Kqos_profile[m[K, std::bind(&MAV_State::MAV2_CB, this, std::placeholders::_1));
+      |                                             [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:40:72:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMAV_State::create_subscription<px4_msgs::msg::VehicleStatus>(const char [29], rmw_qos_profile_t&, std::_Bind_helper<false, void (MAV_State::*)(std::unique_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::default_delete<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >), MAV_State*, const std::_Placeholder<1>&>::type)[m[K’
+   40 |         MAV3_ = [01;31m[Kthis->create_subscription<px4_msgs::msg::VehicleStatus>([m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   41 | [01;31m[K            "/MAV3/fmu/out/vehicle_status", qos_profile, std::bind(&MAV_State::MAV3_CB, this, std::placeholders::_1))[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:41:45:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kqos_profile[m[K’ (type ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’}) to type ‘[01m[Kconst rclcpp::QoS&[m[K’
+   41 |             "/MAV3/fmu/out/vehicle_status", [01;36m[Kqos_profile[m[K, std::bind(&MAV_State::MAV3_CB, this, std::placeholders::_1));
+      |                                             [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:42:72:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMAV_State::create_subscription<px4_msgs::msg::VehicleStatus>(const char [29], rmw_qos_profile_t&, std::_Bind_helper<false, void (MAV_State::*)(std::unique_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> >, std::default_delete<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >), MAV_State*, const std::_Placeholder<1>&>::type)[m[K’
+   42 |         MAV4_ = [01;31m[Kthis->create_subscription<px4_msgs::msg::VehicleStatus>([m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   43 | [01;31m[K            "/MAV4/fmu/out/vehicle_status", qos_profile, std::bind(&MAV_State::MAV4_CB, this, std::placeholders::_1))[m[K;
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+  219 |   [01;36m[Kcreate_subscription[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:43:45:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kqos_profile[m[K’ (type ‘[01m[Krmw_qos_profile_t[m[K’ {aka ‘[01m[Krmw_qos_profile_s[m[K’}) to type ‘[01m[Kconst rclcpp::QoS&[m[K’
+   43 |             "/MAV4/fmu/out/vehicle_status", [01;36m[Kqos_profile[m[K, std::bind(&MAV_State::MAV4_CB, this, std::placeholders::_1));
+      |                                             [01;36m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/keyboard_node.dir/build.make:76: CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:227: CMakeFiles/keyboard_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

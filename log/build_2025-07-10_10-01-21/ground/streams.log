@@ -1,0 +1,14 @@
+[0.005s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[0.036s] [ 20%] Built target attitude_controller
+[0.036s] [ 30%] [32mBuilding CXX object CMakeFiles/wrench_mapper.dir/node/wrench_mapper.cpp.o[0m
+[0.036s] [ 50%] Built target gripper_controller
+[0.037s] [ 70%] Built target qc_servo
+[0.037s] [ 90%] Built target position_controller
+[0.040s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/wrench_mapper.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+[0.040s]     1 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+[0.041s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.041s] compilation terminated.
+[0.041s] gmake[2]: *** [CMakeFiles/wrench_mapper.dir/build.make:76: CMakeFiles/wrench_mapper.dir/node/wrench_mapper.cpp.o] Error 1
+[0.041s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/wrench_mapper.dir/all] Error 2
+[0.041s] gmake: *** [Makefile:146: all] Error 2
+[0.042s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32

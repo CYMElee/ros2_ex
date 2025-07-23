@@ -1,0 +1,140 @@
+[0.005s] Invoking command in '/home/lee/workspace/ros2_ex/build/MAV1': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lee/workspace/ros2_ex/src/MAV/MAV1 -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/MAV1
+[0.036s] -- The C compiler identification is GNU 11.4.0
+[0.064s] -- The CXX compiler identification is GNU 11.4.0
+[0.067s] -- Detecting C compiler ABI info
+[0.105s] -- Detecting C compiler ABI info - done
+[0.108s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.108s] -- Detecting C compile features
+[0.109s] -- Detecting C compile features - done
+[0.110s] -- Detecting CXX compiler ABI info
+[0.150s] -- Detecting CXX compiler ABI info - done
+[0.155s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.156s] -- Detecting CXX compile features
+[0.156s] -- Detecting CXX compile features - done
+[0.157s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.324s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.365s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.383s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.385s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.388s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.392s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.399s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.416s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.417s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.462s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.479s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.498s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.501s] -- Looking for pthread.h
+[0.542s] -- Looking for pthread.h - found
+[0.543s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.582s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.583s] -- Found Threads: TRUE  
+[0.606s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.612s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.619s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.624s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.660s] -- Found px4_msgs: 2.0.1 (/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/cmake)
+[0.666s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.690s] WARNING: Package name "MAV1" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[0.895s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.895s] -- Configured cppcheck include dirs: /home/lee/workspace/ros2_ex/src/MAV/MAV1/include
+[0.895s] -- Configured cppcheck exclude dirs and/or files: 
+[0.920s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.966s] -- Added test 'lint_cmake' to check CMake code style
+[0.990s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.185s] -- Added test 'uncrustify' to check C / C++ code style
+[1.185s] -- Configured uncrustify additional arguments: 
+[1.210s] -- Added test 'xmllint' to check XML markup files
+[1.210s] -- Configuring done
+[1.214s] -- Generating done
+[1.216s] -- Build files have been written to: /home/lee/workspace/ros2_ex/build/MAV1
+[1.221s] Invoked command in '/home/lee/workspace/ros2_ex/build/MAV1' returned '0': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lee/workspace/ros2_ex/src/MAV/MAV1 -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/MAV1
+[1.222s] Invoking command in '/home/lee/workspace/ros2_ex/build/MAV1': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/MAV1 -- -j32 -l32
+[1.249s] [ 50%] [32mBuilding CXX object CMakeFiles/MAV1.dir/node/main.cpp.o[0m
+[2.467s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:[m[K In constructor ‘[01m[KMAVControl_Node::MAVControl_Node()[m[K’:
+[2.467s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:47:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kmav_pose_cb[m[K’ is not a member of ‘[01m[KMAVControl_Node[m[K’
+[2.467s]    47 |             std::bind(&MAVControl_Node::[01;31m[Kmav_pose_cb[m[K, this, std::placeholders::_1));
+[2.468s]       |                                         [01;31m[K^~~~~~~~~~~[m[K
+[2.468s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:50:41:[m[K [01;31m[Kerror: [m[K‘[01m[KT_sub_cb[m[K’ is not a member of ‘[01m[KMAVControl_Node[m[K’
+[2.468s]    50 |             std::bind(&MAVControl_Node::[01;31m[KT_sub_cb[m[K, this, std::placeholders::_1));
+[2.468s]       |                                         [01;31m[K^~~~~~~~[m[K
+[2.469s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::initialize()[m[K’:
+[2.470s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:111:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing VehicleAttitudeSetpoint = struct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kfuse[m[K’
+[2.470s]   111 |         T_.[01;31m[Kfuse[m[K = true;
+[2.470s]       |            [01;31m[K^~~~[m[K
+[2.470s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:113:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing VehicleAttitudeSetpoint = struct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kfuse[m[K’
+[2.470s]   113 |         T_PREARM_.[01;31m[Kfuse[m[K = 1;
+[2.470s]       |                   [01;31m[K^~~~[m[K
+[2.470s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:114:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing VehicleAttitudeSetpoint = struct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kq[m[K’
+[2.470s]   114 |         T_PREARM_.[01;31m[Kq[m[K[0] = 1.0; // w
+[2.470s]       |                   [01;31m[K^[m[K
+[2.470s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:115:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing VehicleAttitudeSetpoint = struct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kq[m[K’
+[2.470s]   115 |         T_PREARM_.[01;31m[Kq[m[K[1] = 0.0; // x
+[2.470s]       |                   [01;31m[K^[m[K
+[2.470s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:116:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing VehicleAttitudeSetpoint = struct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kq[m[K’
+[2.470s]   116 |         T_PREARM_.[01;31m[Kq[m[K[2] = 0.0; // y
+[2.470s]       |                   [01;31m[K^[m[K
+[2.470s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:117:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing VehicleAttitudeSetpoint = struct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kq[m[K’
+[2.470s]   117 |         T_PREARM_.[01;31m[Kq[m[K[3] = 0.0; // z
+[2.470s]       |                   [01;31m[K^[m[K
+[2.473s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::T_cmd_calculate()[m[K’:
+[2.473s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:148:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing PoseStamped = struct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kquaternion[m[K’
+[2.473s]   148 |             mav_pose_.[01;31m[Kquaternion[m[K,
+[2.473s]       |                       [01;31m[K^~~~~~~~~~[m[K
+[2.473s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:149:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing PoseStamped = struct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kquaternion[m[K’
+[2.473s]   149 |             mav_pose_.[01;31m[Kquaternion[m[K,
+[2.473s]       |                       [01;31m[K^~~~~~~~~~[m[K
+[2.473s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:150:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing PoseStamped = struct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kquaternion[m[K’
+[2.473s]   150 |             mav_pose_.[01;31m[Kquaternion[m[K);
+[2.473s]       |                       [01;31m[K^~~~~~~~~~[m[K
+[2.504s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:168:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing PoseStamped = struct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kquaternion[m[K’
+[2.504s]   168 |             platform_pose_.[01;31m[Kquaternion[m[K);
+[2.504s]       |                            [01;31m[K^~~~~~~~~~[m[K
+[2.512s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:183:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing VehicleAttitudeSetpoint = struct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kq[m[K’
+[2.512s]   183 |         T_.[01;31m[Kq[m[K[0] = mav_pose_desire.w();
+[2.512s]       |            [01;31m[K^[m[K
+[2.512s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:184:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing VehicleAttitudeSetpoint = struct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kq[m[K’
+[2.512s]   184 |         T_.[01;31m[Kq[m[K[1] = mav_pose_desire.x();
+[2.512s]       |            [01;31m[K^[m[K
+[2.512s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:185:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing VehicleAttitudeSetpoint = struct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kq[m[K’
+[2.512s]   185 |         T_.[01;31m[Kq[m[K[2] = mav_pose_desire.y();
+[2.512s]       |            [01;31m[K^[m[K
+[2.512s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:186:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing VehicleAttitudeSetpoint = struct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kq[m[K’
+[2.512s]   186 |         T_.[01;31m[Kq[m[K[3] = mav_pose_desire.z();
+[2.512s]       |            [01;31m[K^[m[K
+[2.512s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:187:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing VehicleAttitudeSetpoint = struct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::msg::VehicleAttitudeSetpoint_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kq_valid[m[K’
+[2.512s]   187 |         T_.[01;31m[Kq_valid[m[K = true;
+[2.512s]       |            [01;31m[K^~~~~~~[m[K
+[2.512s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::set_offboard_mode()[m[K’:
+[2.513s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:196:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcommand[m[K’
+[2.513s]   196 |         request->[01;31m[Kcommand[m[K = px4_msgs::msg::VehicleCommand::VEHICLE_CMD_DO_SET_MODE;
+[2.513s]       |                  [01;31m[K^~~~~~~[m[K
+[2.513s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:197:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kparam1[m[K’
+[2.513s]   197 |         request->[01;31m[Kparam1[m[K = 1; // Custom mode
+[2.513s]       |                  [01;31m[K^~~~~~[m[K
+[2.513s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:198:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kparam2[m[K’
+[2.513s]   198 |         request->[01;31m[Kparam2[m[K = 6; // OFFBOARD mode
+[2.513s]       |                  [01;31m[K^~~~~~[m[K
+[2.513s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:199:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktimestamp[m[K’
+[2.513s]   199 |         request->[01;31m[Ktimestamp[m[K = this->get_clock()->now().nanoseconds() / 1000;
+[2.513s]       |                  [01;31m[K^~~~~~~~~[m[K
+[2.514s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:210:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksuccess[m[K’
+[2.514s]   210 |         if (result.get()->[01;31m[Ksuccess[m[K) {
+[2.514s]       |                           [01;31m[K^~~~~~~[m[K
+[2.514s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::arm_vehicle()[m[K’:
+[2.514s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:219:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcommand[m[K’
+[2.514s]   219 |         request->[01;31m[Kcommand[m[K = px4_msgs::msg::VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM;
+[2.514s]       |                  [01;31m[K^~~~~~~[m[K
+[2.514s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:220:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kparam1[m[K’
+[2.514s]   220 |         request->[01;31m[Kparam1[m[K = 1; // Arm
+[2.514s]       |                  [01;31m[K^~~~~~[m[K
+[2.514s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:221:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktimestamp[m[K’
+[2.514s]   221 |         request->[01;31m[Ktimestamp[m[K = this->get_clock()->now().nanoseconds() / 1000;
+[2.514s]       |                  [01;31m[K^~~~~~~~~[m[K
+[2.514s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:232:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksuccess[m[K’
+[2.514s]   232 |         if (result.get()->[01;31m[Ksuccess[m[K) {
+[2.514s]       |                           [01;31m[K^~~~~~~[m[K
+[4.805s] gmake[2]: *** [CMakeFiles/MAV1.dir/build.make:76: CMakeFiles/MAV1.dir/node/main.cpp.o] Error 1
+[4.805s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/MAV1.dir/all] Error 2
+[4.805s] gmake: *** [Makefile:146: all] Error 2
+[4.807s] Invoked command in '/home/lee/workspace/ros2_ex/build/MAV1' returned '2': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/MAV1 -- -j32 -l32

@@ -1,0 +1,142 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-b03237f2b166c42a630d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ground",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "attitude_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-attitude_controller-RelWithDebInfo-cd71bae650ebda04b949.json",
+					"name" : "attitude_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gripper_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gripper_controller-RelWithDebInfo-deaa627f020b2ba08c75.json",
+					"name" : "gripper_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ground_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ground_uninstall-RelWithDebInfo-e5c574f80a58a65378b1.json",
+					"name" : "ground_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_node-RelWithDebInfo-b8b672355d060ca41d5c.json",
+					"name" : "keyboard_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "platform_topic_tool::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-platform_topic_tool-RelWithDebInfo-1c90ef17431287f706a7.json",
+					"name" : "platform_topic_tool",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "position_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-position_controller-RelWithDebInfo-ab53eb082350b3eef066.json",
+					"name" : "position_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "qc_servo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-qc_servo-RelWithDebInfo-0054228b0f483252f7cd.json",
+					"name" : "qc_servo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "trajectory_generator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-trajectory_generator-RelWithDebInfo-0082adad3144f7bd3195.json",
+					"name" : "trajectory_generator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-aff18088dd05de5f7114.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wrench_mapper::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wrench_mapper-RelWithDebInfo-efa9331df1a59997ba73.json",
+					"name" : "wrench_mapper",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/lee/workspace/ros2_ex/build/ground",
+		"source" : "/home/lee/workspace/ros2_ex/src/ground"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

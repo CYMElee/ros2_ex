@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target position_controller[0m
+[ 33%] Built target gripper_controller
+[ 66%] Built target attitude_controller
+[ 83%] [32mBuilding CXX object CMakeFiles/position_controller.dir/node/position_controller.cpp.o[0m

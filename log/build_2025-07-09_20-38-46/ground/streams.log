@@ -1,0 +1,30 @@
+[0.005s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[0.029s] [35m[1mConsolidate compiler generated dependencies of target position_controller[0m
+[0.035s] [ 33%] Built target gripper_controller
+[0.037s] [ 66%] Built target attitude_controller
+[0.039s] [ 83%] [32mBuilding CXX object CMakeFiles/position_controller.dir/node/position_controller.cpp.o[0m
+[4.058s] [100%] [32m[1mLinking CXX executable position_controller[0m
+[4.244s] [100%] Built target position_controller
+[4.251s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[4.252s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/ground
+[4.256s] -- Install configuration: ""
+[4.256s] -- Up-to-date: /home/lee/workspace/ros2_ex/install/ground/lib/ground/attitude_controller
+[4.257s] -- Up-to-date: /home/lee/workspace/ros2_ex/install/ground/lib/ground/gripper_controller
+[4.257s] -- Installing: /home/lee/workspace/ros2_ex/install/ground/lib/ground/position_controller
+[4.259s] -- Set runtime path of "/home/lee/workspace/ros2_ex/install/ground/lib/ground/position_controller" to ""
+[4.259s] -- Up-to-date: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/package_run_dependencies/ground
+[4.259s] -- Up-to-date: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/parent_prefix_path/ground
+[4.259s] -- Up-to-date: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/ament_prefix_path.sh
+[4.259s] -- Up-to-date: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/ament_prefix_path.dsv
+[4.259s] -- Up-to-date: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/path.sh
+[4.259s] -- Up-to-date: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/path.dsv
+[4.259s] -- Up-to-date: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.bash
+[4.259s] -- Up-to-date: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.sh
+[4.259s] -- Up-to-date: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.zsh
+[4.259s] -- Up-to-date: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.dsv
+[4.260s] -- Installing: /home/lee/workspace/ros2_ex/install/ground/share/ground/package.dsv
+[4.260s] -- Up-to-date: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/packages/ground
+[4.260s] -- Up-to-date: /home/lee/workspace/ros2_ex/install/ground/share/ground/cmake/groundConfig.cmake
+[4.260s] -- Up-to-date: /home/lee/workspace/ros2_ex/install/ground/share/ground/cmake/groundConfig-version.cmake
+[4.260s] -- Up-to-date: /home/lee/workspace/ros2_ex/install/ground/share/ground/package.xml
+[4.261s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/ground

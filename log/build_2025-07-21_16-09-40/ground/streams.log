@@ -1,0 +1,126 @@
+[0.001s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[0.001s] [35m[1mConsolidate compiler generated dependencies of target keyboard_node[0m
+[0.001s] [ 13%] Built target gripper_controller
+[0.001s] [ 33%] Built target trajectory_generator
+[0.001s] [ 40%] Built target qc_servo
+[0.002s] [ 53%] Built target attitude_controller
+[0.002s] [ 66%] Built target wrench_mapper
+[0.002s] [ 80%] Built target position_controller
+[0.002s] [ 86%] [32mBuilding CXX object CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o[0m
+[0.946s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:[m[K In constructor ‘[01m[KMAV_State::MAV_State()[m[K’:
+[0.946s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:39:169:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Krclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >::UniquePtr[m[K’ {aka ‘[01m[Kstd::unique_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >, std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > > >[m[K’} and ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >[m[K’)
+[0.946s]    39 |         MAV1_ = this->create_subscription<px4_msgs::msg::VehicleStatus>("/MAV1/fmu/out/vehicle_status", qos, std::bind(&MAV_State::MAV1_CB, this, std::placeholders::_1)[01;31m[K)[m[K;
+[0.946s]       |                                                                                                                                                                         [01;31m[K^[m[K
+[0.946s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[0.946s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[0.946s]                  from [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:1[m[K:
+[0.946s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:386:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::__uniq_ptr_impl<_Tp, _Dp>::pointer>, std::__not_<std::is_array<_Up> > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; _Dp = std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >][m[K’
+[0.946s]   386 |         [01;36m[Koperator[m[K=(unique_ptr<_Up, _Ep>&& __u) noexcept
+[0.946s]       |         [01;36m[K^~~~~~~~[m[K
+[0.947s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:386:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[0.947s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:39:169:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[0.947s]    39 |         MAV1_ = this->create_subscription<px4_msgs::msg::VehicleStatus>("/MAV1/fmu/out/vehicle_status", qos, std::bind(&MAV_State::MAV1_CB, this, std::placeholders::_1)[01;36m[K)[m[K;
+[0.947s]       |                                                                                                                                                                         [01;36m[K^[m[K
+[0.947s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[0.947s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[0.947s]                  from [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:1[m[K:
+[0.947s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:371:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; _Dp = std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >][m[K’
+[0.947s]   371 |       unique_ptr& [01;36m[Koperator[m[K=(unique_ptr&&) = default;
+[0.947s]       |                   [01;36m[K^~~~~~~~[m[K
+[0.947s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:371:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >[m[K’ to ‘[01m[Kstd::unique_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >, std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > > >&&[m[K’
+[0.947s]   371 |       unique_ptr& operator=([01;36m[Kunique_ptr&&[m[K) = default;
+[0.947s]       |                             [01;36m[K^~~~~~~~~~~~[m[K
+[0.947s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:395:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; _Dp = std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >; std::nullptr_t = std::nullptr_t][m[K’
+[0.947s]   395 |       [01;36m[Koperator[m[K=(nullptr_t) noexcept
+[0.947s]       |       [01;36m[K^~~~~~~~[m[K
+[0.947s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:395:17:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >[m[K’ to ‘[01m[Kstd::nullptr_t[m[K’
+[0.947s]   395 |       operator=([01;36m[Knullptr_t[m[K) noexcept
+[0.947s]       |                 [01;36m[K^~~~~~~~~[m[K
+[0.947s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:40:169:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Krclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >::UniquePtr[m[K’ {aka ‘[01m[Kstd::unique_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >, std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > > >[m[K’} and ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >[m[K’)
+[0.947s]    40 |         MAV2_ = this->create_subscription<px4_msgs::msg::VehicleStatus>("/MAV2/fmu/out/vehicle_status", qos, std::bind(&MAV_State::MAV2_CB, this, std::placeholders::_1)[01;31m[K)[m[K;
+[0.947s]       |                                                                                                                                                                         [01;31m[K^[m[K
+[0.948s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[0.948s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[0.948s]                  from [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:1[m[K:
+[0.948s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:386:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::__uniq_ptr_impl<_Tp, _Dp>::pointer>, std::__not_<std::is_array<_Up> > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; _Dp = std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >][m[K’
+[0.948s]   386 |         [01;36m[Koperator[m[K=(unique_ptr<_Up, _Ep>&& __u) noexcept
+[0.948s]       |         [01;36m[K^~~~~~~~[m[K
+[0.948s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:386:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[0.948s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:40:169:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[0.948s]    40 |         MAV2_ = this->create_subscription<px4_msgs::msg::VehicleStatus>("/MAV2/fmu/out/vehicle_status", qos, std::bind(&MAV_State::MAV2_CB, this, std::placeholders::_1)[01;36m[K)[m[K;
+[0.948s]       |                                                                                                                                                                         [01;36m[K^[m[K
+[0.948s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[0.948s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[0.948s]                  from [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:1[m[K:
+[0.948s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:371:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; _Dp = std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >][m[K’
+[0.948s]   371 |       unique_ptr& [01;36m[Koperator[m[K=(unique_ptr&&) = default;
+[0.948s]       |                   [01;36m[K^~~~~~~~[m[K
+[0.948s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:371:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >[m[K’ to ‘[01m[Kstd::unique_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >, std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > > >&&[m[K’
+[0.948s]   371 |       unique_ptr& operator=([01;36m[Kunique_ptr&&[m[K) = default;
+[0.948s]       |                             [01;36m[K^~~~~~~~~~~~[m[K
+[0.948s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:395:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; _Dp = std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >; std::nullptr_t = std::nullptr_t][m[K’
+[0.948s]   395 |       [01;36m[Koperator[m[K=(nullptr_t) noexcept
+[0.948s]       |       [01;36m[K^~~~~~~~[m[K
+[0.948s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:395:17:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >[m[K’ to ‘[01m[Kstd::nullptr_t[m[K’
+[0.949s]   395 |       operator=([01;36m[Knullptr_t[m[K) noexcept
+[0.949s]       |                 [01;36m[K^~~~~~~~~[m[K
+[0.949s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:41:169:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Krclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >::UniquePtr[m[K’ {aka ‘[01m[Kstd::unique_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >, std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > > >[m[K’} and ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >[m[K’)
+[0.949s]    41 |         MAV3_ = this->create_subscription<px4_msgs::msg::VehicleStatus>("/MAV3/fmu/out/vehicle_status", qos, std::bind(&MAV_State::MAV3_CB, this, std::placeholders::_1)[01;31m[K)[m[K;
+[0.949s]       |                                                                                                                                                                         [01;31m[K^[m[K
+[0.949s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[0.949s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[0.949s]                  from [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:1[m[K:
+[0.949s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:386:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::__uniq_ptr_impl<_Tp, _Dp>::pointer>, std::__not_<std::is_array<_Up> > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; _Dp = std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >][m[K’
+[0.949s]   386 |         [01;36m[Koperator[m[K=(unique_ptr<_Up, _Ep>&& __u) noexcept
+[0.949s]       |         [01;36m[K^~~~~~~~[m[K
+[0.949s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:386:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[0.949s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:41:169:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[0.949s]    41 |         MAV3_ = this->create_subscription<px4_msgs::msg::VehicleStatus>("/MAV3/fmu/out/vehicle_status", qos, std::bind(&MAV_State::MAV3_CB, this, std::placeholders::_1)[01;36m[K)[m[K;
+[0.949s]       |                                                                                                                                                                         [01;36m[K^[m[K
+[0.949s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[0.949s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[0.949s]                  from [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:1[m[K:
+[0.949s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:371:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; _Dp = std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >][m[K’
+[0.949s]   371 |       unique_ptr& [01;36m[Koperator[m[K=(unique_ptr&&) = default;
+[0.949s]       |                   [01;36m[K^~~~~~~~[m[K
+[0.949s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:371:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >[m[K’ to ‘[01m[Kstd::unique_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >, std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > > >&&[m[K’
+[0.949s]   371 |       unique_ptr& operator=([01;36m[Kunique_ptr&&[m[K) = default;
+[0.950s]       |                             [01;36m[K^~~~~~~~~~~~[m[K
+[0.950s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:395:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; _Dp = std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >; std::nullptr_t = std::nullptr_t][m[K’
+[0.950s]   395 |       [01;36m[Koperator[m[K=(nullptr_t) noexcept
+[0.950s]       |       [01;36m[K^~~~~~~~[m[K
+[0.950s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:395:17:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >[m[K’ to ‘[01m[Kstd::nullptr_t[m[K’
+[0.950s]   395 |       operator=([01;36m[Knullptr_t[m[K) noexcept
+[0.950s]       |                 [01;36m[K^~~~~~~~~[m[K
+[0.950s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:42:169:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Krclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >::UniquePtr[m[K’ {aka ‘[01m[Kstd::unique_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >, std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > > >[m[K’} and ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >[m[K’)
+[0.950s]    42 |         MAV4_ = this->create_subscription<px4_msgs::msg::VehicleStatus>("/MAV4/fmu/out/vehicle_status", qos, std::bind(&MAV_State::MAV4_CB, this, std::placeholders::_1)[01;31m[K)[m[K;
+[0.950s]       |                                                                                                                                                                         [01;31m[K^[m[K
+[0.950s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[0.950s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[0.950s]                  from [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:1[m[K:
+[0.950s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:386:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Up, class _Ep> typename std::enable_if<std::__and_<std::__and_<std::is_convertible<typename std::unique_ptr<_Up, _Ep>::pointer, typename std::__uniq_ptr_impl<_Tp, _Dp>::pointer>, std::__not_<std::is_array<_Up> > >, std::is_assignable<_T2&, _U2&&> >::value, std::unique_ptr<_Tp, _Dp>&>::type std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Up = _Up; _Ep = _Ep; _Tp = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; _Dp = std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >][m[K’
+[0.950s]   386 |         [01;36m[Koperator[m[K=(unique_ptr<_Up, _Ep>&& __u) noexcept
+[0.950s]       |         [01;36m[K^~~~~~~~[m[K
+[0.950s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:386:9:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[0.950s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:42:169:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[0.950s]    42 |         MAV4_ = this->create_subscription<px4_msgs::msg::VehicleStatus>("/MAV4/fmu/out/vehicle_status", qos, std::bind(&MAV_State::MAV4_CB, this, std::placeholders::_1)[01;36m[K)[m[K;
+[0.950s]       |                                                                                                                                                                         [01;36m[K^[m[K
+[0.950s] In file included from [01m[K/usr/include/c++/11/memory:76[m[K,
+[0.950s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[0.950s]                  from [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:1[m[K:
+[0.951s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:371:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::unique_ptr<_Tp, _Dp>&&) [with _Tp = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; _Dp = std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >][m[K’
+[0.951s]   371 |       unique_ptr& [01;36m[Koperator[m[K=(unique_ptr&&) = default;
+[0.951s]       |                   [01;36m[K^~~~~~~~[m[K
+[0.951s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:371:29:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >[m[K’ to ‘[01m[Kstd::unique_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >, std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > > >&&[m[K’
+[0.951s]   371 |       unique_ptr& operator=([01;36m[Kunique_ptr&&[m[K) = default;
+[0.951s]       |                             [01;36m[K^~~~~~~~~~~~[m[K
+[0.951s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:395:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::unique_ptr<_Tp, _Dp>& std::unique_ptr<_Tp, _Dp>::operator=(std::nullptr_t) [with _Tp = rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >; _Dp = std::default_delete<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >; std::nullptr_t = std::nullptr_t][m[K’
+[0.951s]   395 |       [01;36m[Koperator[m[K=(nullptr_t) noexcept
+[0.951s]       |       [01;36m[K^~~~~~~~[m[K
+[0.951s] [01m[K/usr/include/c++/11/bits/unique_ptr.h:395:17:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<px4_msgs::msg::VehicleStatus_<std::allocator<void> > > >[m[K’ to ‘[01m[Kstd::nullptr_t[m[K’
+[0.951s]   395 |       operator=([01;36m[Knullptr_t[m[K) noexcept
+[0.951s]       |                 [01;36m[K^~~~~~~~~[m[K
+[1.960s] gmake[2]: *** [CMakeFiles/keyboard_node.dir/build.make:76: CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o] Error 1
+[1.960s] gmake[1]: *** [CMakeFiles/Makefile2:227: CMakeFiles/keyboard_node.dir/all] Error 2
+[1.960s] gmake: *** [Makefile:146: all] Error 2
+[1.962s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '2': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32

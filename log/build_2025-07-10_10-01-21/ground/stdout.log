@@ -1,0 +1,5 @@
+[ 20%] Built target attitude_controller
+[ 30%] [32mBuilding CXX object CMakeFiles/wrench_mapper.dir/node/wrench_mapper.cpp.o[0m
+[ 50%] Built target gripper_controller
+[ 70%] Built target qc_servo
+[ 90%] Built target position_controller

@@ -1,0 +1,83 @@
+[0.005s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/opt/ros/humble /usr/bin/cmake /home/lee/workspace/ros2_ex/src/ground -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/ground
+[0.013s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.071s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.074s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.086s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.087s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.090s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.094s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.099s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.112s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.113s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.159s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.180s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.185s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.192s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.194s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.227s] -- Found px4_msgs: 2.0.1 (/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/cmake)
+[0.235s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.265s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.265s] -- Configured cppcheck include dirs: /home/lee/workspace/ros2_ex/src/ground/include;$<BUILD_INTERFACE:/home/lee/workspace/ros2_ex/src/ground/include>
+[0.265s] -- Configured cppcheck exclude dirs and/or files: 
+[0.266s] -- Added test 'lint_cmake' to check CMake code style
+[0.266s] -- Added test 'uncrustify' to check C / C++ code style
+[0.266s] -- Configured uncrustify additional arguments: 
+[0.266s] -- Added test 'xmllint' to check XML markup files
+[0.266s] -- Configuring done
+[0.277s] -- Generating done
+[0.282s] -- Build files have been written to: /home/lee/workspace/ros2_ex/build/ground
+[0.286s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/opt/ros/humble /usr/bin/cmake /home/lee/workspace/ros2_ex/src/ground -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/ground
+[0.287s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[0.309s] [35m[1mConsolidate compiler generated dependencies of target gripper_controller[0m
+[0.310s] [35m[1mConsolidate compiler generated dependencies of target trajectory_generator[0m
+[0.310s] [35m[1mConsolidate compiler generated dependencies of target attitude_controller[0m
+[0.311s] [35m[1mConsolidate compiler generated dependencies of target keyboard_node[0m
+[0.311s] [35m[1mConsolidate compiler generated dependencies of target position_controller[0m
+[0.311s] [35m[1mConsolidate compiler generated dependencies of target qc_servo[0m
+[0.311s] [35m[1mConsolidate compiler generated dependencies of target wrench_mapper[0m
+[0.317s] [ 13%] Built target gripper_controller
+[0.321s] [ 26%] Built target trajectory_generator
+[0.322s] [ 33%] [32mBuilding CXX object CMakeFiles/keyboard_node.dir/src/getch.cpp.o[0m
+[0.322s] [ 46%] Built target position_controller
+[0.323s] [ 60%] Built target attitude_controller
+[0.323s] [ 73%] Built target wrench_mapper
+[0.323s] [ 86%] Built target qc_servo
+[0.339s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:[m[K In function ‘[01m[Kchar getch()[m[K’:
+[0.339s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_oflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.339s]     8 |     struct termios old = {0[01;35m[K}[m[K;
+[0.339s]       |                            [01;35m[K^[m[K
+[0.339s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_cflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.339s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_lflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.339s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_line[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.340s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_cc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.340s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_ispeed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.340s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_ospeed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.352s] [ 93%] [32m[1mLinking CXX executable keyboard_node[0m
+[0.473s] [100%] Built target keyboard_node
+[0.480s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[0.481s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/ground
+[0.486s] -- Install configuration: "RelWithDebInfo"
+[0.486s] -- Execute custom install script
+[0.486s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/trajectory_generator
+[0.486s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/attitude_controller
+[0.486s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/gripper_controller
+[0.487s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/position_controller
+[0.487s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/qc_servo
+[0.487s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/wrench_mapper
+[0.487s] -- Symlinking: /home/lee/workspace/ros2_ex/install/ground/share/ground/launch/keyboard_launch.xml
+[0.493s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/package_run_dependencies/ground
+[0.493s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/parent_prefix_path/ground
+[0.493s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/ament_prefix_path.sh
+[0.493s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/ament_prefix_path.dsv
+[0.493s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/path.sh
+[0.493s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/path.dsv
+[0.493s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.bash
+[0.493s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.sh
+[0.493s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.zsh
+[0.493s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.dsv
+[0.493s] -- Symlinking: /home/lee/workspace/ros2_ex/install/ground/share/ground/package.dsv
+[0.498s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/packages/ground
+[0.498s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/cmake/groundConfig.cmake
+[0.498s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/cmake/groundConfig-version.cmake
+[0.498s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/package.xml
+[0.499s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/ground

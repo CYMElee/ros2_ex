@@ -1,0 +1,21 @@
+[0.005s] Invoking command in '/home/lee/workspace/ros2_ex/build/MAV1': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/MAV1 -- -j32 -l32
+[0.033s] [35m[1mConsolidate compiler generated dependencies of target MAV1[0m
+[0.044s] [ 50%] [32mBuilding CXX object CMakeFiles/MAV1.dir/node/main.cpp.o[0m
+[1.336s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::set_offboard_mode()[m[K’:
+[1.336s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:208:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kresult[m[K’
+[1.336s]   208 |         if (result.get()->[01;31m[Kresult[m[K == px4_msgs::srv::VehicleCommand::Response::RESULT_SUCCESS) {
+[1.336s]       |                           [01;31m[K^~~~~~[m[K
+[1.336s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:208:78:[m[K [01;31m[Kerror: [m[K‘[01m[KRESULT_SUCCESS[m[K’ is not a member of ‘[01m[Kpx4_msgs::srv::VehicleCommand::Response[m[K’ {aka ‘[01m[Kpx4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’}
+[1.336s]   208 |         if (result.get()->result == px4_msgs::srv::VehicleCommand::Response::[01;31m[KRESULT_SUCCESS[m[K) {
+[1.336s]       |                                                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.336s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::arm_vehicle()[m[K’:
+[1.336s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:230:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kresult[m[K’
+[1.337s]   230 |         if (result.get()->[01;31m[Kresult[m[K == px4_msgs::srv::VehicleCommand::Response::RESULT_SUCCESS) {
+[1.337s]       |                           [01;31m[K^~~~~~[m[K
+[1.337s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:230:78:[m[K [01;31m[Kerror: [m[K‘[01m[KRESULT_SUCCESS[m[K’ is not a member of ‘[01m[Kpx4_msgs::srv::VehicleCommand::Response[m[K’ {aka ‘[01m[Kpx4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’}
+[1.337s]   230 |         if (result.get()->result == px4_msgs::srv::VehicleCommand::Response::[01;31m[KRESULT_SUCCESS[m[K) {
+[1.337s]       |                                                                              [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.062s] gmake[2]: *** [CMakeFiles/MAV1.dir/build.make:76: CMakeFiles/MAV1.dir/node/main.cpp.o] Error 1
+[4.062s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/MAV1.dir/all] Error 2
+[4.062s] gmake: *** [Makefile:146: all] Error 2
+[4.065s] Invoked command in '/home/lee/workspace/ros2_ex/build/MAV1' returned '2': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/MAV1 -- -j32 -l32

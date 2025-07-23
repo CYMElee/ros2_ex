@@ -1,0 +1,24 @@
+[0.001s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[0.001s] [35m[1mConsolidate compiler generated dependencies of target keyboard_node[0m
+[0.001s] [ 13%] Built target gripper_controller
+[0.001s] [ 26%] Built target trajectory_generator
+[0.001s] [ 40%] Built target attitude_controller
+[0.001s] [ 53%] Built target wrench_mapper
+[0.001s] [ 60%] [32mBuilding CXX object CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o[0m
+[0.001s] [ 73%] Built target position_controller
+[0.001s] [ 86%] Built target qc_servo
+[0.997s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.997s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:89:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kc_prev[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[0.997s]    89 |     int [01;35m[Kc_prev[m[K = EOF;
+[0.997s]       |         [01;35m[K^~~~~~[m[K
+[6.735s] [ 93%] [32m[1mLinking CXX executable keyboard_node[0m
+[11.651s] /usr/bin/ld: CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o: in function `std::_Bind<void (MAV_State::*(MAV_State*, std::_Placeholder<1>))(std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >)>::_Bind<MAV_State*, std::_Placeholder<1> const&>(void (MAV_State::*&&)(std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >), MAV_State*&&, std::_Placeholder<1> const&)':
+[11.651s] /usr/include/c++/11/functional:490: undefined reference to `MAV_State::MAV1_CB(std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >)'
+[11.651s] /usr/bin/ld: /usr/include/c++/11/functional:490: undefined reference to `MAV_State::MAV2_CB(std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >)'
+[11.651s] /usr/bin/ld: /usr/include/c++/11/functional:490: undefined reference to `MAV_State::MAV3_CB(std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >)'
+[11.651s] /usr/bin/ld: /usr/include/c++/11/functional:490: undefined reference to `MAV_State::MAV4_CB(std::shared_ptr<px4_msgs::msg::VehicleStatus_<std::allocator<void> > >)'
+[11.676s] collect2: error: ld returned 1 exit status
+[11.677s] gmake[2]: *** [CMakeFiles/keyboard_node.dir/build.make:185: keyboard_node] Error 1
+[11.677s] gmake[1]: *** [CMakeFiles/Makefile2:227: CMakeFiles/keyboard_node.dir/all] Error 2
+[11.677s] gmake: *** [Makefile:146: all] Error 2
+[11.678s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '2': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:/home/lee/workspace/vrpn/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/lee/gazebo_maritime_ws/install/lib /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32

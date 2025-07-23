@@ -1,0 +1,48 @@
+[35m[1mConsolidate compiler generated dependencies of target platform_topic_tool[0m
+[ 11%] Built target qc_servo
+[ 41%] Built target keyboard_node
+[ 41%] Built target gripper_controller
+[ 52%] Built target trajectory_generator
+[ 64%] Built target position_controller
+[ 76%] Built target wrench_mapper
+[ 88%] Built target attitude_controller
+[ 94%] [32mBuilding CXX object CMakeFiles/platform_topic_tool.dir/src/platform_topic_tool.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:1[m[K:
+[01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:[m[K In constructor ‘[01m[KPositionAttitudeVelocityConverterNode::PositionAttitudeVelocityConverterNode()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:55:9:[m[K [01;31m[Kerror: [m[Kstatic assertion failed: First argument to logging macros must be an rclcpp::Logger
+   55 |         [01;31m[KRCLCPP_INFO[m[K("Position, Attitude, Velocity, and Omega Converter Node has been started!");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:1[m[K:
+[01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:55:9:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget_name[m[K’ in ‘[01m[K("Position, Attitude, Velocity, and Omega Converter Node has been started!")[m[K’, which is of non-class type ‘[01m[Kconst char [73][m[K’
+   55 |         [01;31m[KRCLCPP_INFO[m[K("Position, Attitude, Velocity, and Omega Converter Node has been started!");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:55:9:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kget_name[m[K’ in ‘[01m[K("Position, Attitude, Velocity, and Omega Converter Node has been started!")[m[K’, which is of non-class type ‘[01m[Kconst char [73][m[K’
+   55 |         [01;31m[KRCLCPP_INFO[m[K("Position, Attitude, Velocity, and Omega Converter Node has been started!");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:55:9:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+   55 |         [01;31m[KRCLCPP_INFO[m[K("Position, Attitude, Velocity, and Omega Converter Node has been started!");
+      |         [01;31m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/platform_topic_tool.dir/build.make:76: CMakeFiles/platform_topic_tool.dir/src/platform_topic_tool.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:333: CMakeFiles/platform_topic_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

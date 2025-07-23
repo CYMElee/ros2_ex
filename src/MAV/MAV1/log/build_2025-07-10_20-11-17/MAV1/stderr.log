@@ -1,0 +1,33 @@
+WARNING: Package name "MAV1" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::set_offboard_mode()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:193:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcommand[m[K’
+  193 |         request->[01;31m[Kcommand[m[K = px4_msgs::msg::VehicleCommand::VEHICLE_CMD_DO_SET_MODE;
+      |                  [01;31m[K^~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:194:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kparam1[m[K’
+  194 |         request->[01;31m[Kparam1[m[K = 1; // Custom mode
+      |                  [01;31m[K^~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:195:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kparam2[m[K’
+  195 |         request->[01;31m[Kparam2[m[K = 6; // OFFBOARD mode
+      |                  [01;31m[K^~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:196:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktimestamp[m[K’
+  196 |         request->[01;31m[Ktimestamp[m[K = this->get_clock()->now().nanoseconds() / 1000;
+      |                  [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:207:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksuccess[m[K’
+  207 |         if (result.get()->[01;31m[Ksuccess[m[K) {
+      |                           [01;31m[K^~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::arm_vehicle()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:216:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kcommand[m[K’
+  216 |         request->[01;31m[Kcommand[m[K = px4_msgs::msg::VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM;
+      |                  [01;31m[K^~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:217:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kparam1[m[K’
+  217 |         request->[01;31m[Kparam1[m[K = 1; // Arm
+      |                  [01;31m[K^~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:218:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ktimestamp[m[K’
+  218 |         request->[01;31m[Ktimestamp[m[K = this->get_clock()->now().nanoseconds() / 1000;
+      |                  [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:229:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct px4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct px4_msgs::srv::VehicleCommand_Response_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksuccess[m[K’
+  229 |         if (result.get()->[01;31m[Ksuccess[m[K) {
+      |                           [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/MAV1.dir/build.make:76: CMakeFiles/MAV1.dir/node/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/MAV1.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target wrench_mapper[0m
+[ 20%] Built target gripper_controller
+[ 40%] Built target position_controller
+[ 60%] Built target attitude_controller
+[ 80%] Built target qc_servo
+[ 90%] [32mBuilding CXX object CMakeFiles/wrench_mapper.dir/node/wrench_mapper.cpp.o[0m

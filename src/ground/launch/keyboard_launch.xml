@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Controller nodes -->
+    <node pkg="ground" exec="platform_topic_tool" name="platform_topic_tool" output="screen"/>
+    <node pkg="ground" exec="gripper_controller" name="gripper_controller" output="screen"/>
+    <node pkg="ground" exec="position_controller" name="position_controller" output="screen"/>
+    <node pkg="ground" exec="wrench_mapper" name="wrench_mapper" output="screen"/>
+    <node pkg="ground" exec="attitude_controller" name="attitude_controller" output="screen"/>
+    <node pkg="ground" exec="qc_servo" name="qc_servo" output="screen"/>
+    <node pkg="ground" exec="trajectory_generator" name="trajectory_generator" output="screen"/>
+</launch>

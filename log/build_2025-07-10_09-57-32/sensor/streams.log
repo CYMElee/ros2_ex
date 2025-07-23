@@ -1,0 +1,55 @@
+[0.004s] Invoking command in '/home/lee/workspace/ros2_ex/build/sensor': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lee/workspace/ros2_ex/src/sensor -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/sensor
+[0.012s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.075s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.077s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.090s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.091s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.093s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.097s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.102s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.116s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.116s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.173s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.200s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.205s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.212s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.214s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.247s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.248s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.249s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.250s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.280s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.280s] -- Configured cppcheck include dirs: 
+[0.280s] -- Configured cppcheck exclude dirs and/or files: 
+[0.281s] -- Added test 'lint_cmake' to check CMake code style
+[0.281s] -- Added test 'uncrustify' to check C / C++ code style
+[0.281s] -- Configured uncrustify additional arguments: 
+[0.281s] -- Added test 'xmllint' to check XML markup files
+[0.281s] -- Configuring done
+[0.285s] -- Generating done
+[0.287s] -- Build files have been written to: /home/lee/workspace/ros2_ex/build/sensor
+[0.291s] Invoked command in '/home/lee/workspace/ros2_ex/build/sensor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lee/workspace/ros2_ex/src/sensor -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/sensor
+[0.292s] Invoking command in '/home/lee/workspace/ros2_ex/build/sensor': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/sensor -- -j32 -l32
+[0.314s] [35m[1mConsolidate compiler generated dependencies of target topic_tool[0m
+[0.324s] [100%] Built target topic_tool
+[0.331s] Invoked command in '/home/lee/workspace/ros2_ex/build/sensor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/sensor -- -j32 -l32
+[0.335s] Invoking command in '/home/lee/workspace/ros2_ex/build/sensor': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/sensor
+[0.339s] -- Install configuration: "RelWithDebInfo"
+[0.339s] -- Execute custom install script
+[0.340s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/lib/sensor/topic_tool
+[0.340s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/ament_index/resource_index/package_run_dependencies/sensor
+[0.340s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/ament_index/resource_index/parent_prefix_path/sensor
+[0.340s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/environment/ament_prefix_path.sh
+[0.340s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/environment/ament_prefix_path.dsv
+[0.340s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/environment/path.sh
+[0.340s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/environment/path.dsv
+[0.340s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/local_setup.bash
+[0.340s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/local_setup.sh
+[0.340s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/local_setup.zsh
+[0.341s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/local_setup.dsv
+[0.341s] -- Symlinking: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/package.dsv
+[0.346s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/ament_index/resource_index/packages/sensor
+[0.346s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/cmake/sensorConfig.cmake
+[0.346s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/cmake/sensorConfig-version.cmake
+[0.346s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/package.xml
+[0.347s] Invoked command in '/home/lee/workspace/ros2_ex/build/sensor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/sensor

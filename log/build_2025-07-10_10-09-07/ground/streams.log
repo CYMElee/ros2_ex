@@ -1,0 +1,66 @@
+[0.006s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[0.020s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.077s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.080s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.093s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.094s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.097s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.101s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.106s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.119s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.119s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.173s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.193s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.198s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.204s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.206s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.239s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.274s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.274s] -- Configured cppcheck include dirs: 
+[0.274s] -- Configured cppcheck exclude dirs and/or files: 
+[0.274s] -- Added test 'lint_cmake' to check CMake code style
+[0.274s] -- Added test 'uncrustify' to check C / C++ code style
+[0.274s] -- Configured uncrustify additional arguments: 
+[0.274s] -- Added test 'xmllint' to check XML markup files
+[0.275s] -- Configuring done
+[0.284s] -- Generating done
+[0.288s] -- Build files have been written to: /home/lee/workspace/ros2_ex/build/ground
+[0.304s] [35m[1mConsolidate compiler generated dependencies of target attitude_controller[0m
+[0.304s] [35m[1mConsolidate compiler generated dependencies of target gripper_controller[0m
+[0.304s] [35m[1mConsolidate compiler generated dependencies of target position_controller[0m
+[0.304s] [35m[1mConsolidate compiler generated dependencies of target qc_servo[0m
+[0.304s] [35m[1mConsolidate compiler generated dependencies of target wrench_mapper[0m
+[0.309s] [  8%] [32mBuilding CXX object CMakeFiles/trajectory_generator.dir/node/trajectory_generator.cpp.o[0m
+[0.315s] [ 25%] Built target position_controller
+[0.315s] [ 41%] Built target gripper_controller
+[0.315s] [ 58%] Built target wrench_mapper
+[0.316s] [ 75%] Built target attitude_controller
+[0.316s] [ 91%] Built target qc_servo
+[9.077s] [100%] [32m[1mLinking CXX executable trajectory_generator[0m
+[9.224s] [100%] Built target trajectory_generator
+[9.230s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[9.231s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/ground
+[9.236s] -- Install configuration: "RelWithDebInfo"
+[9.236s] -- Execute custom install script
+[9.236s] -- Symlinking: /home/lee/workspace/ros2_ex/install/ground/lib/ground/trajectory_generator
+[9.241s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/attitude_controller
+[9.242s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/gripper_controller
+[9.242s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/position_controller
+[9.242s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/qc_servo
+[9.242s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/wrench_mapper
+[9.242s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/package_run_dependencies/ground
+[9.242s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/parent_prefix_path/ground
+[9.242s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/ament_prefix_path.sh
+[9.242s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/ament_prefix_path.dsv
+[9.242s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/path.sh
+[9.243s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/path.dsv
+[9.243s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.bash
+[9.243s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.sh
+[9.243s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.zsh
+[9.243s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.dsv
+[9.243s] -- Symlinking: /home/lee/workspace/ros2_ex/install/ground/share/ground/package.dsv
+[9.248s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/packages/ground
+[9.248s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/cmake/groundConfig.cmake
+[9.248s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/cmake/groundConfig-version.cmake
+[9.248s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/package.xml
+[9.250s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/ground

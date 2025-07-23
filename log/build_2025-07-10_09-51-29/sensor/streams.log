@@ -1,0 +1,24 @@
+[0.005s] Invoking command in '/home/lee/workspace/ros2_ex/build/sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/sensor -- -j32 -l32
+[0.030s] [35m[1mConsolidate compiler generated dependencies of target topic_tool[0m
+[0.042s] [100%] Built target topic_tool
+[0.048s] Invoked command in '/home/lee/workspace/ros2_ex/build/sensor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/sensor -- -j32 -l32
+[0.054s] Invoking command in '/home/lee/workspace/ros2_ex/build/sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/sensor
+[0.059s] -- Install configuration: "RelWithDebInfo"
+[0.059s] -- Execute custom install script
+[0.059s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/lib/sensor/topic_tool
+[0.059s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/ament_index/resource_index/package_run_dependencies/sensor
+[0.059s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/ament_index/resource_index/parent_prefix_path/sensor
+[0.059s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/environment/ament_prefix_path.sh
+[0.059s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/environment/ament_prefix_path.dsv
+[0.059s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/environment/path.sh
+[0.059s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/environment/path.dsv
+[0.059s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/local_setup.bash
+[0.059s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/local_setup.sh
+[0.059s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/local_setup.zsh
+[0.060s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/local_setup.dsv
+[0.060s] -- Symlinking: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/package.dsv
+[0.065s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/ament_index/resource_index/packages/sensor
+[0.065s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/cmake/sensorConfig.cmake
+[0.065s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/cmake/sensorConfig-version.cmake
+[0.065s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/sensor/share/sensor/package.xml
+[0.066s] Invoked command in '/home/lee/workspace/ros2_ex/build/sensor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/sensor

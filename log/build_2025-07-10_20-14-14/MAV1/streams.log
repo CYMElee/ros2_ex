@@ -1,0 +1,11 @@
+[0.006s] Invoking command in '/home/lee/workspace/ros2_ex/build/MAV1': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/MAV1 -- -j32 -l32
+[0.033s] [35m[1mConsolidate compiler generated dependencies of target MAV1[0m
+[0.043s] [ 50%] [32mBuilding CXX object CMakeFiles/MAV1.dir/node/main.cpp.o[0m
+[0.165s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Kmav1/getch.h: No such file or directory
+[0.165s]    11 | #include [01;31m[K<mav1/getch.h>[m[K
+[0.165s]       |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.165s] compilation terminated.
+[0.167s] gmake[2]: *** [CMakeFiles/MAV1.dir/build.make:76: CMakeFiles/MAV1.dir/node/main.cpp.o] Error 1
+[0.167s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/MAV1.dir/all] Error 2
+[0.167s] gmake: *** [Makefile:146: all] Error 2
+[0.169s] Invoked command in '/home/lee/workspace/ros2_ex/build/MAV1' returned '2': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/MAV1 -- -j32 -l32

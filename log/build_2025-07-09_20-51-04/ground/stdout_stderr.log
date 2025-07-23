@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target position_controller[0m
+[ 33%] Built target gripper_controller
+[ 66%] Built target attitude_controller
+[ 83%] [32mBuilding CXX object CMakeFiles/position_controller.dir/node/position_controller.cpp.o[0m
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/position_controller.cpp:[m[K In member function ‘[01m[Kvoid PositionController::desire_position_cb(geometry_msgs::msg::Vector3_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/position_controller.cpp:105:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kpd[m[K’
+  105 |     [01;31m[Kpd[m[K(1) = msg->y; // y
+      |     [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/position_controller.dir/build.make:76: CMakeFiles/position_controller.dir/node/position_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/position_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

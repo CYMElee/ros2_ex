@@ -1,0 +1,7 @@
+[01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:[m[K In member function ‘[01m[Kvoid PositionAttitudeVelocityConverterNode::position_callback(px4_msgs::msg::VehicleLocalPosition_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:70:1:[m[K [01;31m[Kerror: [m[K‘[01m[KNorth[m[K’ was not declared in this scope
+   70 | [01;31m[KNorth[m[K), y (East), z (Down)
+      | [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/platform_topic_tool.dir/build.make:76: CMakeFiles/platform_topic_tool.dir/src/platform_topic_tool.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:333: CMakeFiles/platform_topic_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

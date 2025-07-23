@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target MAV1[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/MAV1.dir/node/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable MAV1[0m
+[100%] Built target MAV1
+-- Install configuration: ""
+-- Installing: /home/lee/workspace/ros2_ex/install/MAV1/lib/MAV1/MAV1
+-- Set runtime path of "/home/lee/workspace/ros2_ex/install/MAV1/lib/MAV1/MAV1" to ""
+-- Installing: /home/lee/workspace/ros2_ex/install/MAV1/share/ament_index/resource_index/package_run_dependencies/MAV1
+-- Installing: /home/lee/workspace/ros2_ex/install/MAV1/share/ament_index/resource_index/parent_prefix_path/MAV1
+-- Installing: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/environment/ament_prefix_path.sh
+-- Installing: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/environment/ament_prefix_path.dsv
+-- Installing: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/environment/path.sh
+-- Installing: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/environment/path.dsv
+-- Installing: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/local_setup.bash
+-- Installing: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/local_setup.sh
+-- Installing: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/local_setup.zsh
+-- Installing: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/local_setup.dsv
+-- Installing: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/package.dsv
+-- Installing: /home/lee/workspace/ros2_ex/install/MAV1/share/ament_index/resource_index/packages/MAV1
+-- Installing: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/cmake/MAV1Config.cmake
+-- Installing: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/cmake/MAV1Config-version.cmake
+-- Installing: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/package.xml
