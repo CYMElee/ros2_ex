@@ -661,17 +661,22 @@ CMakeFiles/MAV1.dir/node/main.cpp.o: \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__builder.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__traits.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__type_support.hpp \
- /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_status.hpp \
- /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__struct.hpp \
- /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__builder.hpp \
- /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__traits.hpp \
- /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.hpp \
+ /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp \
+ /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp \
+ /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__builder.hpp \
+ /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__traits.hpp \
+ /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__type_support.hpp \
  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_attitude_setpoint.hpp \
  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__struct.hpp \
  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__builder.hpp \
  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__traits.hpp \
  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__type_support.hpp \
+ /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_attitude.hpp \
+ /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__struct.hpp \
+ /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__builder.hpp \
+ /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__traits.hpp \
+ /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__type_support.hpp \
  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/srv/vehicle_command.hpp \
  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/srv/detail/vehicle_command__struct.hpp \
  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__struct.hpp \

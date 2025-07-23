@@ -43,7 +43,7 @@ public:
         std::chrono::milliseconds(10), // 100 Hz
         std::bind(&TrajectoryGenerator::timer_callback, this));
 
-    RCLCPP_INFO(this->get_logger(), "SUCCESS LAUNCH TRAJECTORY_GENERATOR!!!");
+    RCLCPP_INFO_ONCE(this->get_logger(), "SUCCESS LAUNCH TRAJECTORY_GENERATOR!!!");
   }
 
 private:

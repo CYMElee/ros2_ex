@@ -727,17 +727,22 @@ CMakeFiles/MAV1.dir/node/main.cpp.o: /home/lee/workspace/ros2_ex/src/MAV/MAV1/no
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__builder.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__traits.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__type_support.hpp \
-  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_status.hpp \
-  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__struct.hpp \
-  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__builder.hpp \
-  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__traits.hpp \
-  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.hpp \
+  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp \
+  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp \
+  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__builder.hpp \
+  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__traits.hpp \
+  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__type_support.hpp \
   /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_attitude_setpoint.hpp \
   /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__struct.hpp \
   /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__builder.hpp \
   /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__traits.hpp \
   /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__type_support.hpp \
+  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_attitude.hpp \
+  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__struct.hpp \
+  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__builder.hpp \
+  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__traits.hpp \
+  /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__type_support.hpp \
   /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/srv/vehicle_command.hpp \
   /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/srv/detail/vehicle_command__struct.hpp \
   /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__struct.hpp \
@@ -970,8 +975,6 @@ CMakeFiles/MAV1.dir/node/main.cpp.o: /home/lee/workspace/ros2_ex/src/MAV/MAV1/no
 
 /usr/local/include/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
 
-/usr/local/include/Eigen/src/Eigenvalues/EigenSolver.h:
-
 /usr/local/include/Eigen/src/Eigenvalues/HessenbergDecomposition.h:
 
 /usr/local/include/Eigen/src/Geometry/Umeyama.h:
@@ -1026,8 +1029,6 @@ CMakeFiles/MAV1.dir/node/main.cpp.o: /home/lee/workspace/ros2_ex/src/MAV/MAV1/no
 
 /usr/local/include/Eigen/src/Core/util/ReenableStupidWarnings.h:
 
-/usr/local/include/Eigen/src/Core/Reverse.h:
-
 /usr/local/include/Eigen/src/Core/Replicate.h:
 
 /usr/local/include/Eigen/src/Core/Select.h:
@@ -1081,8 +1082,6 @@ CMakeFiles/MAV1.dir/node/main.cpp.o: /home/lee/workspace/ros2_ex/src/MAV/MAV1/no
 /usr/local/include/Eigen/src/Core/Matrix.h:
 
 /usr/local/include/Eigen/src/Core/PlainObjectBase.h:
-
-/usr/local/include/Eigen/src/Core/ReturnByValue.h:
 
 /usr/local/include/Eigen/src/Core/DenseStorage.h:
 
@@ -1176,6 +1175,10 @@ CMakeFiles/MAV1.dir/node/main.cpp.o: /home/lee/workspace/ros2_ex/src/MAV/MAV1/no
 
 /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_command__struct.hpp:
 
+/usr/local/include/Eigen/src/Core/Reverse.h:
+
+/home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__traits.hpp:
+
 /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__type_support.hpp:
 
 /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude_setpoint__struct.hpp:
@@ -1184,9 +1187,13 @@ CMakeFiles/MAV1.dir/node/main.cpp.o: /home/lee/workspace/ros2_ex/src/MAV/MAV1/no
 
 /home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_attitude_setpoint.hpp:
 
-/home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__type_support.hpp:
+/usr/local/include/Eigen/src/Eigenvalues/EigenSolver.h:
 
-/home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__traits.hpp:
+/home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__traits.hpp:
+
+/usr/local/include/Eigen/src/Core/ReturnByValue.h:
+
+/home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/offboard_control_mode.hpp:
 
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32_multi_array__struct.hpp:
 
@@ -1282,6 +1289,8 @@ CMakeFiles/MAV1.dir/node/main.cpp.o: /home/lee/workspace/ros2_ex/src/MAV/MAV1/no
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
 
+/home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__builder.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
 
 /usr/local/include/Eigen/src/LU/PartialPivLU.h:
@@ -1361,6 +1370,8 @@ CMakeFiles/MAV1.dir/node/main.cpp.o: /home/lee/workspace/ros2_ex/src/MAV/MAV1/no
 /opt/ros/humble/include/rcutils/rcutils/shared_library.h:
 
 /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp:
+
+/home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__struct.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__type_support.hpp:
 
@@ -1469,8 +1480,6 @@ CMakeFiles/MAV1.dir/node/main.cpp.o: /home/lee/workspace/ros2_ex/src/MAV/MAV1/no
 /usr/include/c++/11/bits/move.h:
 
 /usr/local/include/Eigen/src/SVD/JacobiSVD.h:
-
-/home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_status.hpp:
 
 /usr/include/c++/11/bits/hash_bytes.h:
 
@@ -1838,6 +1847,8 @@ CMakeFiles/MAV1.dir/node/main.cpp.o: /home/lee/workspace/ros2_ex/src/MAV/MAV1/no
 
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
 
+/home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__type_support.hpp:
+
 /usr/include/c++/11/ext/type_traits.h:
 
 /usr/local/include/Eigen/src/Core/SelfCwiseBinaryOp.h:
@@ -2055,6 +2066,8 @@ CMakeFiles/MAV1.dir/node/main.cpp.o: /home/lee/workspace/ros2_ex/src/MAV/MAV1/no
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__struct.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
@@ -2480,6 +2493,8 @@ CMakeFiles/MAV1.dir/node/main.cpp.o: /home/lee/workspace/ros2_ex/src/MAV/MAV1/no
 
 /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
 
+/home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/offboard_control_mode__type_support.hpp:
+
 /opt/ros/humble/include/rmw/rmw/events_statuses/requested_deadline_missed.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
@@ -2580,6 +2595,8 @@ CMakeFiles/MAV1.dir/node/main.cpp.o: /home/lee/workspace/ros2_ex/src/MAV/MAV1/no
 
 /opt/ros/humble/include/rclcpp/rclcpp/macros.hpp:
 
+/home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/vehicle_attitude.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/contexts/default_context.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/guard_condition.hpp:
@@ -2629,10 +2646,6 @@ CMakeFiles/MAV1.dir/node/main.cpp.o: /home/lee/workspace/ros2_ex/src/MAV/MAV1/no
 /usr/local/include/Eigen/src/Eigenvalues/Tridiagonalization.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__type_support.hpp:
-
-/home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__builder.hpp:
-
-/home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_status__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
 
@@ -2773,6 +2786,8 @@ CMakeFiles/MAV1.dir/node/main.cpp.o: /home/lee/workspace/ros2_ex/src/MAV/MAV1/no
 /usr/include/c++/11/shared_mutex:
 
 /usr/local/include/Eigen/src/Core/products/TriangularSolverVector.h:
+
+/home/lee/workspace/ros2_ex/install/px4_msgs/include/px4_msgs/px4_msgs/msg/detail/vehicle_attitude__builder.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
 

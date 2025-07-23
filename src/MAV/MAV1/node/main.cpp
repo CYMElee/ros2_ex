@@ -3,8 +3,9 @@
 #include <std_msgs/msg/int16.hpp>
 #include <std_msgs/msg/float64_multi_array.hpp>
 #include <std_msgs/msg/float32_multi_array.hpp>
-#include <px4_msgs/msg/vehicle_status.hpp>
+#include <px4_msgs/msg/offboard_control_mode.hpp>
 #include <px4_msgs/msg/vehicle_attitude_setpoint.hpp>
+#include "px4_msgs/msg/vehicle_attitude.hpp"
 #include <px4_msgs/srv/vehicle_command.hpp>
 #include <px4_msgs/msg/vehicle_command.hpp>
 #include <Eigen/Dense>
@@ -12,101 +13,77 @@
 #include <cmath>
 
 enum MAV_mod {
-    IDLE,
-    TAKEOFF,
-    LAND,
-    SET_HOME,
+    DISARM, //1
+    IDLE, // 2
+    TAKEOFF, // 3
+    LAND, // 4
+    SET_HOME, // 5
 };
 
 class MAVControl_Node : public rclcpp::Node {
 public:
     MAVControl_Node() : Node("mav_control_node") {
-        // Get UAV_ID parameter
-        this->declare_parameter<int>("UAV_ID", 1);
-        this->get_parameter("UAV_ID", UAV_ID_);
 
-        // Initialize variables
-        initialize();
-
+        rmw_qos_profile_t qos_profile = rmw_qos_profile_sensor_data;
+		    auto qos = rclcpp::QoS(rclcpp::QoSInitialization(qos_profile.history, 5), qos_profile);
         // Publishers
-        local_pos_pub_ = this->create_publisher<geometry_msgs::msg::PoseStamped>(
-            "/fmu/in/vehicle_local_position_setpoint", 10);
         T_pub_ = this->create_publisher<px4_msgs::msg::VehicleAttitudeSetpoint>(
-            "/fmu/in/vehicle_attitude_setpoint", 10);
+            "/MAV1/fmu/in/vehicle_attitude_setpoint", qos);
         T_pub_debug_ = this->create_publisher<std_msgs::msg::Float32MultiArray>(
-            "/fmu/in/vehicle_attitude_setpoint_euler", 10);
+            "/MAV1/fmu/in/vehicle_attitude_setpoint_euler", qos);
+        offboard_control_mode_publisher_ = this->create_publisher<px4_msgs::msg::OffboardControlMode>(
+            "/MAV1/fmu/in/offboard_control_mode", qos);
+
+        vehicle_command_publisher_ = this->create_publisher<px4_msgs::msg::VehicleCommand>(
+            "/MAV1/fmu/in/vehicle_command", qos);
 
         // Subscribers
-        state_sub_ = this->create_subscription<px4_msgs::msg::VehicleStatus>(
-            "/MAV" + std::to_string(UAV_ID_) + "/fmu/out/vehicle_status", 10,
-            std::bind(&MAVControl_Node::state_cb, this, std::placeholders::_1));
-        platform_pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
-            "/platform/mavros/local_position/pose", 12,
-            std::bind(&MAVControl_Node::platform_pose_cb, this, std::placeholders::_1));
-        mav_pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
-            "/MAV" + std::to_string(UAV_ID_) + "/local_position/pose", 10,
+
+        platform_pose_sub_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
+            "/platfMAVControl_Nodefmu/out/vehicle_attitude", qos,
             std::bind(&MAVControl_Node::mav_pose, this, std::placeholders::_1));
         T_sub_ = this->create_subscription<std_msgs::msg::Float64MultiArray>(
-            "cmd", 12,
+            "/MAV1/cmd", qos,
             std::bind(&MAVControl_Node::T_sub, this, std::placeholders::_1));
         takeoff_signal_sub_ = this->create_subscription<std_msgs::msg::Int16>(
-            "/ground_station/set_mode", 10,
+            "/ground_station/set_mode", qos,
             std::bind(&MAVControl_Node::mode_cb, this, std::placeholders::_1));
+       
+        offboard_setpoint_counter_ = 0;
 
-        // Service clients
-        vehicle_command_client_ = this->create_client<px4_msgs::srv::VehicleCommand>(
-            "/fmu/in/vehicle_command");
+        timer2_ = this->create_wall_timer(std::chrono::milliseconds(10),std::bind(&MAVControl_Node::timer2_callback, this));
 
-        // Wait for vehicle status connection
-        RCLCPP_INFO(this->get_logger(), "Waiting for vehicle status connection...");
-        while (rclcpp::ok() && !current_state_.nav_state) {
-            rclcpp::spin_some(this->get_node_base_interface());
-            rclcpp::sleep_for(std::chrono::milliseconds(10));
-        }
-        RCLCPP_INFO(this->get_logger(), "Vehicle status connected.");
+		timer_ = this->create_wall_timer(std::chrono::milliseconds(10),std::bind(&MAVControl_Node::timer_callback, this));
 
-        // Initialize setpoint
-        pose_.pose.position.x = 0;
-        pose_.pose.position.y = 0;
-        pose_.pose.position.z = 0;
+	}
+       
 
-        // Publish initial setpoints
-        auto rate = rclcpp::Rate(100);
-        for (int i = 100; rclcpp::ok() && i > 0; --i) {
-            local_pos_pub_->publish(pose_);
-            rclcpp::spin_some(this->get_node_base_interface());
-            rate.sleep();
-        }
 
-        // Set OFFBOARD mode and arm
-        set_offboard_mode();
-        arm_vehicle();
-
-        // Main loop
-        main_loop();
-    }
 
 private:
-    int UAV_ID_;
+    
     geometry_msgs::msg::PoseStamped pose_;
     geometry_msgs::msg::PoseStamped platform_pose_;
     geometry_msgs::msg::PoseStamped mav_pose_;
-    px4_msgs::msg::VehicleStatus current_state_;
     std_msgs::msg::Float64MultiArray T_cmd_;
     std_msgs::msg::Float32MultiArray Eul_cmd_;
     std_msgs::msg::Int16 Change_Mode_Trigger_;
     px4_msgs::msg::VehicleAttitudeSetpoint T_;
     px4_msgs::msg::VehicleAttitudeSetpoint T_PREARM_;
 
+    uint64_t offboard_setpoint_counter_;
+
+    rclcpp::TimerBase::SharedPtr timer_,timer2_;
     rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr local_pos_pub_;
     rclcpp::Publisher<px4_msgs::msg::VehicleAttitudeSetpoint>::SharedPtr T_pub_;
     rclcpp::Publisher<std_msgs::msg::Float32MultiArray>::SharedPtr T_pub_debug_;
-    rclcpp::Subscription<px4_msgs::msg::VehicleStatus>::SharedPtr state_sub_;
+    rclcpp::Publisher<px4_msgs::msg::OffboardControlMode>::SharedPtr offboard_control_mode_publisher_;
+    rclcpp::Publisher<px4_msgs::msg::VehicleCommand>::SharedPtr vehicle_command_publisher_;
+
     rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr platform_pose_sub_;
     rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr mav_pose_sub_;
     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr T_sub_;
     rclcpp::Subscription<std_msgs::msg::Int16>::SharedPtr takeoff_signal_sub_;
-    rclcpp::Client<px4_msgs::srv::VehicleCommand>::SharedPtr vehicle_command_client_;
 
     void initialize() {
         T_cmd_.data.resize(3);
@@ -116,20 +93,17 @@ private:
         T_PREARM_.q_d[3] = 0.0; // z
         T_PREARM_.thrust_body[0] = 0.0;
         T_PREARM_.thrust_body[1] = 0.0;
-        T_PREARM_.thrust_body[2] = -0.3; // Negative for upward thrust
+        T_PREARM_.thrust_body[2] = -0.2; // Negative for upward thrust
         Eul_cmd_.data.resize(3);
         Change_Mode_Trigger_.data = MAV_mod::IDLE;
     }
 
-    void state_cb(const px4_msgs::msg::VehicleStatus::SharedPtr msg) {
-        current_state_ = *msg;
-    }
 
     void mode_cb(const std_msgs::msg::Int16::SharedPtr msg) {
         Change_Mode_Trigger_ = *msg;
     }
 
-    void platform_pose_cb(const geometry_msgs::msg::PoseStamped::SharedPtr msg) {
+    void platform_pose_cb(const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
         platform_pose_ = *msg;
     }
 
@@ -186,84 +160,80 @@ private:
         T_.thrust_body[0] = 0.0;
         T_.thrust_body[1] = 0.0;
         T_.thrust_body[2] = -thrust; // Negative for upward thrust
+        T_pub_->publish(T_);
+        T_pub_debug_->publish(Eul_cmd_);
         T_.timestamp = this->get_clock()->now().nanoseconds() / 1000;
     }
 
-    void set_offboard_mode() {
-        auto request = std::make_shared<px4_msgs::srv::VehicleCommand::Request>();
-        request->request.command = px4_msgs::msg::VehicleCommand::VEHICLE_CMD_DO_SET_MODE;
-        request->request.param1 = 1.0; // Custom mode
-        request->request.param2 = 6.0; // OFFBOARD mode
-        request->request.timestamp = this->get_clock()->now().nanoseconds() / 1000;
 
-        while (!vehicle_command_client_->wait_for_service(std::chrono::seconds(1))) {
-            if (!rclcpp::ok()) {
-                RCLCPP_ERROR(this->get_logger(), "Interrupted while waiting for vehicle command service.");
-                return;
-            }
-            RCLCPP_INFO(this->get_logger(), "Waiting for vehicle command service...");
-        }
-
-        try {
-            auto result = vehicle_command_client_->async_send_request(request);
-            if (result.wait_for(std::chrono::seconds(5)) == std::future_status::ready) {
-                RCLCPP_INFO(this->get_logger(), "OFFBOARD mode command sent");
-            } else {
-                RCLCPP_ERROR(this->get_logger(), "Failed to set OFFBOARD mode: service call timed out");
-            }
-        } catch (const std::exception &e) {
-            RCLCPP_ERROR(this->get_logger(), "Failed to set OFFBOARD mode: %s", e.what());
-        }
+    void publish_vehicle_command(uint16_t command, float param1, float param2)
+    {
+	    px4_msgs::msg::VehicleCommand msg{};
+	    msg.param1 = param1;
+	    msg.param2 = param2;
+	    msg.command = command;
+	    msg.target_system = 1;
+	    msg.target_component = 1;
+	    msg.source_system = 1;
+	    msg.source_component = 1;
+	    msg.from_external = true;
+	    msg.timestamp = this->get_clock()->now().nanoseconds() / 1000;
+	    vehicle_command_publisher_->publish(msg);
     }
 
-    void arm_vehicle() {
-        auto request = std::make_shared<px4_msgs::srv::VehicleCommand::Request>();
-        request->request.command = px4_msgs::msg::VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM;
-        request->request.param1 = 1.0; // Arm
-        request->request.timestamp = this->get_clock()->now().nanoseconds() / 1000;
 
-        while (!vehicle_command_client_->wait_for_service(std::chrono::seconds(1))) {
-            if (!rclcpp::ok()) {
-                RCLCPP_ERROR(this->get_logger(), "Interrupted while waiting for vehicle command service.");
-                return;
-            }
-            RCLCPP_INFO(this->get_logger(), "Waiting for vehicle command service...");
-        }
-
-        try {
-            auto result = vehicle_command_client_->async_send_request(request);
-            if (result.wait_for(std::chrono::seconds(5)) == std::future_status::ready) {
-                RCLCPP_INFO(this->get_logger(), "Vehicle arm command sent");
-            } else {
-                RCLCPP_ERROR(this->get_logger(), "Failed to arm vehicle: service call timed out");
-            }
-        } catch (const std::exception &e) {
-            RCLCPP_ERROR(this->get_logger(), "Failed to arm vehicle: %s", e.what());
-        }
+    void publish_offboard_control_mode()
+    {
+	    px4_msgs::msg::OffboardControlMode msg{};
+	    msg.position = false;
+	    msg.velocity = false;
+	    msg.acceleration = false;
+	    msg.attitude = true;
+	    msg.body_rate = false;
+	    msg.timestamp = this->get_clock()->now().nanoseconds() / 1000;
+	    offboard_control_mode_publisher_->publish(msg);
     }
 
-    void main_loop() {
-        auto rate = rclcpp::Rate(100);
-        while (rclcpp::ok() && Change_Mode_Trigger_.data != MAV_mod::TAKEOFF && Change_Mode_Trigger_.data != MAV_mod::LAND) {
-            RCLCPP_INFO(this->get_logger(), "READY_TAKEOFF!!");
-            if (current_state_.nav_state != px4_msgs::msg::VehicleStatus::NAVIGATION_STATE_OFFBOARD) {
-                set_offboard_mode();
-            }
-            if (!current_state_.arming_state) {
-                arm_vehicle();
-            }
-            rclcpp::spin_some(this->get_node_base_interface());
-            rate.sleep();
-        }
+    void arm()
+    {
+	    publish_vehicle_command(px4_msgs::msg::VehicleCommand::VEHICLE_CMD_COMPONENT_ARM_DISARM, 1.0);
 
-        while (rclcpp::ok()) {
-            T_cmd_calculate();
-            T_pub_->publish(T_);
-            T_pub_debug_->publish(Eul_cmd_);
-            rclcpp::spin_some(this->get_node_base_interface());
-            rate.sleep();
-        }
+	    RCLCPP_INFO(this->get_logger(), "Arm command send");
     }
+	void timer_callback(){
+
+			if (offboard_setpoint_counter_ == 10) {
+				// Change to Offboard mode after 10 setpoints
+				this->publish_vehicle_command(px4_msgs::msg::VehicleCommand::VEHICLE_CMD_DO_SET_MODE, 1, 6);
+
+				// Arm the vehicle
+				this->arm();
+                offboard_setpoint_counter_ = 12;
+			}
+
+			publish_offboard_control_mode();
+			// stop the counter after reaching 11
+			if (offboard_setpoint_counter_ < 11) {
+				offboard_setpoint_counter_++;
+			}
+		}
+
+    void timer2_callback(){
+
+			if (offboard_setpoint_counter_ == 12) {
+                if(Change_Mode_Trigger_ == static_cast<int16_t>(MAV_mod::IDLE)){
+
+                    initialize();
+                    
+                }
+                if(Change_Mode_Trigger_ == static_cast<int16_t>(MAV_mod::TAKEOFF)){
+                    T_cmd_calculate();
+                }
+			}
+
+		}
+
+
 };
 
 int main(int argc, char **argv) {

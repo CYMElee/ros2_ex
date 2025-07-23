@@ -1,0 +1,18 @@
+[35m[1mConsolidate compiler generated dependencies of target trajectory_generator[0m
+[35m[1mConsolidate compiler generated dependencies of target keyboard_node[0m
+[35m[1mConsolidate compiler generated dependencies of target platform_topic_tool[0m
+[ 11%] Built target attitude_controller
+[ 47%] Built target gripper_controller
+[ 47%] Built target position_controller
+[ 52%] Built target wrench_mapper
+[ 58%] Built target trajectory_generator
+[ 70%] Built target qc_servo
+[ 82%] [32mBuilding CXX object CMakeFiles/platform_topic_tool.dir/src/platform_topic_tool.cpp.o[0m
+[ 94%] Built target keyboard_node
+[01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:[m[K In constructor ‘[01m[KPositionAttitudeVelocityConverterNode::PositionAttitudeVelocityConverterNode()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/ground/src/platform_topic_tool.cpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klatest_velocity_[m[K’ was not declared in this scope
+   57 |         [01;31m[Klatest_velocity_[m[K.vx = latest_velocity_.vy = latest_velocity_.vz = 0.0;
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/platform_topic_tool.dir/build.make:76: CMakeFiles/platform_topic_tool.dir/src/platform_topic_tool.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:333: CMakeFiles/platform_topic_tool.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
