@@ -18,15 +18,18 @@ extern "C"
 // Constants defined in the message
 
 /// Struct defined in msg/RoverVelocitySetpoint in the package px4_msgs.
+/**
+  * Rover Velocity Setpoint
+ */
 typedef struct px4_msgs__msg__RoverVelocitySetpoint
 {
-  /// time since system start (microseconds)
+  /// Time since system start
   uint64_t timestamp;
-  /// [-inf, inf] Speed setpoint (Backwards driving if negative)
+  /// [@range -inf (Backwards), inf (Forwards)] Speed setpoint
   float speed;
-  /// [-pi,pi] from North. [invalid: NAN, speed is defined in body x direction]
+  /// [rad] [@range -pi,pi] [@frame NED] [@invalid: NaN, speed is defined in body x direction] Bearing setpoint
   float bearing;
-  /// [-pi, pi] (Mecanum only, Optional, defaults to current vehicle yaw) Vehicle yaw setpoint in NED frame
+  /// [rad] [@range -pi, pi] [@frame NED] [@invalid NaN, Defaults to vehicle yaw] Mecanum only: Yaw setpoint
   float yaw;
 } px4_msgs__msg__RoverVelocitySetpoint;
 

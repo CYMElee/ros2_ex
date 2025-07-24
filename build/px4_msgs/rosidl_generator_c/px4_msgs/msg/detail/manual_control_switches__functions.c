@@ -30,7 +30,6 @@ px4_msgs__msg__ManualControlSwitches__init(px4_msgs__msg__ManualControlSwitches 
   // photo_switch
   // video_switch
   // engage_main_motor_switch
-  // payload_power_switch
   // switch_changes
   return true;
 }
@@ -54,7 +53,6 @@ px4_msgs__msg__ManualControlSwitches__fini(px4_msgs__msg__ManualControlSwitches 
   // photo_switch
   // video_switch
   // engage_main_motor_switch
-  // payload_power_switch
   // switch_changes
 }
 
@@ -116,10 +114,6 @@ px4_msgs__msg__ManualControlSwitches__are_equal(const px4_msgs__msg__ManualContr
   if (lhs->engage_main_motor_switch != rhs->engage_main_motor_switch) {
     return false;
   }
-  // payload_power_switch
-  if (lhs->payload_power_switch != rhs->payload_power_switch) {
-    return false;
-  }
   // switch_changes
   if (lhs->switch_changes != rhs->switch_changes) {
     return false;
@@ -161,8 +155,6 @@ px4_msgs__msg__ManualControlSwitches__copy(
   output->video_switch = input->video_switch;
   // engage_main_motor_switch
   output->engage_main_motor_switch = input->engage_main_motor_switch;
-  // payload_power_switch
-  output->payload_power_switch = input->payload_power_switch;
   // switch_changes
   output->switch_changes = input->switch_changes;
   return true;

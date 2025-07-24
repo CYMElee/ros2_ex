@@ -51,6 +51,9 @@ add_executable(platform_topic_tool src/platform_topic_tool.cpp)
 ament_target_dependencies(platform_topic_tool rclcpp std_msgs px4_msgs)
 
 
+add_executable(mocap_px4_bridge src/mocap_px4_bridge.cpp)
+ament_target_dependencies(mocap_px4_bridge rclcpp std_msgs px4_msgs geometry_msgs)
+
 target_include_directories(keyboard_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
@@ -92,6 +95,9 @@ install(TARGETS
   platform_topic_tool
   DESTINATION lib/${PROJECT_NAME})
 
+install(TARGETS
+  mocap_px4_bridge
+  DESTINATION lib/${PROJECT_NAME})
 
 
   # Install launch files

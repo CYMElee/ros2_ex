@@ -1,0 +1,26 @@
+[0.001s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[0.001s] [ 11%] Built target qc_servo
+[0.001s] [ 23%] Built target gripper_controller
+[0.001s] [ 35%] Built target wrench_mapper
+[0.001s] [ 47%] Built target platform_topic_tool
+[0.002s] [ 58%] Built target trajectory_generator
+[0.002s] [ 64%] [32mBuilding CXX object CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o[0m
+[0.002s] [ 76%] Built target position_controller
+[0.002s] [ 88%] Built target attitude_controller
+[1.047s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:[m[K In member function ‘[01m[Kvoid MAV_State::Check_All_State(const Int16&)[m[K’:
+[1.047s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:68:13:[m[K [01;31m[Kerror: [m[K‘[01m[KSET_MODE[m[K’ was not declared in this scope; did you mean ‘[01m[KSET_HOME[m[K’?
+[1.047s]    68 |             [01;31m[KSET_MODE[m[K->publish(Mode);
+[1.047s]       |             [01;31m[K^~~~~~~~[m[K
+[1.047s]       |             [32m[KSET_HOME[m[K
+[1.050s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:72:13:[m[K [01;31m[Kerror: [m[K‘[01m[KSET_MODE[m[K’ was not declared in this scope; did you mean ‘[01m[KSET_HOME[m[K’?
+[1.050s]    72 |             [01;31m[KSET_MODE[m[K->publish(Mode);
+[1.050s]       |             [01;31m[K^~~~~~~~[m[K
+[1.050s]       |             [32m[KSET_HOME[m[K
+[1.052s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:76:13:[m[K [01;31m[Kerror: [m[K‘[01m[KSET_MODE[m[K’ was not declared in this scope; did you mean ‘[01m[KSET_HOME[m[K’?
+[1.052s]    76 |             [01;31m[KSET_MODE[m[K->publish(Mode);
+[1.052s]       |             [01;31m[K^~~~~~~~[m[K
+[1.052s]       |             [32m[KSET_HOME[m[K
+[2.053s] gmake[2]: *** [CMakeFiles/keyboard_node.dir/build.make:76: CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o] Error 1
+[2.053s] gmake[1]: *** [CMakeFiles/Makefile2:229: CMakeFiles/keyboard_node.dir/all] Error 2
+[2.053s] gmake: *** [Makefile:146: all] Error 2
+[2.055s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '2': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32

@@ -5,23 +5,24 @@
 
 module px4_msgs {
   module msg {
+    @verbatim (language="comment", text=
+      "Rover Rate Status")
     struct RoverRateStatus {
       @verbatim (language="comment", text=
-        "time since system start (microseconds)")
+        "Time since system start")
+      @unit (value="us")
       uint64 timestamp;
 
       @verbatim (language="comment", text=
-        "Measured yaw rate")
-      @unit (value="rad/s")
+        "[rad/s] [@range -inf, inf] [@frame NED] Measured yaw rate")
       float measured_yaw_rate;
 
       @verbatim (language="comment", text=
-        "Yaw rate setpoint that is being tracked (Applied slew rates)")
-      @unit (value="rad/s")
+        "[rad/s] [@range -inf, inf] [@frame NED] Yaw rate setpoint that is being tracked (Applied slew rates)")
       float adjusted_yaw_rate_setpoint;
 
       @verbatim (language="comment", text=
-        "Integral of the PID for the closed loop yaw rate controller")
+        "[] [@range -1, 1] Integral of the PID for the closed loop yaw rate controller")
       float pid_yaw_rate_integral;
     };
   };

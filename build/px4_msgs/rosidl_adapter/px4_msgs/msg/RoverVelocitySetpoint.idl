@@ -5,24 +5,25 @@
 
 module px4_msgs {
   module msg {
+    @verbatim (language="comment", text=
+      "Rover Velocity Setpoint")
     struct RoverVelocitySetpoint {
       @verbatim (language="comment", text=
-        "time since system start (microseconds)")
+        "Time since system start")
+      @unit (value="us")
       uint64 timestamp;
 
       @verbatim (language="comment", text=
-        "[-inf, inf] Speed setpoint (Backwards driving if negative)")
+        "[@range -inf (Backwards), inf (Forwards)] Speed setpoint")
       @unit (value="m/s")
       float speed;
 
       @verbatim (language="comment", text=
-        "[-pi,pi] from North. [invalid: NAN, speed is defined in body x direction]")
-      @unit (value="rad")
+        "[rad] [@range -pi,pi] [@frame NED] [@invalid: NaN, speed is defined in body x direction] Bearing setpoint")
       float bearing;
 
       @verbatim (language="comment", text=
-        "[-pi, pi] (Mecanum only, Optional, defaults to current vehicle yaw) Vehicle yaw setpoint in NED frame")
-      @unit (value="rad")
+        "[rad] [@range -pi, pi] [@frame NED] [@invalid NaN, Defaults to vehicle yaw] Mecanum only: Yaw setpoint")
       float yaw;
     };
   };

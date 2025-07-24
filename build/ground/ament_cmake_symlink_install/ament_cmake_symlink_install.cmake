@@ -334,6 +334,9 @@ include("/home/lee/workspace/ros2_ex/build/ground/ament_cmake_symlink_install_ta
 # install("TARGETS" "platform_topic_tool" "DESTINATION" "lib/ground")
 include("/home/lee/workspace/ros2_ex/build/ground/ament_cmake_symlink_install_targets_7_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
+# install("TARGETS" "mocap_px4_bridge" "DESTINATION" "lib/ground")
+include("/home/lee/workspace/ros2_ex/build/ground/ament_cmake_symlink_install_targets_8_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
 # install(DIRECTORY "launch" "DESTINATION" "share/ground")
 ament_cmake_symlink_install_directory("/home/lee/workspace/ros2_ex/src/ground" DIRECTORY "launch" "DESTINATION" "share/ground")
 

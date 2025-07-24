@@ -915,4 +915,5 @@ CMakeFiles/wrench_mapper.dir/node/wrench_mapper.cpp.o
  /usr/local/include/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
  /usr/local/include/Eigen/src/Eigenvalues/RealQZ.h
  /usr/local/include/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+ /usr/local/include/Eigen/QR
 

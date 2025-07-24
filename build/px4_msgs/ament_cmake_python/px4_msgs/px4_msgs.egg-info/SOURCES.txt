@@ -41,6 +41,7 @@ px4_msgs/msg/_debug_vect.py
 px4_msgs/msg/_differential_pressure.py
 px4_msgs/msg/_distance_sensor.py
 px4_msgs/msg/_distance_sensor_mode_change_request.py
+px4_msgs/msg/_dronecan_node_status.py
 px4_msgs/msg/_ekf2_timestamps.py
 px4_msgs/msg/_esc_report.py
 px4_msgs/msg/_esc_status.py

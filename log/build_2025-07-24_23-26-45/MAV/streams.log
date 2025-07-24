@@ -1,0 +1,72 @@
+[0.000s] Invoking command in '/home/lee/workspace/ros2_ex/build/MAV': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/MAV -- -j32 -l32
+[0.001s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.001s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.001s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.001s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.001s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.001s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.001s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.001s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.001s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.001s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.001s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.001s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.001s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.001s] -- Found tf2: 0.25.13 (/opt/ros/humble/share/tf2/cmake)
+[0.001s] -- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.034s] -- Found px4_msgs: 2.0.1 (/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/cmake)
+[0.043s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.074s] WARNING: Package name "MAV" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[0.281s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.282s] -- Configured cppcheck include dirs: /home/lee/workspace/ros2_ex/src/MAV/include
+[0.282s] -- Configured cppcheck exclude dirs and/or files: 
+[0.306s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.355s] -- Added test 'lint_cmake' to check CMake code style
+[0.380s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.582s] -- Added test 'uncrustify' to check C / C++ code style
+[0.582s] -- Configured uncrustify additional arguments: 
+[0.606s] -- Added test 'xmllint' to check XML markup files
+[0.608s] -- Configuring done
+[0.618s] -- Generating done
+[0.621s] -- Build files have been written to: /home/lee/workspace/ros2_ex/build/MAV
+[0.640s] [35m[1mConsolidate compiler generated dependencies of target mav3[0m
+[0.640s] [35m[1mConsolidate compiler generated dependencies of target mav1[0m
+[0.640s] [35m[1mConsolidate compiler generated dependencies of target mav4[0m
+[0.640s] [35m[1mConsolidate compiler generated dependencies of target mav2[0m
+[0.653s] [ 12%] [32mBuilding CXX object CMakeFiles/mav4.dir/node/mav4.cpp.o[0m
+[0.653s] [ 25%] [32mBuilding CXX object CMakeFiles/mav3.dir/node/mav3.cpp.o[0m
+[0.654s] [ 50%] [32mBuilding CXX object CMakeFiles/mav2.dir/node/mav2.cpp.o[0m
+[0.654s] [ 50%] [32mBuilding CXX object CMakeFiles/mav1.dir/node/mav1.cpp.o[0m
+[15.372s] [ 62%] [32m[1mLinking CXX executable mav4[0m
+[15.609s] [ 62%] Built target mav4
+[15.711s] [ 75%] [32m[1mLinking CXX executable mav2[0m
+[15.904s] [ 87%] [32m[1mLinking CXX executable mav3[0m
+[15.952s] [ 87%] Built target mav2
+[16.003s] [100%] [32m[1mLinking CXX executable mav1[0m
+[16.145s] [100%] Built target mav3
+[16.228s] [100%] Built target mav1
+[16.234s] Invoked command in '/home/lee/workspace/ros2_ex/build/MAV' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/MAV -- -j32 -l32
+[16.235s] Invoking command in '/home/lee/workspace/ros2_ex/build/MAV': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/MAV
+[16.239s] -- Install configuration: "RelWithDebInfo"
+[16.239s] -- Execute custom install script
+[16.239s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/lib/MAV/mav1
+[16.239s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/lib/MAV/mav2
+[16.239s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/lib/MAV/mav3
+[16.239s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/lib/MAV/mav4
+[16.239s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/launch/mav_launch.xml
+[16.239s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/ament_index/resource_index/package_run_dependencies/MAV
+[16.239s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/ament_index/resource_index/parent_prefix_path/MAV
+[16.239s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/environment/ament_prefix_path.sh
+[16.239s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/environment/ament_prefix_path.dsv
+[16.239s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/environment/path.sh
+[16.239s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/environment/path.dsv
+[16.240s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/local_setup.bash
+[16.240s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/local_setup.sh
+[16.240s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/local_setup.zsh
+[16.240s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/local_setup.dsv
+[16.240s] -- Symlinking: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/package.dsv
+[16.245s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/ament_index/resource_index/packages/MAV
+[16.245s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/cmake/MAVConfig.cmake
+[16.245s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/cmake/MAVConfig-version.cmake
+[16.245s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/package.xml
+[16.247s] Invoked command in '/home/lee/workspace/ros2_ex/build/MAV' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/MAV

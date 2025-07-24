@@ -61,16 +61,19 @@ public:
             MAV3_State_.arming_state == px4_msgs::msg::VehicleStatus::ARMING_STATE_ARMED &&
             MAV4_State_.arming_state == px4_msgs::msg::VehicleStatus::ARMING_STATE_ARMED &&
             Mode.data == (MAV_mod::IDLE)) {
-            RCLCPP_INFO_ONCE(this->get_logger(), "All_Mav_Get_Ready!!!");
+            RCLCPP_INFO(this->get_logger(), "All_Mav_Get_Ready!!!");
         }
         if (Mode.data == MAV_mod::TAKEOFF) {
-            RCLCPP_INFO_ONCE(this->get_logger(), "All_Mav_Takeoff!!!");
+            RCLCPP_INFO(this->get_logger(), "All_Mav_Takeoff!!!");
+            
         }
         if (Mode.data == MAV_mod::LAND) {
-            RCLCPP_INFO_ONCE(this->get_logger(), "All_Mav_Land!!!");
+            RCLCPP_INFO(this->get_logger(), "All_Mav_Land!!!");
+            
         }
         if (Mode.data == MAV_mod::SET_HOME) {
-            RCLCPP_INFO_ONCE(this->get_logger(), "SET_THE_PLATFORM_HOME_POSITION(keyboard)!!!");
+            RCLCPP_INFO(this->get_logger(), "SET_THE_PLATFORM_HOME_POSITION(keyboard)!!!");
+           
         }
     }
 };
@@ -94,7 +97,7 @@ int main(int argc, char** argv)
     Mode.data = MAV_mod::IDLE;
 
     // Loop rate (100 Hz)
-    rclcpp::Rate rate(100.0);
+    rclcpp::Rate rate(50.0);
     int c_prev = EOF;
 
     while (rclcpp::ok())
@@ -110,17 +113,18 @@ int main(int argc, char** argv)
             {
             case 'T':
                 Mode.data = MAV_mod::TAKEOFF;
-                SET_MODE->publish(Mode);
+                
                 break;
             case 'L':
                 Mode.data = MAV_mod::LAND;
-                SET_MODE->publish(Mode);
+                
                 break;
             case 'S':
                 Mode.data = MAV_mod::SET_HOME;
-                SET_MODE->publish(Mode);
+                
                 break;
             }
+            SET_MODE->publish(Mode);
         }
         c_prev = c;
 

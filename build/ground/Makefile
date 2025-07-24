@@ -301,6 +301,19 @@ platform_topic_tool/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/platform_topic_tool.dir/build.make CMakeFiles/platform_topic_tool.dir/build
 .PHONY : platform_topic_tool/fast
 
+#=============================================================================
+# Target rules for targets named mocap_px4_bridge
+
+# Build rule for target.
+mocap_px4_bridge: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mocap_px4_bridge
+.PHONY : mocap_px4_bridge
+
+# fast build rule for target.
+mocap_px4_bridge/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mocap_px4_bridge.dir/build.make CMakeFiles/mocap_px4_bridge.dir/build
+.PHONY : mocap_px4_bridge/fast
+
 node/attitude_controller.o: node/attitude_controller.cpp.o
 .PHONY : node/attitude_controller.o
 
@@ -493,6 +506,30 @@ src/getch.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard_node.dir/build.make CMakeFiles/keyboard_node.dir/src/getch.cpp.s
 .PHONY : src/getch.cpp.s
 
+src/mocap_px4_bridge.o: src/mocap_px4_bridge.cpp.o
+.PHONY : src/mocap_px4_bridge.o
+
+# target to build an object file
+src/mocap_px4_bridge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mocap_px4_bridge.dir/build.make CMakeFiles/mocap_px4_bridge.dir/src/mocap_px4_bridge.cpp.o
+.PHONY : src/mocap_px4_bridge.cpp.o
+
+src/mocap_px4_bridge.i: src/mocap_px4_bridge.cpp.i
+.PHONY : src/mocap_px4_bridge.i
+
+# target to preprocess a source file
+src/mocap_px4_bridge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mocap_px4_bridge.dir/build.make CMakeFiles/mocap_px4_bridge.dir/src/mocap_px4_bridge.cpp.i
+.PHONY : src/mocap_px4_bridge.cpp.i
+
+src/mocap_px4_bridge.s: src/mocap_px4_bridge.cpp.s
+.PHONY : src/mocap_px4_bridge.s
+
+# target to generate assembly for a file
+src/mocap_px4_bridge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mocap_px4_bridge.dir/build.make CMakeFiles/mocap_px4_bridge.dir/src/mocap_px4_bridge.cpp.s
+.PHONY : src/mocap_px4_bridge.cpp.s
+
 src/platform_topic_tool.o: src/platform_topic_tool.cpp.o
 .PHONY : src/platform_topic_tool.o
 
@@ -535,6 +572,7 @@ help:
 	@echo "... attitude_controller"
 	@echo "... gripper_controller"
 	@echo "... keyboard_node"
+	@echo "... mocap_px4_bridge"
 	@echo "... platform_topic_tool"
 	@echo "... position_controller"
 	@echo "... qc_servo"
@@ -564,6 +602,9 @@ help:
 	@echo "... src/getch.o"
 	@echo "... src/getch.i"
 	@echo "... src/getch.s"
+	@echo "... src/mocap_px4_bridge.o"
+	@echo "... src/mocap_px4_bridge.i"
+	@echo "... src/mocap_px4_bridge.s"
 	@echo "... src/platform_topic_tool.o"
 	@echo "... src/platform_topic_tool.i"
 	@echo "... src/platform_topic_tool.s"

@@ -18,15 +18,18 @@ extern "C"
 // Constants defined in the message
 
 /// Struct defined in msg/RoverRateStatus in the package px4_msgs.
+/**
+  * Rover Rate Status
+ */
 typedef struct px4_msgs__msg__RoverRateStatus
 {
-  /// time since system start (microseconds)
+  /// Time since system start
   uint64_t timestamp;
-  /// Measured yaw rate
+  /// [rad/s] [@range -inf, inf] [@frame NED] Measured yaw rate
   float measured_yaw_rate;
-  /// Yaw rate setpoint that is being tracked (Applied slew rates)
+  /// [rad/s] [@range -inf, inf] [@frame NED] Yaw rate setpoint that is being tracked (Applied slew rates)
   float adjusted_yaw_rate_setpoint;
-  /// Integral of the PID for the closed loop yaw rate controller
+  /// [] [@range -1, 1] Integral of the PID for the closed loop yaw rate controller
   float pid_yaw_rate_integral;
 } px4_msgs__msg__RoverRateStatus;
 

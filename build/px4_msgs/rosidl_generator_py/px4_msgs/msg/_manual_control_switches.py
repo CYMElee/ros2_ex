@@ -168,7 +168,6 @@ class ManualControlSwitches(metaclass=Metaclass_ManualControlSwitches):
         '_photo_switch',
         '_video_switch',
         '_engage_main_motor_switch',
-        '_payload_power_switch',
         '_switch_changes',
     ]
 
@@ -186,14 +185,12 @@ class ManualControlSwitches(metaclass=Metaclass_ManualControlSwitches):
         'photo_switch': 'uint8',
         'video_switch': 'uint8',
         'engage_main_motor_switch': 'uint8',
-        'payload_power_switch': 'uint8',
         'switch_changes': 'uint32',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('uint64'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint64'),  # noqa: E501
-        rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint8'),  # noqa: E501
@@ -225,7 +222,6 @@ class ManualControlSwitches(metaclass=Metaclass_ManualControlSwitches):
         self.photo_switch = kwargs.get('photo_switch', int())
         self.video_switch = kwargs.get('video_switch', int())
         self.engage_main_motor_switch = kwargs.get('engage_main_motor_switch', int())
-        self.payload_power_switch = kwargs.get('payload_power_switch', int())
         self.switch_changes = kwargs.get('switch_changes', int())
 
     def __repr__(self):
@@ -282,8 +278,6 @@ class ManualControlSwitches(metaclass=Metaclass_ManualControlSwitches):
         if self.video_switch != other.video_switch:
             return False
         if self.engage_main_motor_switch != other.engage_main_motor_switch:
-            return False
-        if self.payload_power_switch != other.payload_power_switch:
             return False
         if self.switch_changes != other.switch_changes:
             return False
@@ -488,21 +482,6 @@ class ManualControlSwitches(metaclass=Metaclass_ManualControlSwitches):
             assert value >= 0 and value < 256, \
                 "The 'engage_main_motor_switch' field must be an unsigned integer in [0, 255]"
         self._engage_main_motor_switch = value
-
-    @builtins.property
-    def payload_power_switch(self):
-        """Message field 'payload_power_switch'."""
-        return self._payload_power_switch
-
-    @payload_power_switch.setter
-    def payload_power_switch(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, int), \
-                "The 'payload_power_switch' field must be of type 'int'"
-            assert value >= 0 and value < 256, \
-                "The 'payload_power_switch' field must be an unsigned integer in [0, 255]"
-        self._payload_power_switch = value
 
     @builtins.property
     def switch_changes(self):

@@ -1,0 +1,16 @@
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:[m[K In member function ‘[01m[Kvoid MAV_State::Check_All_State(const Int16&)[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:68:13:[m[K [01;31m[Kerror: [m[K‘[01m[KSET_MODE[m[K’ was not declared in this scope; did you mean ‘[01m[KSET_HOME[m[K’?
+   68 |             [01;31m[KSET_MODE[m[K->publish(Mode);
+      |             [01;31m[K^~~~~~~~[m[K
+      |             [32m[KSET_HOME[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:72:13:[m[K [01;31m[Kerror: [m[K‘[01m[KSET_MODE[m[K’ was not declared in this scope; did you mean ‘[01m[KSET_HOME[m[K’?
+   72 |             [01;31m[KSET_MODE[m[K->publish(Mode);
+      |             [01;31m[K^~~~~~~~[m[K
+      |             [32m[KSET_HOME[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:76:13:[m[K [01;31m[Kerror: [m[K‘[01m[KSET_MODE[m[K’ was not declared in this scope; did you mean ‘[01m[KSET_HOME[m[K’?
+   76 |             [01;31m[KSET_MODE[m[K->publish(Mode);
+      |             [01;31m[K^~~~~~~~[m[K
+      |             [32m[KSET_HOME[m[K
+gmake[2]: *** [CMakeFiles/keyboard_node.dir/build.make:76: CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:229: CMakeFiles/keyboard_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

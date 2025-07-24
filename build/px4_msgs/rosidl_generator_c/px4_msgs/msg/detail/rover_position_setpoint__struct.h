@@ -18,19 +18,22 @@ extern "C"
 // Constants defined in the message
 
 /// Struct defined in msg/RoverPositionSetpoint in the package px4_msgs.
+/**
+  * Rover Position Setpoint
+ */
 typedef struct px4_msgs__msg__RoverPositionSetpoint
 {
-  /// time since system start (microseconds)
+  /// Time since system start
   uint64_t timestamp;
-  /// 2-dimensional position setpoint in NED frame
+  /// [m] [@range -inf, inf] [@frame NED] Target position
   float position_ned[2];
-  /// (Optional) 2-dimensional start position in NED frame used to define the line that the rover will track to position_ned (Defaults to vehicle position)
+  /// [m] [@range -inf, inf] [@frame NED] [@invalid NaN Defaults to vehicle position] Start position which specifies a line for the rover to track
   float start_ned[2];
-  /// (Optional) Specify rover speed (Defaults to maximum speed)
+  /// [m/s] [@range 0, inf] [@invalid NaN Defaults to maximum speed] Cruising speed
   float cruising_speed;
-  /// (Optional) Specify arrival speed (Defaults to zero)
+  /// [m/s] [@range 0, inf] [@invalid NaN Defaults to 0] Speed the rover should arrive at the target with
   float arrival_speed;
-  /// [-pi,pi] from North. Optional, NAN if not set. Mecanum only. (Defaults to vehicle yaw)
+  /// [rad] [@range -pi,pi] [@frame NED] [@invalid NaN Defaults to vehicle yaw] Mecanum only: Specify vehicle yaw during travel
   float yaw;
 } px4_msgs__msg__RoverPositionSetpoint;
 

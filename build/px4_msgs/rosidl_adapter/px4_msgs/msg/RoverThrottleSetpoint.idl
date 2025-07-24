@@ -5,17 +5,21 @@
 
 module px4_msgs {
   module msg {
+    @verbatim (language="comment", text=
+      "Rover Throttle setpoint")
     struct RoverThrottleSetpoint {
       @verbatim (language="comment", text=
-        "time since system start (microseconds)")
+        "Time since system start")
+      @unit (value="us")
       uint64 timestamp;
 
       @verbatim (language="comment", text=
-        "throttle setpoint along body X axis [-1, 1] (Positiv = forwards, Negativ = backwards)")
+        "[] [@range -1 (Backwards), 1 (Forwards)] Throttle setpoint along body X axis")
+      @unit (value="@frame Body")
       float throttle_body_x;
 
       @verbatim (language="comment", text=
-        "throttle setpoint along body Y axis [-1, 1] (Mecanum only, Positiv = right, Negativ = left)")
+        "[] [@range -1 (Left), 1 (Right)] [@frame Body] [@invalid NaN If not mecanum] Mecanum only: Throttle setpoint along body Y axis")
       float throttle_body_y;
     };
   };

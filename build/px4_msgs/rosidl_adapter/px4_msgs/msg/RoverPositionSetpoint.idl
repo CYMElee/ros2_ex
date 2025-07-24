@@ -6,34 +6,32 @@
 module px4_msgs {
   module msg {
     typedef float float__2[2];
+    @verbatim (language="comment", text=
+      "Rover Position Setpoint")
     struct RoverPositionSetpoint {
       @verbatim (language="comment", text=
-        "time since system start (microseconds)")
+        "Time since system start")
+      @unit (value="us")
       uint64 timestamp;
 
       @verbatim (language="comment", text=
-        "2-dimensional position setpoint in NED frame")
-      @unit (value="m")
+        "[m] [@range -inf, inf] [@frame NED] Target position")
       float__2 position_ned;
 
       @verbatim (language="comment", text=
-        "(Optional) 2-dimensional start position in NED frame used to define the line that the rover will track to position_ned (Defaults to vehicle position)")
-      @unit (value="m")
+        "[m] [@range -inf, inf] [@frame NED] [@invalid NaN Defaults to vehicle position] Start position which specifies a line for the rover to track")
       float__2 start_ned;
 
       @verbatim (language="comment", text=
-        "(Optional) Specify rover speed (Defaults to maximum speed)")
-      @unit (value="m/s")
+        "[m/s] [@range 0, inf] [@invalid NaN Defaults to maximum speed] Cruising speed")
       float cruising_speed;
 
       @verbatim (language="comment", text=
-        "(Optional) Specify arrival speed (Defaults to zero)")
-      @unit (value="m/s")
+        "[m/s] [@range 0, inf] [@invalid NaN Defaults to 0] Speed the rover should arrive at the target with")
       float arrival_speed;
 
       @verbatim (language="comment", text=
-        "[-pi,pi] from North. Optional, NAN if not set. Mecanum only. (Defaults to vehicle yaw)")
-      @unit (value="rad")
+        "[rad] [@range -pi,pi] [@frame NED] [@invalid NaN Defaults to vehicle yaw] Mecanum only: Specify vehicle yaw during travel")
       float yaw;
     };
   };

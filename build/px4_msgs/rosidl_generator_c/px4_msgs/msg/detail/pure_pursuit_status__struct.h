@@ -18,19 +18,22 @@ extern "C"
 // Constants defined in the message
 
 /// Struct defined in msg/PurePursuitStatus in the package px4_msgs.
+/**
+  * Pure pursuit status
+ */
 typedef struct px4_msgs__msg__PurePursuitStatus
 {
-  /// time since system start (microseconds)
+  /// Time since system start
   uint64_t timestamp;
-  /// Lookahead distance of pure the pursuit controller
+  /// [@range 0, inf] Lookahead distance of pure the pursuit controller
   float lookahead_distance;
-  /// Target bearing calculated by the pure pursuit controller
+  /// [rad] [@range -pi, pi] [@frame NED] Target bearing calculated by the pure pursuit controller
   float target_bearing;
-  /// Shortest distance from the vehicle to the path (Positiv: Vehicle is on the right hand side with respect to the oriented path vector, Negativ: Left of the path)
+  /// [@range -inf (Left of the path), inf (Right of the path)] Shortest distance from the vehicle to the path
   float crosstrack_error;
-  /// Distance from the vehicle to the current waypoint
+  /// [@range -inf, inf]Distance from the vehicle to the current waypoint
   float distance_to_waypoint;
-  /// Bearing towards current waypoint
+  /// [rad] [@range -pi, pi] [@frame NED]Bearing towards current waypoint
   float bearing_to_waypoint;
 } px4_msgs__msg__PurePursuitStatus;
 

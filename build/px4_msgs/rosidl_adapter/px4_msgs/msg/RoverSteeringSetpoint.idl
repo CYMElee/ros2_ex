@@ -5,13 +5,17 @@
 
 module px4_msgs {
   module msg {
+    @verbatim (language="comment", text=
+      "Rover Steering setpoint")
     struct RoverSteeringSetpoint {
       @verbatim (language="comment", text=
-        "time since system start (microseconds)")
+        "Time since system start")
+      @unit (value="us")
       uint64 timestamp;
 
       @verbatim (language="comment", text=
-        "[-1, 1] Positiv = Turn right, Negativ: Turn left (Ackermann: Steering angle, Differential/Mecanum: Speed difference between the left and right wheels)")
+        "[@range -1 (Left), 1 (Right)] Ackermann: Normalized steering angle, Differential/Mecanum: Normalized speed difference between the left and right wheels")
+      @unit (value="@frame Body")
       float normalized_steering_setpoint;
     };
   };

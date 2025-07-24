@@ -97,10 +97,6 @@ module px4_msgs {
       uint8 engage_main_motor_switch;
 
       @verbatim (language="comment", text=
-        "Payload power switch")
-      uint8 payload_power_switch;
-
-      @verbatim (language="comment", text=
         "number of switch changes")
       uint32 switch_changes;
     };

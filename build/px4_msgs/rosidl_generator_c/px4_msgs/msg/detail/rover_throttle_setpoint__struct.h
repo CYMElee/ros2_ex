@@ -18,13 +18,16 @@ extern "C"
 // Constants defined in the message
 
 /// Struct defined in msg/RoverThrottleSetpoint in the package px4_msgs.
+/**
+  * Rover Throttle setpoint
+ */
 typedef struct px4_msgs__msg__RoverThrottleSetpoint
 {
-  /// time since system start (microseconds)
+  /// Time since system start
   uint64_t timestamp;
-  /// throttle setpoint along body X axis [-1, 1] (Positiv = forwards, Negativ = backwards)
+  /// [] [@range -1 (Backwards), 1 (Forwards)] Throttle setpoint along body X axis
   float throttle_body_x;
-  /// throttle setpoint along body Y axis [-1, 1] (Mecanum only, Positiv = right, Negativ = left)
+  /// [] [@range -1 (Left), 1 (Right)] [@frame Body] [@invalid NaN If not mecanum] Mecanum only: Throttle setpoint along body Y axis
   float throttle_body_y;
 } px4_msgs__msg__RoverThrottleSetpoint;
 

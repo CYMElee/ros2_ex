@@ -2,6 +2,8 @@
 #include <std_msgs/msg/float64_multi_array.hpp>
 #include <std_msgs/msg/float64.hpp>
 #include <Eigen/Dense>
+#include <Eigen/QR>    
+
 
  
 
@@ -64,8 +66,9 @@ public:
     W4 = W4_temp * (BP4x * B4R);
 
     Ar << Ar_temp2, W1, W2, W3, W4;
+    
 
-    ArT = (Ar.transpose()) * ((Ar * Ar.transpose()).inverse());
+    ArT = Ar .completeOrthogonalDecomposition().pseudoInverse();
 
     u1.data.resize(3);
     u2.data.resize(3);

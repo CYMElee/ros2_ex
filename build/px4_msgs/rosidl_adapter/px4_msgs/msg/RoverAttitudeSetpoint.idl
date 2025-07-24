@@ -5,14 +5,16 @@
 
 module px4_msgs {
   module msg {
+    @verbatim (language="comment", text=
+      "Rover Attitude Setpoint")
     struct RoverAttitudeSetpoint {
       @verbatim (language="comment", text=
-        "time since system start (microseconds)")
+        "Time since system start")
+      @unit (value="us")
       uint64 timestamp;
 
       @verbatim (language="comment", text=
-        "Expressed in NED frame")
-      @unit (value="rad")
+        "[rad] [@range -inf, inf] [@frame NED] Yaw setpoint")
       float yaw_setpoint;
     };
   };

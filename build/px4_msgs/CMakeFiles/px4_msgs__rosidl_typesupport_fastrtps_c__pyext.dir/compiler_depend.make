@@ -361,6 +361,9 @@ CMakeFiles/px4_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_p
   rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.h \
   rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__struct.h \
   rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.h \
+  rosidl_generator_c/px4_msgs/msg/detail/dronecan_node_status__type_support.h \
+  rosidl_generator_c/px4_msgs/msg/detail/dronecan_node_status__struct.h \
+  rosidl_generator_c/px4_msgs/msg/detail/dronecan_node_status__functions.h \
   rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__type_support.h \
   rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__struct.h \
   rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.h \
@@ -1423,8 +1426,6 @@ rosidl_generator_c/px4_msgs/msg/detail/lateral_control_configuration__functions.
 
 rosidl_generator_c/px4_msgs/msg/detail/lateral_control_configuration__struct.h:
 
-rosidl_generator_c/px4_msgs/msg/detail/lateral_control_configuration__type_support.h:
-
 rosidl_generator_c/px4_msgs/msg/detail/landing_target_pose__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/satellite_info__type_support.h:
@@ -1438,6 +1439,14 @@ rosidl_generator_c/px4_msgs/msg/detail/landing_target_pose__type_support.h:
 rosidl_generator_c/px4_msgs/msg/detail/rover_attitude_setpoint__type_support.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/landing_target_innovations__functions.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/obstacle_distance__type_support.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/landing_target_innovations__type_support.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/position_setpoint__struct.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/landing_gear_wheel__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/log_message__functions.h:
 
@@ -1514,6 +1523,14 @@ rosidl_generator_c/px4_msgs/msg/detail/action_request__struct.h:
 rosidl_generator_c/px4_msgs/msg/detail/magnetometer_bias_estimate__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/parameter_set_value_request__functions.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/parameter_reset_request__functions.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/landing_target_innovations__struct.h:
+
+/usr/include/python3.10/pythread.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/ulog_stream__functions.h:
 
@@ -1693,6 +1710,10 @@ rosidl_generator_c/px4_msgs/msg/detail/estimator_aid_source1d__type_support.h:
 
 /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
 
+rosidl_generator_c/px4_msgs/msg/detail/lateral_control_configuration__type_support.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/dronecan_node_status__type_support.h:
+
 /usr/include/python3.10/bltinmodule.h:
 
 /usr/include/stdio.h:
@@ -1856,14 +1877,6 @@ rosidl_generator_c/px4_msgs/msg/detail/gimbal_device_information__type_support.h
 /usr/include/stdlib.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/actuator_servos__struct.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/parameter_set_value_request__functions.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/parameter_reset_request__functions.h:
-
-/usr/include/python3.10/pythread.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/landing_target_innovations__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -2050,10 +2063,6 @@ rosidl_generator_c/px4_msgs/msg/detail/tiltrotor_extra_controls__functions.h:
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/obstacle_distance__type_support.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/landing_target_innovations__type_support.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -2555,6 +2564,8 @@ rosidl_generator_c/px4_msgs/msg/detail/wind__type_support.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/navigator_status__struct.h:
 
+rosidl_generator_c/px4_msgs/msg/detail/dronecan_node_status__struct.h:
+
 rosidl_generator_c/px4_msgs/msg/detail/debug_vect__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
@@ -2564,6 +2575,8 @@ rosidl_generator_c/px4_msgs/msg/detail/debug_vect__struct.h:
 rosidl_generator_c/px4_msgs/msg/detail/debug_vect__functions.h:
 
 /usr/include/python3.10/cellobject.h:
+
+rosidl_generator_c/px4_msgs/msg/detail/dronecan_node_status__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/actuator_test__type_support.h:
 
@@ -2848,7 +2861,3 @@ rosidl_generator_c/px4_msgs/msg/detail/iridiumsbd_status__struct.h:
 rosidl_generator_c/px4_msgs/msg/detail/landing_gear__functions.h:
 
 rosidl_generator_c/px4_msgs/msg/detail/landing_gear_wheel__struct.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/position_setpoint__struct.h:
-
-rosidl_generator_c/px4_msgs/msg/detail/landing_gear_wheel__functions.h:

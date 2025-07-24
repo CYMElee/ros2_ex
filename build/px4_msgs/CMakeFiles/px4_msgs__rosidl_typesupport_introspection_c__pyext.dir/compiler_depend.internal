@@ -362,6 +362,9 @@ CMakeFiles/px4_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_genera
  /home/lee/workspace/ros2_ex/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__type_support.h
  /home/lee/workspace/ros2_ex/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__struct.h
  /home/lee/workspace/ros2_ex/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/distance_sensor_mode_change_request__functions.h
+ /home/lee/workspace/ros2_ex/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/dronecan_node_status__type_support.h
+ /home/lee/workspace/ros2_ex/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/dronecan_node_status__struct.h
+ /home/lee/workspace/ros2_ex/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/dronecan_node_status__functions.h
  /home/lee/workspace/ros2_ex/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__type_support.h
  /home/lee/workspace/ros2_ex/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__struct.h
  /home/lee/workspace/ros2_ex/build/px4_msgs/rosidl_generator_c/px4_msgs/msg/detail/ekf2_timestamps__functions.h

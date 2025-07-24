@@ -5,19 +5,20 @@
 
 module px4_msgs {
   module msg {
+    @verbatim (language="comment", text=
+      "Rover Attitude Status")
     struct RoverAttitudeStatus {
       @verbatim (language="comment", text=
-        "time since system start (microseconds)")
+        "Time since system start")
+      @unit (value="us")
       uint64 timestamp;
 
       @verbatim (language="comment", text=
-        "Measured yaw rate")
-      @unit (value="rad/s")
+        "[rad] [@range -pi, pi] [@frame NED]Measured yaw")
       float measured_yaw;
 
       @verbatim (language="comment", text=
-        "Yaw setpoint that is being tracked (Applied slew rates)")
-      @unit (value="rad/s")
+        "[rad] [@range -pi, pi] [@frame NED] Yaw setpoint that is being tracked (Applied slew rates)")
       float adjusted_yaw_setpoint;
     };
   };

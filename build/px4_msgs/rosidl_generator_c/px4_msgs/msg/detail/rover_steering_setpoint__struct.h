@@ -18,11 +18,14 @@ extern "C"
 // Constants defined in the message
 
 /// Struct defined in msg/RoverSteeringSetpoint in the package px4_msgs.
+/**
+  * Rover Steering setpoint
+ */
 typedef struct px4_msgs__msg__RoverSteeringSetpoint
 {
-  /// time since system start (microseconds)
+  /// Time since system start
   uint64_t timestamp;
-  /// [-1, 1] Positiv = Turn right, Negativ: Turn left (Ackermann: Steering angle, Differential/Mecanum: Speed difference between the left and right wheels)
+  /// [@range -1 (Left), 1 (Right)] Ackermann: Normalized steering angle, Differential/Mecanum: Normalized speed difference between the left and right wheels
   float normalized_steering_setpoint;
 } px4_msgs__msg__RoverSteeringSetpoint;
 

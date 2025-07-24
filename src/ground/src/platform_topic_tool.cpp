@@ -17,12 +17,12 @@ public:
 
         // 創建訂閱者，訂閱 /fmu/out/vehicle_local_position
         position_subscription_ = this->create_subscription<px4_msgs::msg::VehicleLocalPosition>(
-            "/MAV5/fmu/out/vehicle_local_position", qos,
+            "/MAV1/fmu/out/vehicle_local_position", qos,
             std::bind(&PositionAttitudeVelocityConverterNode::position_callback, this, std::placeholders::_1));
 
         // 創建訂閱者，訂閱 /fmu/out/vehicle_attitude
         attitude_subscription_ = this->create_subscription<px4_msgs::msg::VehicleAttitude>(
-            "/MAV5/fmu/out/vehicle_attitude", qos,
+            "/MAV1/fmu/out/vehicle_attitude", qos,
             std::bind(&PositionAttitudeVelocityConverterNode::attitude_callback, this, std::placeholders::_1));
 
         // 創建訂閱者，訂閱 /fmu/out/vehicle_angular_velocity

@@ -5,34 +5,35 @@
 
 module px4_msgs {
   module msg {
+    @verbatim (language="comment", text=
+      "Pure pursuit status")
     struct PurePursuitStatus {
       @verbatim (language="comment", text=
-        "time since system start (microseconds)")
+        "Time since system start")
+      @unit (value="us")
       uint64 timestamp;
 
       @verbatim (language="comment", text=
-        "Lookahead distance of pure the pursuit controller")
+        "[@range 0, inf] Lookahead distance of pure the pursuit controller")
       @unit (value="m")
       float lookahead_distance;
 
       @verbatim (language="comment", text=
-        "Target bearing calculated by the pure pursuit controller")
-      @unit (value="rad")
+        "[rad] [@range -pi, pi] [@frame NED] Target bearing calculated by the pure pursuit controller")
       float target_bearing;
 
       @verbatim (language="comment", text=
-        "Shortest distance from the vehicle to the path (Positiv: Vehicle is on the right hand side with respect to the oriented path vector, Negativ: Left of the path)")
+        "[@range -inf (Left of the path), inf (Right of the path)] Shortest distance from the vehicle to the path")
       @unit (value="m")
       float crosstrack_error;
 
       @verbatim (language="comment", text=
-        "Distance from the vehicle to the current waypoint")
+        "[@range -inf, inf]Distance from the vehicle to the current waypoint")
       @unit (value="m")
       float distance_to_waypoint;
 
       @verbatim (language="comment", text=
-        "Bearing towards current waypoint")
-      @unit (value="rad")
+        "[rad] [@range -pi, pi] [@frame NED]Bearing towards current waypoint")
       float bearing_to_waypoint;
     };
   };

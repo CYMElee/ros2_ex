@@ -1,0 +1,43 @@
+[0.001s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[0.001s] [35m[1mConsolidate compiler generated dependencies of target mocap_px4_bridge[0m
+[0.001s] [ 10%] Built target trajectory_generator
+[0.001s] [ 21%] Built target position_controller
+[0.001s] [ 36%] Built target keyboard_node
+[0.001s] [ 42%] [32mBuilding CXX object CMakeFiles/platform_topic_tool.dir/src/platform_topic_tool.cpp.o[0m
+[0.002s] [ 52%] Built target qc_servo
+[0.002s] [ 68%] Built target gripper_controller
+[0.002s] [ 73%] Built target mocap_px4_bridge
+[0.002s] [ 84%] Built target attitude_controller
+[0.002s] [ 94%] Built target wrench_mapper
+[11.900s] [100%] [32m[1mLinking CXX executable platform_topic_tool[0m
+[12.106s] [100%] Built target platform_topic_tool
+[12.113s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[12.114s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/ground
+[12.118s] -- Install configuration: "RelWithDebInfo"
+[12.118s] -- Execute custom install script
+[12.118s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/keyboard_node
+[12.119s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/attitude_controller
+[12.119s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/gripper_controller
+[12.119s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/position_controller
+[12.119s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/qc_servo
+[12.119s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/wrench_mapper
+[12.119s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/trajectory_generator
+[12.119s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/platform_topic_tool
+[12.119s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/mocap_px4_bridge
+[12.119s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/launch/keyboard_launch.xml
+[12.119s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/package_run_dependencies/ground
+[12.119s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/parent_prefix_path/ground
+[12.119s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/ament_prefix_path.sh
+[12.119s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/ament_prefix_path.dsv
+[12.119s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/path.sh
+[12.119s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/path.dsv
+[12.120s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.bash
+[12.120s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.sh
+[12.120s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.zsh
+[12.120s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.dsv
+[12.120s] -- Symlinking: /home/lee/workspace/ros2_ex/install/ground/share/ground/package.dsv
+[12.125s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/packages/ground
+[12.125s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/cmake/groundConfig.cmake
+[12.125s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/cmake/groundConfig-version.cmake
+[12.125s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/package.xml
+[12.126s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/ground

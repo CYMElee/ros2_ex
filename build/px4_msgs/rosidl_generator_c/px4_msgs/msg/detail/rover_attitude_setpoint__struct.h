@@ -18,11 +18,14 @@ extern "C"
 // Constants defined in the message
 
 /// Struct defined in msg/RoverAttitudeSetpoint in the package px4_msgs.
+/**
+  * Rover Attitude Setpoint
+ */
 typedef struct px4_msgs__msg__RoverAttitudeSetpoint
 {
-  /// time since system start (microseconds)
+  /// Time since system start
   uint64_t timestamp;
-  /// Expressed in NED frame
+  /// [rad] [@range -inf, inf] [@frame NED] Yaw setpoint
   float yaw_setpoint;
 } px4_msgs__msg__RoverAttitudeSetpoint;
 

@@ -896,6 +896,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ament_cmake_symlink_install_targets_5_RelWithDebInfo.cmake"
   "ament_cmake_symlink_install_targets_6_RelWithDebInfo.cmake"
   "ament_cmake_symlink_install_targets_7_RelWithDebInfo.cmake"
+  "ament_cmake_symlink_install_targets_8_RelWithDebInfo.cmake"
   "ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ground"
   "ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/ground"
   "ament_cmake_index/share/ament_index/resource_index/packages/ground"
@@ -914,4 +915,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/qc_servo.dir/DependInfo.cmake"
   "CMakeFiles/wrench_mapper.dir/DependInfo.cmake"
   "CMakeFiles/platform_topic_tool.dir/DependInfo.cmake"
+  "CMakeFiles/mocap_px4_bridge.dir/DependInfo.cmake"
   )

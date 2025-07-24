@@ -6,6 +6,7 @@
 /home/lee/workspace/ros2_ex/install/ground/lib/ground/wrench_mapper
 /home/lee/workspace/ros2_ex/install/ground/lib/ground/trajectory_generator
 /home/lee/workspace/ros2_ex/install/ground/lib/ground/platform_topic_tool
+/home/lee/workspace/ros2_ex/install/ground/lib/ground/mocap_px4_bridge
 /home/lee/workspace/ros2_ex/install/ground/share/ground/launch/keyboard_launch.xml
 /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/package_run_dependencies/ground
 /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/parent_prefix_path/ground

@@ -18,21 +18,24 @@ extern "C"
 // Constants defined in the message
 
 /// Struct defined in msg/RoverVelocityStatus in the package px4_msgs.
+/**
+  * Rover Velocity Status
+ */
 typedef struct px4_msgs__msg__RoverVelocityStatus
 {
-  /// time since system start (microseconds)
+  /// Time since system start
   uint64_t timestamp;
-  /// Measured speed in body x direction. Positiv: forwards, Negativ: backwards
+  /// [m/s] [@range -inf (Backwards), inf (Forwards)] [@frame Body] Measured speed in body x direction
   float measured_speed_body_x;
-  /// Post slew rate speed setpoint in body x direction. Positiv: forwards, Negativ: backwards
+  /// [m/s] [@range -inf (Backwards), inf (Forwards)] [@frame Body] Speed setpoint in body x direction that is being tracked (Applied slew rates)
   float adjusted_speed_body_x_setpoint;
-  /// Integral of the PID for the closed loop controller of the speed in body x direction
+  /// [] [@range -1, 1] Integral of the PID for the closed loop controller of the speed in body x direction
   float pid_throttle_body_x_integral;
-  /// Measured speed in body y direction. Positiv: right, Negativ: left (Mecanum only)
+  /// [m/s] [@range -inf (Left), inf (Right)] [@frame Body] [@invalid NaN If not mecanum] Mecanum only: Measured speed in body y direction
   float measured_speed_body_y;
-  /// Post slew rate speed setpoint in body y direction. Positiv: right, Negativ: left (Mecanum only)
+  /// [m/s] [@range -inf (Left), inf (Right)] [@frame Body] [@invalid NaN If not mecanum] Mecanum only: Speed setpoint in body y direction that is being tracked (Applied slew rates)
   float adjusted_speed_body_y_setpoint;
-  /// Integral of the PID for the closed loop controller of the speed in body y direction (Mecanum only)
+  /// [] [@range -1, 1] Mecanum only: Integral of the PID for the closed loop controller of the speed in body y direction
   float pid_throttle_body_y_integral;
 } px4_msgs__msg__RoverVelocityStatus;
 

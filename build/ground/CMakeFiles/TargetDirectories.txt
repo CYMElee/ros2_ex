@@ -8,6 +8,7 @@
 /home/lee/workspace/ros2_ex/build/ground/CMakeFiles/qc_servo.dir
 /home/lee/workspace/ros2_ex/build/ground/CMakeFiles/wrench_mapper.dir
 /home/lee/workspace/ros2_ex/build/ground/CMakeFiles/platform_topic_tool.dir
+/home/lee/workspace/ros2_ex/build/ground/CMakeFiles/mocap_px4_bridge.dir
 /home/lee/workspace/ros2_ex/build/ground/CMakeFiles/test.dir
 /home/lee/workspace/ros2_ex/build/ground/CMakeFiles/edit_cache.dir
 /home/lee/workspace/ros2_ex/build/ground/CMakeFiles/rebuild_cache.dir
