@@ -54,7 +54,7 @@ public:
 
         // 初始化數據儲存
         latest_position_.x = latest_position_.y = latest_position_.z = 0.0;
-        latest_velocity_.vx = latest_velocity_.vy = latest_velocity_.vz = 0.0;
+        latest_position_.vx = latest_position_.vy = latest_position_.vz = 0.0;
         latest_attitude_.q[0] = 1.0; // w
         latest_attitude_.q[1] = latest_attitude_.q[2] = latest_attitude_.q[3] = 0.0; // x, y, z
         latest_angular_velocity_.xyz[0] = latest_angular_velocity_.xyz[1] = latest_angular_velocity_.xyz[2] = 0.0;
@@ -70,13 +70,6 @@ public:
 private:
     void position_callback(const px4_msgs::msg::VehicleLocalPosition::SharedPtr msg)
     {
-        // 檢查數據有效性
-        if (!msg->xy_valid || !msg->z_valid || !msg->v_xy_valid || !msg->v_z_valid)
-        {
-            RCLCPP_WARN(this->get_logger(), "Invalid position or velocity data received!");
-            return;
-        }
-
         // 儲存最新的位置和速度數據
         latest_position_ = *msg;
         latest_position_valid_ = true;
@@ -98,14 +91,7 @@ private:
 
     void timer_callback()
     {
-        // 檢查是否有有效的最新數據
-        if (!latest_position_valid_ || !latest_attitude_valid_ || !latest_angular_velocity_valid_)
-        {
-            RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000, 
-                                 "Waiting for valid data: position=%d, attitude=%d, angular_velocity=%d",
-                                 latest_position_valid_, latest_attitude_valid_, latest_angular_velocity_valid_);
-            return;
-        }
+
 
         // 處理位置和速度 (NED 到 ENU)
         position_msg_.data[0] = latest_position_.y;      // ENU x = NED y (East)
@@ -138,15 +124,7 @@ private:
         omega_msg_.data[2] = omega_enu[2]; // wz (yaw rate)
         omega_publisher_->publish(omega_msg_);
 
-        // 記錄發布的數據（用於調試）
-        RCLCPP_DEBUG(this->get_logger(), "Published ENU position: x=%.2f, y=%.2f, z=%.2f",
-                     position_msg_.data[0], position_msg_.data[1], position_msg_.data[2]);
-        RCLCPP_DEBUG(this->get_logger(), "Published ENU velocity: vx=%.2f, vy=%.2f, vz=%.2f",
-                     velocity_msg_.data[0], velocity_msg_.data[1], velocity_msg_.data[2]);
-        RCLCPP_DEBUG(this->get_logger(), "Published ENU attitude: q_w=%.2f, q_x=%.2f, q_y=%.2f, q_z=%.2f",
-                     attitude_msg_.data[0], attitude_msg_.data[1], attitude_msg_.data[2], attitude_msg_.data[3]);
-        RCLCPP_DEBUG(this->get_logger(), "Published ENU omega: wx=%.2f, wy=%.2f, wz=%.2f",
-                     omega_msg_.data[0], omega_msg_.data[1], omega_msg_.data[2]);
+
     }
 
     // 成員變數

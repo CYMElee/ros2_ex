@@ -1,0 +1,26 @@
+[0.000s] Invoking command in '/home/lee/workspace/ros2_ex/build/MAV1': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/MAV1 -- -j32 -l32
+[0.001s] [35m[1mConsolidate compiler generated dependencies of target MAV1[0m
+[0.002s] [ 50%] [32mBuilding CXX object CMakeFiles/MAV1.dir/node/main.cpp.o[0m
+[13.123s] [100%] [32m[1mLinking CXX executable MAV1[0m
+[13.341s] [100%] Built target MAV1
+[13.349s] Invoked command in '/home/lee/workspace/ros2_ex/build/MAV1' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/MAV1 -- -j32 -l32
+[13.349s] Invoking command in '/home/lee/workspace/ros2_ex/build/MAV1': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/MAV1
+[13.353s] -- Install configuration: "RelWithDebInfo"
+[13.353s] -- Execute custom install script
+[13.353s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV1/lib/MAV1/MAV1
+[13.354s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV1/share/ament_index/resource_index/package_run_dependencies/MAV1
+[13.354s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV1/share/ament_index/resource_index/parent_prefix_path/MAV1
+[13.354s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/environment/ament_prefix_path.sh
+[13.354s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/environment/ament_prefix_path.dsv
+[13.354s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/environment/path.sh
+[13.354s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/environment/path.dsv
+[13.354s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/local_setup.bash
+[13.354s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/local_setup.sh
+[13.354s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/local_setup.zsh
+[13.354s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/local_setup.dsv
+[13.354s] -- Symlinking: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/package.dsv
+[13.358s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV1/share/ament_index/resource_index/packages/MAV1
+[13.358s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/cmake/MAV1Config.cmake
+[13.358s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/cmake/MAV1Config-version.cmake
+[13.358s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV1/share/MAV1/package.xml
+[13.359s] Invoked command in '/home/lee/workspace/ros2_ex/build/MAV1' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/vrpn/install/vrpn_mocap:/home/lee/workspace/vrpn/install/mocap_px4_bridge:/home/lee/workspace/vrpn/install/px4_msgs:/home/lee/workspace/vrpn/install/mocap_optitrack:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/MAV1

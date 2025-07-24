@@ -30,7 +30,7 @@ Matrix<double, 3, 3> E;
 Vector3d eR;
 Vector3d eW;
 
-Quaterniond quaternion;
+Quaterniond quaternion1, quaternion2;
 
 class AttitudeController : public rclcpp::Node
 {
@@ -42,13 +42,13 @@ public:
     er.data.resize(3);
 
     // Initialize matrices
-    KR << 15, 0, 0,
-          0, 15, 0,
-          0, 0, 10;
-
-    Kw << 9, 0, 0,
-          0, 9, 0,
+    KR << 5, 0, 0,
+          0, 5, 0,
           0, 0, 3;
+
+    Kw << 3, 0, 0,
+          0, 3, 0,
+          0, 0, 1;
 
     IB << IBxy, 0, 0,
           0, IBxy, 0,
@@ -86,14 +86,14 @@ public:
 private:
   void desire_attitude_cb(const std_msgs::msg::Float64MultiArray::SharedPtr msg)
   {
-    quaternion = AngleAxisd(msg->data[0], Vector3d(msg->data[1], msg->data[2], msg->data[3]));
-    Rr = quaternion.toRotationMatrix();
+    quaternion1 = AngleAxisd(msg->data[0], Vector3d(msg->data[1], msg->data[2], msg->data[3]));
+    Rr = quaternion1.toRotationMatrix();
   }
 
   void measure_attitude_cb(const std_msgs::msg::Float64MultiArray::SharedPtr msg)
   {
-    quaternion = AngleAxisd(msg->data[0], Vector3d(msg->data[1], msg->data[2], msg->data[3]));
-    R = quaternion.toRotationMatrix();
+    quaternion2 = AngleAxisd(msg->data[0], Vector3d(msg->data[1], msg->data[2], msg->data[3]));
+    R = quaternion2.toRotationMatrix();
   }
 
   void desire_omega_cb(const std_msgs::msg::Float64MultiArray::SharedPtr msg)

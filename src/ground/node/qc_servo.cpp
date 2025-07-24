@@ -50,8 +50,8 @@ void MAV::Thrust(std_msgs::msg::Float64MultiArray fd, int i)
     double f = (fd_e.norm() / 4); // Because we have 4 motors for each sd420
 
     T.data[0] = p1 * pow(f, 6) + p2 * pow(f, 5) + p3 * pow(f, 4) + p4 * pow(f, 3) + p5 * pow(f, 2) + p6 * pow(f, 1) + p7; // Net thrust (PWM 0~1)
-    if (T.data[0] >= 1.0)
-        T.data[0] = 1.0;
+    if (T.data[0] >= 0.3)
+        T.data[0] = 0.3;
     if (T.data[0] <= 0.1)
         T.data[0] = 0.1;
 

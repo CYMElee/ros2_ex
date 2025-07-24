@@ -1,9 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target topic_tool[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/topic_tool.dir/src/topic_tool.cpp.o[0m
-[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:[m[K In member function ‘[01m[Kvoid MocapNode::run()[m[K’:
-[01m[K/home/lee/workspace/ros2_ex/src/sensor/src/topic_tool.cpp:45:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass MocapNode[m[K’ has no member named ‘[01m[Kget_shared_ptr[m[K’
-   45 |       rclcpp::spin_some(this->[01;31m[Kget_shared_ptr[m[K());
-      |                               [01;31m[K^~~~~~~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/topic_tool.dir/build.make:76: CMakeFiles/topic_tool.dir/src/topic_tool.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/topic_tool.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

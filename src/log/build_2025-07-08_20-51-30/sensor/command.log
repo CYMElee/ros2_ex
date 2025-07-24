@@ -1,2 +1,0 @@
-Invoking command in '/home/lee/workspace/ros2_ex/src/build/sensor': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/src/build/sensor -- -j32 -l32
-Invoked command in '/home/lee/workspace/ros2_ex/src/build/sensor' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/src/build/sensor -- -j32 -l32

@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-44b7c79779ed18a0d77c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "MAV",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "MAV_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MAV_uninstall-RelWithDebInfo-b25e02b686036a46513e.json",
+					"name" : "MAV_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mav1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav1-RelWithDebInfo-d1913bc5068dbc9787c8.json",
+					"name" : "mav1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mav2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav2-RelWithDebInfo-2177f7d18ce2c4b72225.json",
+					"name" : "mav2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mav3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav3-RelWithDebInfo-0d6c66772ac2ff435d8e.json",
+					"name" : "mav3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "mav4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mav4-RelWithDebInfo-2a1fc160cae47e469415.json",
+					"name" : "mav4",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-cf2f2b973ef1d760a35c.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/lee/workspace/ros2_ex/build/MAV",
+		"source" : "/home/lee/workspace/ros2_ex/src/MAV"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

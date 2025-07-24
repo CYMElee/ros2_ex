@@ -4,7 +4,7 @@
 #include "Eigen/Dense"
 
 #define G 9.81 // gravity
-#define M_main 1.0 // kg
+#define M_main 1.5 // kg
 #define M_qc 1.5 // kg
 
 using namespace Eigen;
@@ -41,13 +41,13 @@ public:
     T.data.resize(3);
 
     // Control gains
-    Kp << 10, 0, 0,
-          0, 10, 0,
-          0, 0, 3;
+    Kp << 3, 0, 0,
+          0, 3, 0,
+          0, 0, 2;
 
-    Kv << 9, 0, 0,
-          0, 9, 0,
-          0, 0, 2.5;
+    Kv << 2, 0, 0,
+          0, 2, 0,
+          0, 0, 1;
 
     Ki << 1, 0, 0,
           0, 1, 0,
@@ -89,16 +89,12 @@ public:
         std::bind(&PositionController::control_loop, this));
 
     RCLCPP_INFO_ONCE(this->get_logger(), "SUCCESS LAUNCH POSITION CONTROLLER");
-    RCLCPP_INFO_ONCE(this->get_logger(), "RECEIVE POSITION");
   }
 
 private:
   void desire_position_cb(const std_msgs::msg::Float64MultiArray::SharedPtr msg)
   {
-    if (msg->data.size() != 3) {
-      RCLCPP_WARN(this->get_logger(), "Invalid desire_position data size: expected 3, got %zu", msg->data.size());
-      return;
-    }
+
     pd(0) = msg->data[0]; // x
     pd(1) = msg->data[1]; // y
     pd(2) = msg->data[2]; // z
@@ -106,10 +102,7 @@ private:
 
   void desire_velocity_cb(const std_msgs::msg::Float64MultiArray::SharedPtr msg)
   {
-    if (msg->data.size() != 3) {
-      RCLCPP_WARN(this->get_logger(), "Invalid desire_velocity data size: expected 3, got %zu", msg->data.size());
-      return;
-    }
+
     pd_dot(0) = msg->data[0]; // vx
     pd_dot(1) = msg->data[1]; // vy
     pd_dot(2) = msg->data[2]; // vz
@@ -117,10 +110,7 @@ private:
 
   void measure_position_cb(const std_msgs::msg::Float64MultiArray::SharedPtr msg)
   {
-    if (msg->data.size() != 3) {
-      RCLCPP_WARN(this->get_logger(), "Invalid measure_position data size: expected 3, got %zu", msg->data.size());
-      return;
-    }
+
     p(0) = msg->data[0]; // x
     p(1) = msg->data[1]; // y
     p(2) = msg->data[2]; // z
@@ -128,10 +118,7 @@ private:
 
   void measure_velocity_cb(const std_msgs::msg::Float64MultiArray::SharedPtr msg)
   {
-    if (msg->data.size() != 3) {
-      RCLCPP_WARN(this->get_logger(), "Invalid measure_velocity data size: expected 3, got %zu", msg->data.size());
-      return;
-    }
+
     p_dot(0) = msg->data[0]; // vx
     p_dot(1) = msg->data[1]; // vy
     p_dot(2) = msg->data[2]; // vz
@@ -139,10 +126,7 @@ private:
 
   void measure_attitude_cb(const std_msgs::msg::Float64MultiArray::SharedPtr msg)
   {
-    if (msg->data.size() != 4) {
-      RCLCPP_WARN(this->get_logger(), "Invalid measure_attitude data size: expected 4, got %zu", msg->data.size());
-      return;
-    }
+
     quaternion = Quaterniond(msg->data[0], msg->data[1], msg->data[2], msg->data[3]); // q_w, q_x, q_y, q_z
     quaternion.normalize(); // 確保四元數規範化
     R = quaternion.toRotationMatrix();
