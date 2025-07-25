@@ -1,0 +1,30 @@
+[0.000s] Invoking command in '/home/lee/workspace/ros2_ex/build/MAV': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/MAV -- -j32 -l32
+[0.001s] [ 25%] Built target mav1
+[0.002s] [ 50%] Built target mav3
+[0.002s] [ 75%] Built target mav2
+[0.002s] [100%] Built target mav4
+[0.002s] Invoked command in '/home/lee/workspace/ros2_ex/build/MAV' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/MAV -- -j32 -l32
+[0.002s] Invoking command in '/home/lee/workspace/ros2_ex/build/MAV': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/MAV
+[0.002s] -- Install configuration: "RelWithDebInfo"
+[0.002s] -- Execute custom install script
+[0.002s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/lib/MAV/mav1
+[0.002s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/lib/MAV/mav2
+[0.002s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/lib/MAV/mav3
+[0.002s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/lib/MAV/mav4
+[0.002s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/launch/mav_launch.xml
+[0.003s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/ament_index/resource_index/package_run_dependencies/MAV
+[0.003s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/ament_index/resource_index/parent_prefix_path/MAV
+[0.003s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/environment/ament_prefix_path.sh
+[0.003s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/environment/ament_prefix_path.dsv
+[0.003s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/environment/path.sh
+[0.003s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/environment/path.dsv
+[0.003s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/local_setup.bash
+[0.003s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/local_setup.sh
+[0.003s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/local_setup.zsh
+[0.003s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/local_setup.dsv
+[0.003s] -- Symlinking: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/package.dsv
+[0.003s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/ament_index/resource_index/packages/MAV
+[0.003s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/cmake/MAVConfig.cmake
+[0.003s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/cmake/MAVConfig-version.cmake
+[0.003s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/package.xml
+[0.003s] Invoked command in '/home/lee/workspace/ros2_ex/build/MAV' returned '0': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/MAV

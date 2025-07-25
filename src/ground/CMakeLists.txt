@@ -48,7 +48,7 @@ ament_target_dependencies(wrench_mapper rclcpp std_msgs)
 
 
 add_executable(platform_topic_tool src/platform_topic_tool.cpp)
-ament_target_dependencies(platform_topic_tool rclcpp std_msgs px4_msgs)
+ament_target_dependencies(platform_topic_tool rclcpp std_msgs px4_msgs tf2)
 
 
 add_executable(mocap_px4_bridge src/mocap_px4_bridge.cpp)

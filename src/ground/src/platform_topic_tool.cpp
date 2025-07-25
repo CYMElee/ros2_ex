@@ -3,6 +3,8 @@
 #include "px4_msgs/msg/vehicle_attitude.hpp"
 #include "px4_msgs/msg/vehicle_angular_velocity.hpp"
 #include "std_msgs/msg/float64_multi_array.hpp"
+#include "tf2/LinearMath/Quaternion.h"
+#include "tf2/LinearMath/Matrix3x3.h"
 #include "Eigen/Dense"
 #include "cmath"
 
@@ -38,6 +40,9 @@ public:
         attitude_publisher_ = this->create_publisher<std_msgs::msg::Float64MultiArray>(
             "/platform/measure_attitude", qos);
 
+        attitude_eul_publisher_ = this->create_publisher<std_msgs::msg::Float64MultiArray>(
+            "/platform/measure_attitude_eul", qos);
+
         // 創建發布者，發布到 /platform/measure_velocity
         velocity_publisher_ = this->create_publisher<std_msgs::msg::Float64MultiArray>(
             "/platform/measure_velocity", qos);
@@ -49,6 +54,7 @@ public:
         // 初始化發布消息
         position_msg_.data.resize(3); // x, y, z 三個分量
         attitude_msg_.data.resize(4); // q_w, q_x, q_y, q_z 四個分量
+        attitude_eul_msg_.data.resize(3);       
         velocity_msg_.data.resize(3); // vx, vy, vz 三個分量
         omega_msg_.data.resize(3);    // wx, wy, wz 三個分量
 
@@ -106,13 +112,22 @@ private:
 
         // 處理姿態 (NED 到 NWU)
         Eigen::Quaterniond q_ned(latest_attitude_.q[0], latest_attitude_.q[1], latest_attitude_.q[2], latest_attitude_.q[3]);
-        q_ned.normalize(); 
+        //q_ned.normalize(); 
     
         attitude_msg_.data[0] = q_ned.w(); // q_w
         attitude_msg_.data[1] = q_ned.x(); // q_x
         attitude_msg_.data[2] = -q_ned.y(); // q_y
         attitude_msg_.data[3] = -q_ned.z(); // q_z
         attitude_publisher_->publish(attitude_msg_);
+
+        tf2::Quaternion q_nwu(attitude_msg_.data[1],attitude_msg_.data[2],attitude_msg_.data[3],attitude_msg_.data[0]);
+        tf2::Matrix3x3 mat(q_nwu);
+       
+
+
+        mat.getRPY(attitude_eul_msg_.data[2], attitude_eul_msg_.data[1],  attitude_eul_msg_.data[0]); 
+        attitude_eul_publisher_->publish(attitude_eul_msg_);
+
 
         // 處理角速度 (FRD 到 NWU)
         Eigen::Vector3d omega_frd(latest_angular_velocity_.xyz[0], latest_angular_velocity_.xyz[1], latest_angular_velocity_.xyz[2]);
@@ -130,10 +145,13 @@ private:
     rclcpp::Subscription<px4_msgs::msg::VehicleAngularVelocity>::SharedPtr angular_velocity_subscription_;
     rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr position_publisher_;
     rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr attitude_publisher_;
+    rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr attitude_eul_publisher_;
+
     rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr velocity_publisher_;
     rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr omega_publisher_;
     std_msgs::msg::Float64MultiArray position_msg_;
     std_msgs::msg::Float64MultiArray attitude_msg_;
+    std_msgs::msg::Float64MultiArray attitude_eul_msg_;
     std_msgs::msg::Float64MultiArray velocity_msg_;
     std_msgs::msg::Float64MultiArray omega_msg_;
     px4_msgs::msg::VehicleLocalPosition latest_position_;

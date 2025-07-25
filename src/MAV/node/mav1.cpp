@@ -102,23 +102,22 @@ private:
 
     void mav_pose(const px4_msgs::msg::VehicleAttitude::SharedPtr msg) {
         // Store original NED quaternion
-        Eigen::Quaterniond q_ned(msg->q[0], msg->q[1], msg->q[2], msg->q[3]);
-        q_ned.normalize(); // Ensure quaternion is normalized
+        Eigen::Quaterniond q_frd(msg->q[0], msg->q[1], msg->q[2], msg->q[3]);
+       
 
-        // Define NED to ENU rotation quaternion (90° around Z + 180° around X)
-        Eigen::Quaterniond q_ned_to_enu(cos(M_PI / 4.0), sin(M_PI / 4.0), 0.0, 0.0); // 90° around Z
-        Eigen::Quaterniond q_x_180(0.0, 1.0, 0.0, 0.0); // 180° around X
-        q_ned_to_enu = q_x_180 * q_ned_to_enu;
+        Eigen::Quaterniond q_nwu;
+        q_nwu.w() = q_frd.w();
+        q_nwu.x() = q_frd.x();
+        q_nwu.y() = -q_frd.y();
+        q_nwu.z() = -q_frd.z();
+    
 
-        // Convert to ENU
-        Eigen::Quaterniond q_enu = q_ned_to_enu * q_ned * q_ned_to_enu.conjugate();
-
-        // Store in mav_pose_ (ENU)
+      
         mav_pose_ = *msg;
-        mav_pose_.q[0] = q_enu.w();
-        mav_pose_.q[1] = q_enu.x();
-        mav_pose_.q[2] = q_enu.y();
-        mav_pose_.q[3] = q_enu.z();
+        mav_pose_.q[0] = q_nwu.w();
+        mav_pose_.q[1] = q_nwu.x();
+        mav_pose_.q[2] = q_nwu.y();
+        mav_pose_.q[3] = q_nwu.z();
     }
 
     void T_sub(const std_msgs::msg::Float64MultiArray::SharedPtr msg) {
@@ -161,14 +160,15 @@ private:
         mav_pose_desire = Eigen::AngleAxisd(eulerAngles_mav_des(0), Eigen::Vector3d::UnitZ()) *
                           Eigen::AngleAxisd(eulerAngles_mav_des(1), Eigen::Vector3d::UnitY()) *
                           Eigen::AngleAxisd(eulerAngles_mav_des(2), Eigen::Vector3d::UnitX());
-        mav_pose_desire.normalize(); // Ensure normalization
+        mav_pose_desire.normalize(); 
 
-        // Convert desired pose back to NED for publishing
-        Eigen::Quaterniond q_enu_to_ned(cos(M_PI / 4.0), -sin(M_PI / 4.0), 0.0, 0.0); // Reverse 90° around Z
-        Eigen::Quaterniond q_x_180(0.0, 1.0, 0.0, 0.0); // 180° around X
-        q_enu_to_ned = q_x_180 * q_enu_to_ned;
-        Eigen::Quaterniond mav_pose_desire_ned = q_enu_to_ned * mav_pose_desire * q_enu_to_ned.conjugate();
-        mav_pose_desire_ned.normalize(); // Ensure normalization
+
+        Eigen::Quaterniond mav_pose_desire_ned;
+
+        mav_pose_desire_ned.w() = mav_pose_desire.w();
+        mav_pose_desire_ned.x() = mav_pose_desire.x();
+        mav_pose_desire_ned.y() = -mav_pose_desire.y();
+        mav_pose_desire_ned.z() = -mav_pose_desire.z();
 
         Eul_cmd_.data[0] = eulerAngles_mav_des(0);
         Eul_cmd_.data[1] = eulerAngles_mav_des(1);

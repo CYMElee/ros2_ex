@@ -1,0 +1,10 @@
+[35m[1mConsolidate compiler generated dependencies of target platform_topic_tool[0m
+[ 10%] Built target qc_servo
+[ 21%] Built target gripper_controller
+[ 36%] Built target wrench_mapper
+[ 42%] Built target trajectory_generator
+[ 52%] Built target position_controller
+[ 63%] Built target mocap_px4_bridge
+[ 78%] Built target keyboard_node
+[ 89%] Built target attitude_controller
+[ 94%] [32mBuilding CXX object CMakeFiles/platform_topic_tool.dir/src/platform_topic_tool.cpp.o[0m

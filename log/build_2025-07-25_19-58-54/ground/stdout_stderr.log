@@ -1,0 +1,38 @@
+[35m[1mConsolidate compiler generated dependencies of target platform_topic_tool[0m
+[ 31%] Built target gripper_controller
+[ 31%] Built target wrench_mapper
+[ 21%] Built target attitude_controller
+[ 42%] Built target qc_servo
+[ 52%] Built target trajectory_generator
+[ 63%] Built target mocap_px4_bridge
+[ 78%] Built target keyboard_node
+[ 89%] Built target position_controller
+[100%] Built target platform_topic_tool
+-- Install configuration: "RelWithDebInfo"
+-- Execute custom install script
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/keyboard_node
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/attitude_controller
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/gripper_controller
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/position_controller
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/qc_servo
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/wrench_mapper
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/trajectory_generator
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/platform_topic_tool
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/mocap_px4_bridge
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/launch/ground_launch.xml
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/launch/topic_tool_launch.xml
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/package_run_dependencies/ground
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/parent_prefix_path/ground
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/path.sh
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/path.dsv
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.bash
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.sh
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.zsh
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.dsv
+-- Symlinking: /home/lee/workspace/ros2_ex/install/ground/share/ground/package.dsv
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/packages/ground
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/cmake/groundConfig.cmake
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/cmake/groundConfig-version.cmake
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/package.xml
