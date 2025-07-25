@@ -17,12 +17,12 @@ public:
 
         // 創建訂閱者，訂閱 /fmu/out/vehicle_local_position
         position_subscription_ = this->create_subscription<px4_msgs::msg::VehicleLocalPosition>(
-            "/MAV1/fmu/out/vehicle_local_position", qos,
+            "/MAV5/fmu/out/vehicle_local_position", qos,
             std::bind(&PositionAttitudeVelocityConverterNode::position_callback, this, std::placeholders::_1));
 
         // 創建訂閱者，訂閱 /fmu/out/vehicle_attitude
         attitude_subscription_ = this->create_subscription<px4_msgs::msg::VehicleAttitude>(
-            "/MAV1/fmu/out/vehicle_attitude", qos,
+            "/MAV5/fmu/out/vehicle_attitude", qos,
             std::bind(&PositionAttitudeVelocityConverterNode::attitude_callback, this, std::placeholders::_1));
 
         // 創建訂閱者，訂閱 /fmu/out/vehicle_angular_velocity
@@ -72,56 +72,53 @@ private:
     {
         // 儲存最新的位置和速度數據
         latest_position_ = *msg;
-        latest_position_valid_ = true;
+      
     }
 
     void attitude_callback(const px4_msgs::msg::VehicleAttitude::SharedPtr msg)
     {
         // 儲存最新的姿態數據
         latest_attitude_ = *msg;
-        latest_attitude_valid_ = true;
+       
     }
 
     void angular_velocity_callback(const px4_msgs::msg::VehicleAngularVelocity::SharedPtr msg)
     {
         // 儲存最新的角速度數據
         latest_angular_velocity_ = *msg;
-        latest_angular_velocity_valid_ = true;
+        
     }
 
     void timer_callback()
     {
 
 
-        // 處理位置和速度 (NED 到 ENU)
-        position_msg_.data[0] = latest_position_.y;      // ENU x = NED y (East)
-        position_msg_.data[1] = latest_position_.x;      // ENU y = NED x (North)
-        position_msg_.data[2] = -latest_position_.z;     // ENU z = -NED z (Up)
+        // 處理位置和速度 (NED 到 NWU)
+        position_msg_.data[0] = latest_position_.x;      
+        position_msg_.data[1] = -latest_position_.y;   
+        position_msg_.data[2] = -latest_position_.z;     
         position_publisher_->publish(position_msg_);
 
-        velocity_msg_.data[0] = latest_position_.vy;     // ENU vx = NED vy (East)
-        velocity_msg_.data[1] = latest_position_.vx;     // ENU vy = NED vx (North)
-        velocity_msg_.data[2] = -latest_position_.vz;    // ENU vz = -NED vz (Up)
+        velocity_msg_.data[0] = latest_position_.vx;     
+        velocity_msg_.data[1] = -latest_position_.vy;     
+        velocity_msg_.data[2] = -latest_position_.vz;  
         velocity_publisher_->publish(velocity_msg_);
 
-        // 處理姿態 (NED 到 ENU)
+        // 處理姿態 (NED 到 NWU)
         Eigen::Quaterniond q_ned(latest_attitude_.q[0], latest_attitude_.q[1], latest_attitude_.q[2], latest_attitude_.q[3]);
-        q_ned.normalize(); // 確保四元數規範化
-        Eigen::Quaterniond q_rot(cos(M_PI / 2.0), 0.0, 0.0, sin(M_PI / 2.0)); // 繞 z 軸旋轉 180 度
-        Eigen::Quaterniond q_enu = q_rot * q_ned * q_rot.conjugate();
-        attitude_msg_.data[0] = q_enu.w(); // q_w
-        attitude_msg_.data[1] = q_enu.x(); // q_x
-        attitude_msg_.data[2] = q_enu.y(); // q_y
-        attitude_msg_.data[3] = q_enu.z(); // q_z
+        q_ned.normalize(); 
+    
+        attitude_msg_.data[0] = q_ned.w(); // q_w
+        attitude_msg_.data[1] = q_ned.x(); // q_x
+        attitude_msg_.data[2] = -q_ned.y(); // q_y
+        attitude_msg_.data[3] = -q_ned.z(); // q_z
         attitude_publisher_->publish(attitude_msg_);
 
-        // 處理角速度 (FRD 到 ENU)
+        // 處理角速度 (FRD 到 NWU)
         Eigen::Vector3d omega_frd(latest_angular_velocity_.xyz[0], latest_angular_velocity_.xyz[1], latest_angular_velocity_.xyz[2]);
-        Eigen::Matrix3d R_frd_to_enu = q_rot.toRotationMatrix(); // 旋轉矩陣
-        Eigen::Vector3d omega_enu = R_frd_to_enu * omega_frd;
-        omega_msg_.data[0] = omega_enu[0]; // wx (roll rate)
-        omega_msg_.data[1] = omega_enu[1]; // wy (pitch rate)
-        omega_msg_.data[2] = omega_enu[2]; // wz (yaw rate)
+        omega_msg_.data[0] = omega_frd[0]; 
+        omega_msg_.data[1] = -omega_frd[1];
+        omega_msg_.data[2] = -omega_frd[2]; 
         omega_publisher_->publish(omega_msg_);
 
 
@@ -142,9 +139,7 @@ private:
     px4_msgs::msg::VehicleLocalPosition latest_position_;
     px4_msgs::msg::VehicleAttitude latest_attitude_;
     px4_msgs::msg::VehicleAngularVelocity latest_angular_velocity_;
-    bool latest_position_valid_ = false;
-    bool latest_attitude_valid_ = false;
-    bool latest_angular_velocity_valid_ = false;
+
     rclcpp::TimerBase::SharedPtr timer_;
 };
 

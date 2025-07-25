@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target trajectory_generator[0m
+[ 21%] Built target gripper_controller
+[ 21%] Built target position_controller
+[ 26%] [32mBuilding CXX object CMakeFiles/qc_servo.dir/node/qc_servo.cpp.o[0m
+[ 36%] Built target attitude_controller
+[ 52%] Built target keyboard_node
+[ 63%] Built target wrench_mapper
+[ 73%] Built target trajectory_generator
+[ 84%] Built target mocap_px4_bridge
+[ 89%] [32mBuilding CXX object CMakeFiles/platform_topic_tool.dir/src/platform_topic_tool.cpp.o[0m
+[01m[K/home/lee/workspace/ros2_ex/src/ground/node/qc_servo.cpp:35:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K/[m[K’ token
+   35 | [01;31m[K/[m[Kplatform/desire_position
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/qc_servo.dir/build.make:76: CMakeFiles/qc_servo.dir/node/qc_servo.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:283: CMakeFiles/qc_servo.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 94%] [32m[1mLinking CXX executable platform_topic_tool[0m
+[ 94%] Built target platform_topic_tool
+gmake: *** [Makefile:146: all] Error 2

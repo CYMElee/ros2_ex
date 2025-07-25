@@ -120,7 +120,7 @@ private:
     // In hovering mode, platform hovers at z = 0.3m
     pd.data[0] = p_home.data[0];
     pd.data[1] = p_home.data[1];
-    pd.data[2] = 0.3;
+    pd.data[2] = p_home.data[2]+0.3;
 
     // Platform velocity
     pd_d.data[0] = 0;

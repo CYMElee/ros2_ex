@@ -1,8 +1,0 @@
-WARNING: Package name "MAV1" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
-[01m[K/home/lee/workspace/ros2_ex/src/MAV/MAV1/node/main.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Kpx4_msgs/msg/vehicle_status.hpp: No such file or directory
-    6 | #include [01;31m[K<px4_msgs/msg/vehicle_status.hpp>[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/MAV1.dir/build.make:76: CMakeFiles/MAV1.dir/node/main.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/MAV1.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

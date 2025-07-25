@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <!-- Controller nodes -->
+    <node pkg="ground" exec="mocap_px4_bridge" name="mocap_px4_bridge" output="screen"/>
+    <node pkg="ground" exec="platform_topic_tool" name="platform_topic_tool" output="screen"/>
+</launch>
