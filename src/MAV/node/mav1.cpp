@@ -100,6 +100,8 @@ private:
         platform_pose_ = *msg;
     }
 
+
+
     void mav_pose(const px4_msgs::msg::VehicleAttitude::SharedPtr msg) {
         // Store original NED quaternion
         Eigen::Quaterniond q_frd(msg->q[0], msg->q[1], msg->q[2], msg->q[3]);
@@ -129,8 +131,8 @@ private:
             mav_pose_.q[0],
             mav_pose_.q[1],
             mav_pose_.q[2],
-            mav_pose_.q[3]); // Now in ENU
-        quaternion_mav.normalize(); // Ensure normalization
+            mav_pose_.q[3]); // Now in nwu
+        quaternion_mav.normalize(); 
         Eigen::Matrix3d rotationMatrix_mav = quaternion_mav.toRotationMatrix();
         Eigen::Vector3d eulerAngles_mav = rotationMatrix_mav.eulerAngles(2, 1, 0);
         double alpha = T_cmd_.data[1];
