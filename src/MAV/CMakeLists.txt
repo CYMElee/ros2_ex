@@ -21,14 +21,14 @@ include_directories(
 )
 
 add_executable(mav1 node/mav1.cpp)
-ament_target_dependencies(mav1 rclcpp std_msgs geometry_msgs px4_msgs)
+ament_target_dependencies(mav1 rclcpp std_msgs geometry_msgs px4_msgs tf2)
 
 add_executable(mav2 node/mav2.cpp)
-ament_target_dependencies(mav2 rclcpp std_msgs geometry_msgs px4_msgs)
+ament_target_dependencies(mav2 rclcpp std_msgs geometry_msgs px4_msgs tf2)
 add_executable(mav3 node/mav3.cpp)
-ament_target_dependencies(mav3 rclcpp std_msgs geometry_msgs px4_msgs)
+ament_target_dependencies(mav3 rclcpp std_msgs geometry_msgs px4_msgs tf2)
 add_executable(mav4 node/mav4.cpp)
-ament_target_dependencies(mav4 rclcpp std_msgs geometry_msgs px4_msgs)
+ament_target_dependencies(mav4 rclcpp std_msgs geometry_msgs px4_msgs tf2)
 
 install(TARGETS
   mav1

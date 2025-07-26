@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target platform_topic_tool[0m
+[  5%] [32mBuilding CXX object CMakeFiles/trajectory_generator.dir/node/trajectory_generator.cpp.o[0m
+[ 21%] Built target keyboard_node
+[ 31%] Built target attitude_controller
+[ 36%] [32mBuilding CXX object CMakeFiles/platform_topic_tool.dir/src/platform_topic_tool.cpp.o[0m
+[ 47%] Built target qc_servo
+[ 57%] Built target position_controller
+[ 68%] Built target gripper_controller
+[ 78%] Built target mocap_px4_bridge
+[ 89%] Built target wrench_mapper
+[ 94%] [32m[1mLinking CXX executable trajectory_generator[0m
+[ 94%] Built target trajectory_generator
+[100%] [32m[1mLinking CXX executable platform_topic_tool[0m
+[100%] Built target platform_topic_tool

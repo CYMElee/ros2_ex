@@ -1,0 +1,11 @@
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav1.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::T_cmd_calculate()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav1.cpp:153:44:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[KEigen[m[K’
+  153 |         Eigen::Quaterniond mav_pose_desire [01;31m[KEigen[m[K::quaternion(rotationMatrix_mav_des_i2w);
+      |                                            [01;31m[K^~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav1.cpp:155:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmav_pose_desire[m[K’ was not declared in this scope; did you mean ‘[01m[Kmav_pose_sub_[m[K’?
+  155 |         [01;31m[Kmav_pose_desire[m[K.normalize();
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+      |         [32m[Kmav_pose_sub_[m[K
+gmake[2]: *** [CMakeFiles/mav1.dir/build.make:76: CMakeFiles/mav1.dir/node/mav1.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/mav1.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

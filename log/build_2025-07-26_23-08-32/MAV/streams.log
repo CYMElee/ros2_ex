@@ -1,0 +1,27 @@
+[0.000s] Invoking command in '/home/lee/workspace/ros2_ex/build/MAV': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/MAV -- -j32 -l32
+[0.001s] [35m[1mConsolidate compiler generated dependencies of target mav1[0m
+[0.001s] [ 12%] [32mBuilding CXX object CMakeFiles/mav2.dir/node/mav2.cpp.o[0m
+[0.002s] [ 25%] [32mBuilding CXX object CMakeFiles/mav4.dir/node/mav4.cpp.o[0m
+[0.002s] [ 37%] [32mBuilding CXX object CMakeFiles/mav3.dir/node/mav3.cpp.o[0m
+[0.002s] [ 62%] Built target mav1
+[0.004s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav2.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Quaternion.h: No such file or directory
+[0.004s]    11 | #include [01;31m[K"tf2/LinearMath/Quaternion.h"[m[K
+[0.004s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.004s] compilation terminated.
+[0.004s] gmake[2]: *** [CMakeFiles/mav2.dir/build.make:76: CMakeFiles/mav2.dir/node/mav2.cpp.o] Error 1
+[0.004s] gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/mav2.dir/all] Error 2
+[0.004s] gmake[1]: *** Waiting for unfinished jobs....
+[0.004s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav4.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Quaternion.h: No such file or directory
+[0.004s]    11 | #include [01;31m[K"tf2/LinearMath/Quaternion.h"[m[K
+[0.004s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.004s] compilation terminated.
+[0.004s] gmake[2]: *** [CMakeFiles/mav4.dir/build.make:76: CMakeFiles/mav4.dir/node/mav4.cpp.o] Error 1
+[0.005s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/mav4.dir/all] Error 2
+[0.005s] [01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav3.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Ktf2/LinearMath/Quaternion.h: No such file or directory
+[0.005s]    11 | #include [01;31m[K"tf2/LinearMath/Quaternion.h"[m[K
+[0.005s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.005s] compilation terminated.
+[0.005s] gmake[2]: *** [CMakeFiles/mav3.dir/build.make:76: CMakeFiles/mav3.dir/node/mav3.cpp.o] Error 1
+[0.005s] gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/mav3.dir/all] Error 2
+[0.005s] gmake: *** [Makefile:146: all] Error 2
+[0.005s] Invoked command in '/home/lee/workspace/ros2_ex/build/MAV' returned '2': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/MAV -- -j32 -l32

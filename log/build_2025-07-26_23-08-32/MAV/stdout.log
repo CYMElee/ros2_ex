@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target mav1[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/mav2.dir/node/mav2.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/mav4.dir/node/mav4.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/mav3.dir/node/mav3.cpp.o[0m
+[ 62%] Built target mav1
