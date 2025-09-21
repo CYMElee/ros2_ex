@@ -1,4 +1,0 @@
-[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav1.cpp:[m[K In constructor ‘[01m[KMAVControl_Node::MAVControl_Node()[m[K’:
-[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav1.cpp:55:35:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
-   55 |         [01;35m[KChange_Mode_Trigger_.data == MAV_mod::IDLE[m[K;
-      |         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
