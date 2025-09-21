@@ -1,0 +1,51 @@
+[35m[1mConsolidate compiler generated dependencies of target mav4[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/mav2.dir/node/mav2.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/mav1.dir/node/mav1.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/mav4.dir/node/mav4.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mav3.dir/node/mav3.cpp.o[0m
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav2.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::T_cmd_calculate()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav2.cpp:134:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kthrust[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  134 |        double [01;35m[Kthrust[m[K = T_cmd_.data[0];
+      |               [01;35m[K^~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav1.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::T_cmd_calculate()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav1.cpp:134:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kthrust[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  134 |        double [01;35m[Kthrust[m[K = T_cmd_.data[0];
+      |               [01;35m[K^~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav4.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::T_cmd_calculate()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav4.cpp:134:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kthrust[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  134 |        double [01;35m[Kthrust[m[K = T_cmd_.data[0];
+      |               [01;35m[K^~~~~~[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav3.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::T_cmd_calculate()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav3.cpp:134:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kthrust[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  134 |        double [01;35m[Kthrust[m[K = T_cmd_.data[0];
+      |               [01;35m[K^~~~~~[m[K
+[ 62%] [32m[1mLinking CXX executable mav2[0m
+[ 62%] Built target mav2
+[ 75%] [32m[1mLinking CXX executable mav1[0m
+[ 87%] [32m[1mLinking CXX executable mav3[0m
+[100%] [32m[1mLinking CXX executable mav4[0m
+[100%] Built target mav1
+[100%] Built target mav3
+[100%] Built target mav4
+-- Install configuration: "RelWithDebInfo"
+-- Execute custom install script
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/lib/MAV/mav1
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/lib/MAV/mav2
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/lib/MAV/mav3
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/lib/MAV/mav4
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/launch/mav_launch.xml
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/ament_index/resource_index/package_run_dependencies/MAV
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/ament_index/resource_index/parent_prefix_path/MAV
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/environment/path.sh
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/environment/path.dsv
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/local_setup.bash
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/local_setup.sh
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/local_setup.zsh
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/local_setup.dsv
+-- Symlinking: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/package.dsv
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/ament_index/resource_index/packages/MAV
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/cmake/MAVConfig.cmake
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/cmake/MAVConfig-version.cmake
+-- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/MAV/share/MAV/package.xml

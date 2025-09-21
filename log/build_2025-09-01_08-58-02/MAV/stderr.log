@@ -1,0 +1,12 @@
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav1.cpp:[m[K In constructor ‘[01m[KMAVControl_Node::MAVControl_Node()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav1.cpp:31:62:[m[K [01;31m[Kerror: [m[K‘[01m[Kqos_profile[m[K’ was not declared in this scope; did you mean ‘[01m[Kqos_profile_pub[m[K’?
+   31 |         auto qos_pub = rclcpp::QoS(rclcpp::QoSInitialization([01;31m[Kqos_profile[m[K.history, 5), qos_profile_pub);
+      |                                                              [01;31m[K^~~~~~~~~~~[m[K
+      |                                                              [32m[Kqos_profile_pub[m[K
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav1.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::T_cmd_calculate()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav1.cpp:140:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kthrust[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  140 |        double [01;35m[Kthrust[m[K = T_cmd_.data[0];
+      |               [01;35m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mav1.dir/build.make:76: CMakeFiles/mav1.dir/node/mav1.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/mav1.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

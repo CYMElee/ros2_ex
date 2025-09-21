@@ -42,12 +42,12 @@ public:
     er.data.resize(3);
 
     // Initialize matrices
-    KR << 5, 0, 0,
-          0, 5, 0,
+    KR << 3, 0, 0,
+          0, 3, 0,
           0, 0, 3;
 
-    Kw << 3, 0, 0,
-          0, 3, 0,
+    Kw << 1, 0, 0,
+          0, 1, 0,
           0, 0, 1;
 
     IB << IBxy, 0, 0,

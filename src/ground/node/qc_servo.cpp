@@ -6,13 +6,13 @@
 #include "string"
 
 // Define the motor curve index
-double p7 = 0.03169;
-double p6 = 0.2807;
-double p5 = -0.07407;
-double p4 = 0.01128;
-double p3 = -0.0007524;
-double p2 = 1.375e-05;
-double p1 = 3.274e-07;
+double p7 = 0.009211;
+double p6 = 0.07406;
+double p5 =  -0.008307;
+double p4 = 0.000146;
+double p3 = 0.0001447;
+double p2 = -1.673e-05;
+double p1 = 5.519e-07;
 
 using namespace Eigen;
 using namespace std;
@@ -38,8 +38,12 @@ MAV::MAV(std::shared_ptr<rclcpp::Node> node, string topic)
     rmw_qos_profile_t qos_profile = rmw_qos_profile_sensor_data;
 	auto qos = rclcpp::QoS(rclcpp::QoSInitialization(qos_profile.history, 5), qos_profile);
 
+        rmw_qos_profile_t qos_profile_sub = rmw_qos_profile_sensor_data;
+        qos_profile_sub.reliability = RMW_QOS_POLICY_RELIABILITY_RELIABLE;
+        auto qos_sub = rclcpp::QoS(rclcpp::QoSInitialization(qos_profile_sub.history, 5), qos_profile_sub);    
+
     T.data.resize(3);
-    mav_cmd = node->create_publisher<std_msgs::msg::Float64MultiArray>(topic, qos);
+    mav_cmd = node->create_publisher<std_msgs::msg::Float64MultiArray>(topic, qos_sub);
 }
 
 void MAV::Thrust(std_msgs::msg::Float64MultiArray fd, int i)
@@ -50,8 +54,8 @@ void MAV::Thrust(std_msgs::msg::Float64MultiArray fd, int i)
     double f = (fd_e.norm() / 4); // Because we have 4 motors for each sd420
 
     T.data[0] = p1 * pow(f, 6) + p2 * pow(f, 5) + p3 * pow(f, 4) + p4 * pow(f, 3) + p5 * pow(f, 2) + p6 * pow(f, 1) + p7; // Net thrust (PWM 0~1)
-    if (T.data[0] >= 0.3)
-        T.data[0] = 0.3;
+    if (T.data[0] >= 0.45)
+        T.data[0] = 0.45;
     if (T.data[0] <= 0.1)
         T.data[0] = 0.1;
 

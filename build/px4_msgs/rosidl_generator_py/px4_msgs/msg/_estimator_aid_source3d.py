@@ -188,15 +188,15 @@ class EstimatorAidSource3d(metaclass=Metaclass_EstimatorAidSource3d):
             return False
         if self.time_last_fuse != other.time_last_fuse:
             return False
-        if all(self.observation != other.observation):
+        if any(self.observation != other.observation):
             return False
-        if all(self.observation_variance != other.observation_variance):
+        if any(self.observation_variance != other.observation_variance):
             return False
-        if all(self.innovation != other.innovation):
+        if any(self.innovation != other.innovation):
             return False
-        if all(self.innovation_variance != other.innovation_variance):
+        if any(self.innovation_variance != other.innovation_variance):
             return False
-        if all(self.test_ratio != other.test_ratio):
+        if any(self.test_ratio != other.test_ratio):
             return False
         if self.fusion_enabled != other.fusion_enabled:
             return False

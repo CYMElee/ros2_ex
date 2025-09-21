@@ -124,7 +124,7 @@ class TrajectoryBezier(metaclass=Metaclass_TrajectoryBezier):
             return False
         if self.timestamp != other.timestamp:
             return False
-        if all(self.position != other.position):
+        if any(self.position != other.position):
             return False
         if self.yaw != other.yaw:
             return False

@@ -1,1 +1,0 @@
-/home/lee/workspace/ros2_ex/src/px4_msgs/msg/SensorMag.msg

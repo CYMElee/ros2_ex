@@ -1,0 +1,40 @@
+[0.001s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/ros2_ex/install/sensor:/home/lee/workspace/ros2_ex/install/ground:/home/lee/workspace/ros2_ex/install/MAV4:/home/lee/workspace/ros2_ex/install/MAV3:/home/lee/workspace/ros2_ex/install/MAV2:/home/lee/workspace/ros2_ex/install/MAV1:/home/lee/workspace/ros2_ex/install/MAV:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[0.001s] [  5%] [32mBuilding CXX object CMakeFiles/gripper_controller.dir/node/gripper_controller.cpp.o[0m
+[0.001s] [ 10%] [32mBuilding CXX object CMakeFiles/keyboard_node.dir/src/getch.cpp.o[0m
+[0.001s] [ 15%] [32mBuilding CXX object CMakeFiles/platform_topic_tool.dir/src/platform_topic_tool.cpp.o[0m
+[0.002s] [ 21%] [32mBuilding CXX object CMakeFiles/position_controller.dir/node/position_controller.cpp.o[0m
+[0.002s] [ 26%] [32mBuilding CXX object CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o[0m
+[0.002s] [ 31%] [32m[1mLinking CXX executable trajectory_generator[0m
+[0.002s] [ 36%] [32mBuilding CXX object CMakeFiles/mocap_px4_bridge.dir/src/mocap_px4_bridge.cpp.o[0m
+[0.002s] [ 42%] [32m[1mLinking CXX executable qc_servo[0m
+[0.002s] [ 47%] [32mBuilding CXX object CMakeFiles/wrench_mapper.dir/node/wrench_mapper.cpp.o[0m
+[0.002s] [ 52%] [32m[1mLinking CXX executable attitude_controller[0m
+[0.009s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:[m[K In function ‘[01m[Kchar getch()[m[K’:
+[0.009s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_oflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.009s]     8 |     struct termios old = {0[01;35m[K}[m[K;
+[0.009s]       |                            [01;35m[K^[m[K
+[0.009s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_cflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.009s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_lflag[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.009s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_line[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.009s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_cc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.009s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_ispeed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.009s] [01m[K/home/lee/workspace/ros2_ex/src/ground/src/getch.cpp:8:28:[m[K [01;35m[Kwarning: [m[Kmissing initializer for member ‘[01m[Ktermios::c_ospeed[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmissing-field-initializers-Wmissing-field-initializers]8;;[m[K]
+[0.230s] [ 57%] Built target qc_servo
+[0.273s] [ 63%] Built target trajectory_generator
+[0.314s] [ 68%] Built target attitude_controller
+[1.421s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.421s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:101:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kc_prev[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[1.421s]   101 |     int [01;35m[Kc_prev[m[K = EOF;
+[1.421s]       |         [01;35m[K^~~~~~[m[K
+[7.372s] [ 73%] [32m[1mLinking CXX executable keyboard_node[0m
+[7.512s] [ 73%] Built target keyboard_node
+[7.518s] [ 78%] [32m[1mLinking CXX executable gripper_controller[0m
+[7.599s] [ 84%] [32m[1mLinking CXX executable mocap_px4_bridge[0m
+[7.670s] [ 84%] Built target gripper_controller
+[7.741s] [ 84%] Built target mocap_px4_bridge
+[8.259s] [ 89%] [32m[1mLinking CXX executable position_controller[0m
+[8.391s] [ 89%] Built target position_controller
+[12.326s] [ 94%] [32m[1mLinking CXX executable platform_topic_tool[0m
+[12.521s] [ 94%] Built target platform_topic_tool
+[16.630s] [100%] [32m[1mLinking CXX executable wrench_mapper[0m
+[16.913s] [100%] Built target wrench_mapper

@@ -1,0 +1,8 @@
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav1.cpp:[m[K In member function ‘[01m[Kvoid MAVControl_Node::initialize()[m[K’:
+[01m[K/home/lee/workspace/ros2_ex/src/MAV/node/mav1.cpp:95:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kresize[m[K’ was not declared in this scope; did you mean ‘[01m[Kdysize[m[K’?
+   95 |         Change_Mode_Trigger_.data = [01;31m[Kresize[m[K(1);
+      |                                     [01;31m[K^~~~~~[m[K
+      |                                     [32m[Kdysize[m[K
+gmake[2]: *** [CMakeFiles/mav1.dir/build.make:76: CMakeFiles/mav1.dir/node/mav1.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/mav1.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

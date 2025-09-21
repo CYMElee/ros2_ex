@@ -226,7 +226,7 @@ class SystemPower(metaclass=Metaclass_SystemPower):
             return False
         if self.voltage5v_v != other.voltage5v_v:
             return False
-        if all(self.sensors3v3 != other.sensors3v3):
+        if any(self.sensors3v3 != other.sensors3v3):
             return False
         if self.sensors3v3_valid != other.sensors3v3_valid:
             return False

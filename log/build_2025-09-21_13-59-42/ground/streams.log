@@ -1,0 +1,105 @@
+[0.006s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lee/workspace/ros2_ex/src/ground -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/ground
+[0.012s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.072s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.075s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.090s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.091s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.093s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.098s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.103s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.126s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.128s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.191s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.225s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.234s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.243s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[0.247s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.301s] -- Found px4_msgs: 2.0.1 (/home/lee/workspace/ros2_ex/install/px4_msgs/share/px4_msgs/cmake)
+[0.314s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.351s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.351s] -- Configured cppcheck include dirs: /home/lee/workspace/ros2_ex/src/ground/include;$<BUILD_INTERFACE:/home/lee/workspace/ros2_ex/src/ground/include>
+[0.351s] -- Configured cppcheck exclude dirs and/or files: 
+[0.351s] -- Added test 'lint_cmake' to check CMake code style
+[0.352s] -- Added test 'uncrustify' to check C / C++ code style
+[0.352s] -- Configured uncrustify additional arguments: 
+[0.352s] -- Added test 'xmllint' to check XML markup files
+[0.353s] -- Configuring done
+[0.367s] -- Generating done
+[0.373s] -- Build files have been written to: /home/lee/workspace/ros2_ex/build/ground
+[0.378s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '0': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/lee/workspace/ros2_ex/src/ground -DCMAKE_INSTALL_PREFIX=/home/lee/workspace/ros2_ex/install/ground
+[0.379s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[0.402s] [35m[1mConsolidate compiler generated dependencies of target trajectory_generator[0m
+[0.402s] [35m[1mConsolidate compiler generated dependencies of target gripper_controller[0m
+[0.403s] [35m[1mConsolidate compiler generated dependencies of target attitude_controller[0m
+[0.404s] [35m[1mConsolidate compiler generated dependencies of target keyboard_node[0m
+[0.405s] [35m[1mConsolidate compiler generated dependencies of target wrench_mapper[0m
+[0.405s] [35m[1mConsolidate compiler generated dependencies of target qc_servo[0m
+[0.405s] [35m[1mConsolidate compiler generated dependencies of target position_controller[0m
+[0.405s] [35m[1mConsolidate compiler generated dependencies of target platform_topic_tool[0m
+[0.405s] [35m[1mConsolidate compiler generated dependencies of target mocap_px4_bridge[0m
+[0.412s] [  5%] [32mBuilding CXX object CMakeFiles/gripper_controller.dir/node/gripper_controller.cpp.o[0m
+[0.412s] [ 10%] [32mBuilding CXX object CMakeFiles/trajectory_generator.dir/node/trajectory_generator.cpp.o[0m
+[0.413s] [ 15%] [32mBuilding CXX object CMakeFiles/wrench_mapper.dir/node/wrench_mapper.cpp.o[0m
+[0.414s] [ 21%] [32mBuilding CXX object CMakeFiles/attitude_controller.dir/node/attitude_controller.cpp.o[0m
+[0.416s] [ 26%] [32mBuilding CXX object CMakeFiles/qc_servo.dir/node/qc_servo.cpp.o[0m
+[0.416s] [ 31%] [32mBuilding CXX object CMakeFiles/platform_topic_tool.dir/src/platform_topic_tool.cpp.o[0m
+[0.417s] [ 42%] [32mBuilding CXX object CMakeFiles/keyboard_node.dir/node/keyboard_node.cpp.o[0m
+[0.417s] [ 42%] [32mBuilding CXX object CMakeFiles/mocap_px4_bridge.dir/src/mocap_px4_bridge.cpp.o[0m
+[0.418s] [ 47%] [32mBuilding CXX object CMakeFiles/position_controller.dir/node/position_controller.cpp.o[0m
+[1.773s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.773s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/keyboard_node.cpp:101:9:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kc_prev[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[1.773s]   101 |     int [01;35m[Kc_prev[m[K = EOF;
+[1.773s]       |         [01;35m[K^~~~~~[m[K
+[2.372s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/qc_servo.cpp:[m[K In constructor ‘[01m[KMAV::MAV(std::shared_ptr<rclcpp::Node>, std::string)[m[K’:
+[2.372s] [01m[K/home/lee/workspace/ros2_ex/src/ground/node/qc_servo.cpp:39:14:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kqos[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[2.372s]    39 |         auto [01;35m[Kqos[m[K = rclcpp::QoS(rclcpp::QoSInitialization(qos_profile.history, 5), qos_profile);
+[2.372s]       |              [01;35m[K^~~[m[K
+[8.424s] [ 52%] [32m[1mLinking CXX executable gripper_controller[0m
+[8.656s] [ 52%] Built target gripper_controller
+[8.702s] [ 57%] [32m[1mLinking CXX executable mocap_px4_bridge[0m
+[8.883s] [ 63%] [32m[1mLinking CXX executable qc_servo[0m
+[8.919s] [ 63%] Built target mocap_px4_bridge
+[9.039s] [ 63%] Built target qc_servo
+[9.211s] [ 68%] [32m[1mLinking CXX executable position_controller[0m
+[9.356s] [ 68%] Built target position_controller
+[9.968s] [ 73%] [32m[1mLinking CXX executable keyboard_node[0m
+[10.165s] [ 78%] Built target keyboard_node
+[11.715s] [ 84%] [32m[1mLinking CXX executable trajectory_generator[0m
+[11.883s] [ 84%] Built target trajectory_generator
+[12.936s] [ 89%] [32m[1mLinking CXX executable attitude_controller[0m
+[13.078s] [ 89%] Built target attitude_controller
+[17.597s] [ 94%] [32m[1mLinking CXX executable platform_topic_tool[0m
+[17.825s] [ 94%] Built target platform_topic_tool
+[19.515s] [100%] [32m[1mLinking CXX executable wrench_mapper[0m
+[19.813s] [100%] Built target wrench_mapper
+[19.821s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '0': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/lee/workspace/ros2_ex/build/ground -- -j32 -l32
+[19.822s] Invoking command in '/home/lee/workspace/ros2_ex/build/ground': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/ground
+[19.827s] -- Install configuration: "RelWithDebInfo"
+[19.827s] -- Execute custom install script
+[19.827s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/keyboard_node
+[19.827s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/attitude_controller
+[19.827s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/gripper_controller
+[19.828s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/position_controller
+[19.828s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/qc_servo
+[19.828s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/wrench_mapper
+[19.828s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/trajectory_generator
+[19.828s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/platform_topic_tool
+[19.828s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/lib/ground/mocap_px4_bridge
+[19.828s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/launch/ground_launch.xml
+[19.828s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/launch/topic_tool_launch.xml
+[19.828s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/package_run_dependencies/ground
+[19.828s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/parent_prefix_path/ground
+[19.828s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/ament_prefix_path.sh
+[19.828s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/ament_prefix_path.dsv
+[19.828s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/path.sh
+[19.828s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/environment/path.dsv
+[19.828s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.bash
+[19.829s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.sh
+[19.829s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.zsh
+[19.829s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/local_setup.dsv
+[19.829s] -- Symlinking: /home/lee/workspace/ros2_ex/install/ground/share/ground/package.dsv
+[19.833s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ament_index/resource_index/packages/ground
+[19.833s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/cmake/groundConfig.cmake
+[19.833s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/cmake/groundConfig-version.cmake
+[19.833s] -- Up-to-date symlink: /home/lee/workspace/ros2_ex/install/ground/share/ground/package.xml
+[19.834s] Invoked command in '/home/lee/workspace/ros2_ex/build/ground' returned '0': AMENT_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs:/home/lee/workspace/vrpn/vrpn_optitrack/install/vrpn_mocap:/opt/ros/humble LD_LIBRARY_PATH=/home/lee/workspace/ros2_ex/install/px4_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/lee/workspace/ros2_ex/install/px4_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/lee/workspace/ros2_ex/build/ground

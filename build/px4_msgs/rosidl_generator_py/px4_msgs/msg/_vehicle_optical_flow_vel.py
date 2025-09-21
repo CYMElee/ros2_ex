@@ -167,17 +167,17 @@ class VehicleOpticalFlowVel(metaclass=Metaclass_VehicleOpticalFlowVel):
             return False
         if self.timestamp_sample != other.timestamp_sample:
             return False
-        if all(self.vel_body != other.vel_body):
+        if any(self.vel_body != other.vel_body):
             return False
-        if all(self.vel_ne != other.vel_ne):
+        if any(self.vel_ne != other.vel_ne):
             return False
-        if all(self.flow_uncompensated_integral != other.flow_uncompensated_integral):
+        if any(self.flow_uncompensated_integral != other.flow_uncompensated_integral):
             return False
-        if all(self.flow_compensated_integral != other.flow_compensated_integral):
+        if any(self.flow_compensated_integral != other.flow_compensated_integral):
             return False
-        if all(self.gyro_rate != other.gyro_rate):
+        if any(self.gyro_rate != other.gyro_rate):
             return False
-        if all(self.gyro_rate_integral != other.gyro_rate_integral):
+        if any(self.gyro_rate_integral != other.gyro_rate_integral):
             return False
         return True
 
